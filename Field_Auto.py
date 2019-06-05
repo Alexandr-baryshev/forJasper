@@ -1,3 +1,4 @@
+import clipboard
 import uuid
 import re
 
@@ -13,12 +14,14 @@ template = bas_template.replace("{", "{{").replace("}", "}}").replace("_0", "_{0
 
 template = re.sub(r'uuid=".+?"', 'uuid="{2}"', template)
 
+all_gotovo = ""
 i = 0
 while i < 24:
     y = 15 * i
     gotovo = template.format(i, y, str(uuid.uuid4()),)
+    all_gotovo = all_gotovo + gotovo + "\r\n"
     print(gotovo)
     i = i + 1
 
-
+clipboard.copy(all_gotovo)
 
