@@ -2,9 +2,10 @@ import clipboard
 
 
 bas_template = '''
-    <variable name="Передачи_0" class="java.lang.Long">
-       <variableExpression><![CDATA[$V{ПередачСумВремя(sec)_0} / $V{ПередачКол-во_0}]]></variableExpression>
-	</variable> '''
+	<variable name="Возврат_0" class="java.lang.Long">
+		<variableExpression><![CDATA[$V{ВозвратСумВремя(sec)_0}/$V{ВозвратКол-во_0}]]></variableExpression>
+	</variable>
+ '''
 
 template = bas_template.replace("{", "{{").replace("}", "}}").replace("_0", "_{0}")
 

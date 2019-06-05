@@ -3,12 +3,11 @@ import uuid
 import re
 
 bas_template = '''
-			<textField>
-				<reportElement style="ДанныеПОДСтолбцов" x="310" y="0" width="40" height="15" uuid="1124ed84-8d0f-47ec-a4a3-77899eb463c4">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textFieldExpression><![CDATA[$V{Выезды_0}]]></textFieldExpression>
-			</textField> '''
+			<textField isBlankWhenNull="true">
+				<reportElement style="ДанныеПОДСтолбцов3" x="550" y="0" width="55" height="15" uuid="a2680c9e-d00d-49cd-9458-a27949d8e024"/>
+				<textFieldExpression><![CDATA[((long)($V{Возврат_0} / 3600)) + ":" + ((long)(($V{Возврат_0} % 3600)/60)) + ":" +((long)($V{Возврат_0} % 3600)%60 )]]></textFieldExpression>
+			</textField>
+ '''
 
 
 template = bas_template.replace("{", "{{").replace("}", "}}").replace("_0", "_{0}").replace('y="0"', 'y="{1}"')
