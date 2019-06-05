@@ -8,8 +8,9 @@ bas_template = '''
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textFieldExpression><![CDATA[$V{Выезды_0}]]></textFieldExpression>
-			</textField>
-'''
+			</textField> '''
+
+
 template = bas_template.replace("{", "{{").replace("}", "}}").replace("_0", "_{0}").replace('y="0"', 'y="{1}"')
 
 template = re.sub(r'uuid=".+?"', 'uuid="{2}"', template)
