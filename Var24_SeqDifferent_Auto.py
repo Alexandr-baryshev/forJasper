@@ -59,28 +59,6 @@ while i < 24:
     print(gotovo)
     i = i + 1
 
-#Генерация полей
-
-bas_template = '''
-			<textField isBlankWhenNull="true">
-				<reportElement style="ДанныеПОДСтолбцов3" x="605" y="0" width="40" height="15" uuid="401df5b6-f838-4a3a-9c53-48f940f5d3b0"/>
-				<textFieldExpression><![CDATA[((long)($V{Бригада_0} / 3600)) + ":" + ((long)(($V{Бригада_0} % 3600)/60)) + ":" +((long)($V{Бригада_0} % 3600)%60 )]]></textFieldExpression>
-			</textField>
- '''
-
-
-template = bas_template.replace("{", "{{").replace("}", "}}").replace("_0", "_{0}").replace('y="0"', 'y="{1}"')
-
-template = re.sub(r'uuid=".+?"', 'uuid="{2}"', template)
-
-i = 0
-while i < 24:
-    y = 15 * i
-    gotovo = template.format(i, y, str(uuid.uuid4()),)
-    all_gotovo = all_gotovo + gotovo + "\r\n"
-    print(gotovo)
-    i = i + 1
-
 #Копирование всех серий в буфер
 
 clipboard.copy(all_gotovo)
