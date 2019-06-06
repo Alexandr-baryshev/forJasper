@@ -7,9 +7,9 @@ all_gotovo = ""
 #Первая серия переменных +
 
 bas_template = '''
-	<variable name="БригадаСумВремя(sec)_0" class="java.lang.Long" calculation="Sum">
-		<variableExpression><![CDATA[$V{Бригада_BooL} && $V{BooL_0}  ?
-( $F{Время возврата на базу}.getTime() - $F{Время выезда}.getTime() ) / 1000 : null]]></variableExpression>
+	<variable name="СтанцияСумВремя(sec)_0" class="java.lang.Long" calculation="Sum">
+		<variableExpression><![CDATA[$V{Станция_BooL} && $V{BooL_0}  ?
+( $F{Время возврата на базу}.getTime() - $F{Время регистрации}.getTime() ) / 1000 : null]]></variableExpression>
 	</variable>
  '''
 
@@ -26,8 +26,8 @@ while i < 24:
 #Вторая серия переменных
 
 bas_template = '''
-	<variable name="БригадаКол-во_0" class="java.lang.Integer" calculation="Count">
-		<variableExpression><![CDATA[$V{BooL_0} && $V{Бригада_BooL} ? 1 : null]]></variableExpression>
+	<variable name="СтанцияКол-во_0" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$V{BooL_0} && $V{Станция_BooL} ? 1 : null]]></variableExpression>
 	</variable>
  '''
 
@@ -44,8 +44,8 @@ while i < 24:
 #Третяя серия переменных
 
 bas_template = '''
-	<variable name="Бригада_0" class="java.lang.Long">
-		<variableExpression><![CDATA[$V{БригадаСумВремя(sec)_0}/$V{БригадаКол-во_0}]]></variableExpression>
+	<variable name="Станция_0" class="java.lang.Long">
+		<variableExpression><![CDATA[$V{СтанцияСумВремя(sec)_0}/$V{СтанцияКол-во_0}]]></variableExpression>
 	</variable>
  '''
 
