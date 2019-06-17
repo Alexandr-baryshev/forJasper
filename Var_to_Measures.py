@@ -20,7 +20,10 @@ template = bas_template.replace("{", "{{").replace("}", "}}").replace("variable"
 
 template = re.sub(r'class=".+?"', 'class="{1}"', template)
 
-gotovo = template.format("measure", "java.lang.Object")
+template = re.sub(r'resetType=".+?"', '', template)
+template = re.sub(r'resetGroup=".+?"', '', template)
+
+gotovo = template.format("measure", "java.lang.Long")
 
 print(gotovo)
 
