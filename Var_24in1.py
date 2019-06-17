@@ -16,6 +16,7 @@ template = bas_template.replace("{", "{{").replace("}", "}}").replace("Скор�
 
 
 gotovo = template.format("тест")
+
 print(gotovo)
 
 

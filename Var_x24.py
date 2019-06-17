@@ -2,8 +2,9 @@ import clipboard
 
 
 bas_template = '''
-	<variable name="Возврат_0" class="java.lang.Long">
-		<variableExpression><![CDATA[$V{ВозвратСумВремя(sec)_0}/$V{ВозвратКол-во_0}]]></variableExpression>
+	<variable name="ГоспитСумВремя(sec)_0" class="java.lang.Long" calculation="Sum">
+		<variableExpression><![CDATA[$V{Госпит_BooL} && $V{BooL_0}  ?
+( $F{Время убытия с места происшествия}.getTime() - $F{Время окончания транспортировки}.getTime()  ) / 1000 : null]]></variableExpression>
 	</variable>
  '''
 
