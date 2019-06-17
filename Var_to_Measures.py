@@ -3,10 +3,17 @@ import re
 
 
 bas_template = '''
-<variable name="ПередачВызСумВрем" class="java.lang.Long" calculation="Sum">
-<variableExpression><![CDATA[$F{Время регистрации} != null && $F{Время получения команды на выезд}  != null ?
-( $F{Время получения команды на выезд}.getTime() - $F{Время регистрации}.getTime() ) / 1000 : null]]></variableExpression>
-</variable>
+	<variable name="ВыездаСумВрем" class="java.lang.Long" resetType="Group" resetGroup="по Позывной" calculation="Sum">
+		<variableExpression><![CDATA[$F{Время выезда} != null && $F{Время получения команды на выезд}  != null ?
+( $F{Время выезда}.getTime() - $F{Время получения команды на выезд}.getTime() ) / 1000 : null]]></variableExpression>
+	</variable>
+	<variable name="ВыездаКол-во" class="java.lang.Integer" resetType="Group" resetGroup="по Позывной" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Время выезда} != null && $F{Время получения команды на выезд}  != null ?
+$F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="Выезда" class="java.lang.Long" resetType="Group" resetGroup="по Позывной">
+		<variableExpression><![CDATA[$V{ВыездаСумВрем} / $V{ВыездаКол-во}]]></variableExpression>
+	</variable>
  '''
 
 template = bas_template.replace("{", "{{").replace("}", "}}").replace("variable", "{0}")
