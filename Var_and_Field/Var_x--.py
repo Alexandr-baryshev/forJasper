@@ -2,8 +2,8 @@ import clipboard
 
 
 bas_template = '''
-	<variable name="R1 &amp; C1" class="java.lang.Integer" calculation="DistinctCount">
-		<variableExpression><![CDATA[$V{R1} && $V{C1} ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	<variable name="R11 &amp; C1" class="java.lang.Integer" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{R11} && $V{C1} ? $F{Идентификатор происшествия} : null]]></variableExpression>
 	</variable>
  '''
 

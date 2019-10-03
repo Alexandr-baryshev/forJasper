@@ -4,11 +4,11 @@ import re
 
 bas_template = '''
 			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-				<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="145" y="15" width="20" height="20" uuid="d7394213-df75-4799-900b-c14998306aac"/>
+				<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="145" y="215" width="20" height="20" uuid="d7394213-df75-4799-900b-c14998306aac"/>
 				<textElement>
 					<font isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$V{R1 & C1}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$V{R11 & C1}]]></textFieldExpression>
 			</textField>
  '''
 
