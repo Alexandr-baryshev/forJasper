@@ -7,10 +7,9 @@ variable = '''
 		<variableExpression><![CDATA[$V{R1} && $V{C1} ? $F{Идентификатор происшествия} : null]]></variableExpression>
 	</variable>
  '''
-# -----------------
+# -------------------------------------------------------------------
 
 allResult = ""
-
 
 # --- R СТРОКА замена 11 раз ----------------------->
 row = variable.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}")
