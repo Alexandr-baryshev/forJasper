@@ -2,16 +2,16 @@ import clipboard
 
 
 bas_template = '''
-	<variable name="R_1 &amp; C_4" class="java.lang.Integer" calculation="DistinctCount">
-		<variableExpression><![CDATA[$V{R_1} && $V{C_4} ?  $F{Идентификатор происшествия} : null]]></variableExpression>
+	<variable name="R1 &amp; C1" class="java.lang.Integer" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{R1} && $V{C1} ? $F{Идентификатор происшествия} : null]]></variableExpression>
 	</variable>
  '''
 
-template = bas_template.replace("{", "{{").replace("}", "}}").replace("R_1", "R_{0}")
+template = bas_template.replace("{", "{{").replace("}", "}}").replace("C1", "C{0}").replace("01", "{00}")
 
 all_gotovo = ""
 i = 1
-while i < 7:
+while i <= 31:
     gotovo = template.format(i)
     all_gotovo = all_gotovo + gotovo + "\r\n"
     print(gotovo)
