@@ -14,15 +14,15 @@ field = '''
  '''
 
 allResult = ""
-# --- R СТРОКА замена 11 раз ----------------------->
-rowAndY = field.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}").replace('Y="20"', 'Y="{1}"')
+# --- R СТРОКА копипрование со сдвигом ry раз, где y = сдвиг по вертикали ----------------------->
+rowAndY = field.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}").replace('y="20"', 'y="{1}"')
 rowAndY = re.sub(r'uuid=".+?"', 'uuid="{2}"', rowAndY)
 ry = 1
 while ry <= 11:
-    y = 20 * ry + 20
+    y = 20 * ry
     rowAndYResult = rowAndY.format(ry, y, str(uuid.uuid4()),)
 
-    # --- C СТОЛБЕЦ замена 31 раз ->
+    # --- C СТОЛБЕЦ копипрование со сдвигом cx раз, где x = сдвиг по горизонтали ->
     columnAndX = rowAndYResult.replace("{", "{{").replace("}", "}}").replace("C1", "C{0}").replace('x="145"', 'x="{1}"')
     columnAndX = re.sub(r'uuid=".+?"', 'uuid="{2}"', columnAndX)
     cx = 1
