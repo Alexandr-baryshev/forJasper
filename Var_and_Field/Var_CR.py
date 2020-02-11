@@ -14,13 +14,13 @@ allResult = ""
 # --- C СТОЛБЕЦ замена X раз ----------------------->
 row = variable.replace("{", "{{").replace("}", "}}").replace("C1", "C{0}")
 c = 1
-while c <= 10:
+while c <= 1:
     rowResult = row.format(c)
 
     # --- R СТРОКА замена X раз ->
     column = rowResult.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}")
     r = 1
-    while r <= 20:
+    while r <= 10:
         columnResult = column.format(r)
         allResult = allResult + columnResult + "\r\n"
         print(columnResult)

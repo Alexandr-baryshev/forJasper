@@ -4,30 +4,29 @@ import re
 
 # --- ПОЛЕ ----------------------------------------------------------------------
 field = '''
-			<textField isBlankWhenNull="true">
-				<reportElement style="Ячейка_C_root" x="420" y="15" width="50" height="15" uuid="bf775eea-fdea-4999-84ff-8d2947433685">
+			<textField>
+				<reportElement style="Ячейка_C_root" x="200" y="0" width="30" height="30" uuid="3038b4da-d37b-47f9-8513-44782bde815d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
-				<textFieldExpression><![CDATA[$V{R1 C7}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$V{R1 C3}]]></textFieldExpression>
 			</textField>
  '''
 
 allResult = ""
 # --- R СТРОКА копипрование со сдвигом ry раз, где y = сдвиг по вертикали ---------------------------------->
-rowAndY = field.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}").replace('y="15"', 'y="{1}"')
+rowAndY = field.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}").replace('y="0"', 'y="{1}"')
 rowAndY = re.sub(r'uuid=".+?"', 'uuid="{2}"', rowAndY)
 ry = 1
-while ry <= 20:
-    y = 15 * ry #+ 405
+while ry <= 53:
+    y = 30 * ry - 30
     rowAndYResult = rowAndY.format(ry, y, str(uuid.uuid4()),)
 
     # --- C СТОЛБЕЦ копипрование со сдвигом cx раз, где x = сдвиг по горизонтали ----->
-    columnAndX = rowAndYResult.replace("{", "{{").replace("}", "}}").replace("C7", "C{0}").replace('x="420"', 'x="{1}"')
+    columnAndX = rowAndYResult.replace("{", "{{").replace("}", "}}").replace("C3", "C{0}").replace('x="200"', 'x="{1}"')
     columnAndX = re.sub(r'uuid=".+?"', 'uuid="{2}"', columnAndX)
-    cx = 7
-    while cx <= 8:
-        x = 50 * cx + 70
+    cx = 3
+    while cx <= 19:
+        x = 30 * cx + 110
         columnAndXResult = columnAndX.format(cx, x, str(uuid.uuid4()),)
 
         allResult = allResult + columnAndXResult + "\r\n"

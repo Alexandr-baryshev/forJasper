@@ -3,8 +3,8 @@ import clipboard
 # --- ПЕРЕМЕННАЯ ----------------------------------------------------------------------
 
 variable = '''
-	<variable name="R1 C7" class="java.lang.Integer" calculation="Sum">
-		<variableExpression><![CDATA[$V{R1} ? $V{C7} : null]]></variableExpression>
+	<variable name="R1 C3" class="java.lang.Integer" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{R1} && $V{C3} ? $F{Идентификатор происшествия} : null]]></variableExpression>
 	</variable>
  '''
 # -------------------------------------------------------------------
@@ -14,13 +14,13 @@ allResult = ""
 # --- R СТРОКА замена X раз ----------------------->
 row = variable.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}")
 r = 1
-while r <= 20:
+while r <= 53:
     rowResult = row.format(r)
 
     # --- C СТОЛБЕЦ замена X раз ->
-    column = rowResult.replace("{", "{{").replace("}", "}}").replace("C7", "C{0}")
-    c = 7
-    while c <= 8:
+    column = rowResult.replace("{", "{{").replace("}", "}}").replace("C3", "C{0}")
+    c = 3
+    while c <= 19:
         columnResult = column.format(c)
         allResult = allResult + columnResult + "\r\n"
         print(columnResult)
