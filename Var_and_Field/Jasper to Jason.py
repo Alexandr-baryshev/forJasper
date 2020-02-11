@@ -1,34 +1,55 @@
 jason = [
     '''
 {
-    "agg": null,
-    "alias": null,
-    "caption": "Идентификатор происшествия",
-    "columnSwitch": null,
-    "id": "id_ce_ID_d7ed8869-b757-4256-9c50-b46ad30f8d84",
-    "idField": "id_ce_ID"
+джейсон один
 },
 '''
     ,
     '''
 {
-  "agg": null,
-  "alias": null,
-  "caption": "ФИО пациента",
-  "columnSwitch": null,
-  "id": "card03_p_50140766-dda0-45b6-a430-da36db4adcb5",
-  "idField": "card03_p"
+джейсон два
+}
+ '''
+    ,
+    '''
+{
+джейсон три
+}
+ '''
+    ,
+    '''
+{
+джейсон четыре
+}
+ '''
+    ,
+    '''
+{
+джейсон шесть
 }
  '''
 ]
 
-jasper = ["Идентификатор происшествия", "ФИО пациента"]
+jasper = ["один", "три", "два"]
 
-a = 0
+result = []
+
+a = -1
 b = 0
 
-if  jason[a].__contains__(jasper[b]):
+i = 0
 
-    print("yes")
-else:
-    print("no")
+
+while len(jasper) > len(result):
+    a = a + 1
+    if jason[a].__contains__(jasper[b]):
+        result.append(jason[a])
+        b = b + 1
+    else:
+        result.append(jasper[b] + " - Поле не найдено")
+        b = b + 1
+        a = 0
+
+
+print(result)
+
