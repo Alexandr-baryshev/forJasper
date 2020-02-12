@@ -1,0 +1,122 @@
+[
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Номер вызова",
+            "columnSwitch": null,
+            "id": "id_ce_CALL_NUMB_2387eb7f-64e6-4da8-a378-ff6dcce8769c",
+            "idField": "id_ce_CALL_NUMB"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Время регистрации",
+            "columnSwitch": null,
+            "id": "id_ce_TIME_REG_d9748573-85cd-4076-8cf1-d257c9e5f5fa",
+            "idField": "id_ce_TIME_REG"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "ФИО пациента",
+            "columnSwitch": null,
+            "id": "card03_p_16e664ef-1913-4d29-b8d1-7907ffeead03",
+            "idField": "card03_p"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Дата рождения пациента",
+            "columnSwitch": null,
+            "id": "c03_pat_birthday_1309666d-7b1b-44a7-a38e-ca3835c7ffa5",
+            "idField": "c03_pat_birthday"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Адрес",
+            "columnSwitch": null,
+            "id": "id_addr_ADRESS_a7a24cc4-afcb-4a9e-b172-56f82178c89c",
+            "idField": "id_addr_ADRESS"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Время получения команды на выезд",
+            "columnSwitch": null,
+            "id": "e_ct_b_receive_time_694fce0d-4792-4265-8ed0-34bec8be08de",
+            "idField": "e_ct_b_receive_time"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Время прибытия на место происшествия",
+            "columnSwitch": null,
+            "id": "e_ct_b_place_time_6cb33e53-2c28-43d7-afb2-309508f36849",
+            "idField": "e_ct_b_place_time"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Время отправки",
+            "columnSwitch": null,
+            "id": "e_ct_b_send_time_148bfe76-4647-449a-9158-aff047363b2d",
+            "idField": "e_ct_b_send_time"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Код (ОД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_primary_cod_bb7c759d-2897-4dcb-ae87-312c7520c62b",
+            "idField": "card03_icd10_primary_cod"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Расшифровка (ОД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_primary_cap_d8d94236-c7fc-4a79-9e94-ee0319f1c91a",
+            "idField": "card03_icd10_primary_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "ЛПУ",
+            "columnSwitch": null,
+            "id": "c03_hospital_c130d7b3-ea0d-41ca-8ae9-dd85bc5f5e72",
+            "idField": "c03_hospital"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Отказ от госпитализации",
+            "columnSwitch": null,
+            "id": "c03_is_not_hospitalized_935c4273-0513-41f0-9180-c0003de9409d",
+            "idField": "c03_is_not_hospitalized"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Код ПМУ",
+            "columnSwitch": null,
+            "id": "id_03_help_d_CODE_03c47c05-da31-4e48-acc6-e6fe23e8ca11",
+            "idField": "id_03_help_d_CODE"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Идентификатор происшествия",
+            "columnSwitch": null,
+            "id": "id_ce_ID_84f57569-6b69-42a5-bedc-7a1e07fd399f",
+            "idField": "id_ce_ID"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Город",
+            "columnSwitch": null,
+            "id": "id_addr_CITY_NAME_0c5f0ba6-3cbe-4787-b9a0-dba0f9d3d881",
+            "idField": "id_addr_CITY_NAME"
+        }
+]
