@@ -317,7 +317,41 @@ jason = [
         "id": "c03_staff_fio_4c1b0015-b1b5-4589-8be2-b97a6543faf9",
         "idField": "c03_staff_fio"
     }
+     '''
+    ,
     '''
+    {
+        "agg": null,
+        "alias": null,
+        "caption": "Заявитель",
+        "columnSwitch": null,
+        "id": "id_ce_INFORMER_a2ce6be9-3d81-48b8-a4e6-817489dc9e6b",
+        "idField": "id_ce_INFORMER"
+    },
+         '''
+    ,
+    '''
+    {
+        "agg": null,
+        "alias": null,
+        "caption": "Результат вызова",
+        "columnSwitch": null,
+        "id": "c03_depa_result_88497271-27ab-4583-8d73-0c58ac8aac55",
+        "idField": "c03_depa_result"
+    },
+         '''
+    ,
+    '''
+    {
+        "agg": null,
+        "alias": null,
+        "caption": "Характер вызова по результату",
+        "columnSwitch": null,
+        "id": "c03_depa_cause_res_e7f978bf-20d7-4fca-9f5f-1b713d3128f3",
+        "idField": "c03_depa_cause_res"
+    }
+    '''
+
 ]
 
 jasper = [
