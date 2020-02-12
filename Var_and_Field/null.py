@@ -18,50 +18,34 @@ jason = [
     '''
 джейсон шесть
  '''
+    ,
+    '''
+джейсон семь
+ '''
 ]
 
-jasper = ["один", "три", "два", "шесть"]
+jasper = ["один", "три", "два", "шес", "вапкыв"]
 
 result = []
 
-# a = -1
-# b = 0
-
-# while len(jasper) > len(result):
-#     a = a + 1
-#
-#     while len(jasper) > len(result):
-#
-#         if jason[a].__contains__(jasper[b]):
-#             result.append(jason[a])
-#             break
-#
-#         elif len(jasper) > len(result):
-#             b = b + 1
-#
-#         else:
-#             result.append(jasper[b] + " - Поле не найдено")
-#
-# print(result)
-
-a = 0
 b = -1
 
-while len(jasper) > len(result):  # ЦИКЛ СМЕНЫ b
+while len(jasper) >= len(result):  # ЦИКЛ СМЕНЫ b
+    a = 0
     b = b + 1
-    if jason[a].__contains__(jasper[b]):
+    if len(jason) > a and len(jasper) > b and jason[a].__contains__(jasper[b]):
         result.append(jason[a])
         print("Поле совпало, b+1")
 
     else:
-        while len(jason) > a:    # ЦИКЛ СМЕНЫ a
+        while len(jason) > a and len(jasper) > b:  # ЦИКЛ СМЕНЫ a
 
             if not jason[a].__contains__(jasper[b]):
                 a = a + 1
+                print("Поле не совпало, a+1")
 
             else:
                 result.append(jason[a])
-                a = 0
                 print("Поле совпало, возврат")
                 break
 
