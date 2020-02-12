@@ -59,9 +59,17 @@
         {
             "agg": null,
             "alias": null,
-            "caption": "Позывной",
+            "caption": "Бригада Позывной",
             "columnSwitch": null,
             "id": "e_ct_b_name_609eb4be-d878-49f7-a712-a35aea3acde4",
+            "idField": "e_ct_b_name"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Техника Позывной",
+            "columnSwitch": null,
+            "id": "e_ct_b_name_62376081-f17a-4ba3-a83a-e0399e3d8333",
             "idField": "e_ct_b_name"
         },
         {
