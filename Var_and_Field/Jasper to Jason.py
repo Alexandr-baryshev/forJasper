@@ -42,7 +42,7 @@ while len(jasper) - 1 > b:  # ЦИКЛ СМЕНЫ b
             print("Поле совпало, b+1")
 
         if len(jason) - 1 == a and not res:
-            result.append("не совпало {}".format(jasper[b]))
+            result.append(jasper[b] + " < Не найдено")
             print("Поле не совпало, a+1")
 
 
