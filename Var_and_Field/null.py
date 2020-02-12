@@ -20,24 +20,49 @@ jason = [
  '''
 ]
 
-jasper = ["один", "три", "два", "три"]
+jasper = ["один", "три", "два", "шесть"]
 
 result = []
 
-a = -1
-b = 0
-# print("a: {} b: {}".format(a, b))
-while len(jasper) > len(result):
-    # print("Цикл 1 - a: {} b: {}".format(a, b))
-    a = a + 1
+# a = -1
+# b = 0
+
+# while len(jasper) > len(result):
+#     a = a + 1
+#
+#     while len(jasper) > len(result):
+#
+#         if jason[a].__contains__(jasper[b]):
+#             result.append(jason[a])
+#             break
+#
+#         elif len(jasper) > len(result):
+#             b = b + 1
+#
+#         else:
+#             result.append(jasper[b] + " - Поле не найдено")
+#
+# print(result)
+
+a = 0
+b = -1
+
+while len(jasper) > len(result):  # ЦИКЛ СМЕНЫ b
+    b = b + 1
     if jason[a].__contains__(jasper[b]):
         result.append(jason[a])
-        b = b + 1
-        # print("Нашли в {} фразу".format(jason[a]))
+        print("Поле совпало, b+1")
+
     else:
-        result.append(jasper[b] + " - Поле не найдено")
-        # print("не нащли фразу {}".format(jasper[b]))
-        b = b + 1
-        a = 0
+        while len(jason) > a:    # ЦИКЛ СМЕНЫ a
+
+            if not jason[a].__contains__(jasper[b]):
+                a = a + 1
+
+            else:
+                result.append(jason[a])
+                a = 0
+                print("Поле совпало, возврат")
+                break
 
 print(result)
