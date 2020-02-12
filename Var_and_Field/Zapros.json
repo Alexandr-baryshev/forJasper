@@ -69,8 +69,8 @@
             "alias": null,
             "caption": "Техника Позывной",
             "columnSwitch": null,
-            "id": "e_ct_b_name_62376081-f17a-4ba3-a83a-e0399e3d8333",
-            "idField": "e_ct_b_name"
+            "id": "e_ct_name_ad216b5a-121d-47d7-a427-a2865a7f2ac3",
+            "idField": "e_ct_name"
         },
         {
             "agg": null,
@@ -155,7 +155,7 @@
         {
             "agg": null,
             "alias": null,
-            "caption": "Возраст пациента",
+            "caption": "Возраст",
             "columnSwitch": null,
             "id": "card03_age_p_3a02fa8d-a9bf-4fe6-a836-dae547ab31c2",
             "idField": "card03_age_p"
