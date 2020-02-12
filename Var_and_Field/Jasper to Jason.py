@@ -43,11 +43,13 @@ print("----------------------")
 print(json.dumps(result, ensure_ascii=False, indent=4))
 print("----------------------")
 
-ff = 0
-while len(not_find) > ff:
-    i = not_find[ff]
-    print(i)
-    ff = ff + 1
+# ff = 0
+# while len(not_find) > ff:
+#     i = not_find[ff]
+#     print(i)
+#     ff = ff + 1
+
+
 print("----------------------")
 for i in not_find:
     print(i)
