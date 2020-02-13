@@ -13,6 +13,7 @@ jasper = [
     "Расшифровка (ОД)",
     "Код (ОД)",
     "Результат вызова",
+    "ХУЙ знает что за поле",
     "Характер вызова по результату",
     "Возраст",
     "Адрес",
@@ -25,18 +26,20 @@ result = []
 not_find = []
 
 b = -1
-a = -1
+
 
 for z in jasper:
     b = b + 1
+    a = -1
     for x in jason:
         a = a + 1
+        if jason[a]['caption'] == jasper[b]:
+            result.append(jason[a])
+            break
 
-    if jason[a]['caption'] == jasper[b]:
-        result.append(jason[a])
+        if jason[a]['caption'] != jasper[b] and len(jason) - 1 == a:
+            not_find.append(jasper[b] + "  <- Не найдено")
 
-    if len(jason) - 1 == a:
-        not_find.append(jasper[b] + " < Не найдено")
 
 
 
