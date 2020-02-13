@@ -24,6 +24,7 @@ result = []
 not_find = []
 
 b = -1
+
 while len(jasper) - 1 > b:  # ЦИКЛ СМЕНЫ b
     b = b + 1
     a = -1
@@ -33,11 +34,9 @@ while len(jasper) - 1 > b:  # ЦИКЛ СМЕНЫ b
         if jason[a]['caption'] == jasper[b]:
             result.append(jason[a])
             res = True
-            print("Поле совпало, b+1")
 
         if len(jason) - 1 == a and not res:
             not_find.append(jasper[b] + " < Не найдено")
-            print("Поле не совпало, a+1")
 
 
 
