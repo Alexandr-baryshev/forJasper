@@ -311,6 +311,70 @@
             "columnSwitch": null,
             "id": "id_ce_INFORMER_5d2f7fd5-dea0-4f43-b8c1-0572e9b10c16",
             "idField": "id_ce_INFORMER"
+        },
+            {
+            "agg": null,
+            "alias": null,
+            "caption": "Повод",
+            "columnSwitch": null,
+            "id": "id_ce_RANK_8dfe72a7-fe75-4dab-ab80-7c77f0c7e361",
+            "idField": "id_ce_RANK"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Дата рождения",
+            "columnSwitch": null,
+            "id": "c03_pat_birthday_1d817ae5-7108-4876-9f79-b521438865c4",
+            "idField": "c03_pat_birthday"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Основной диагноз по карте",
+            "columnSwitch": null,
+            "id": "card03_icd10_primary_text_4ee8f9dd-132b-4619-a1ff-0be382809e13",
+            "idField": "card03_icd10_primary_text"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Номер полиса",
+            "columnSwitch": null,
+            "id": "c03_pat_unified_policy_number_9a1093f8-e546-42c8-8d34-4fd0403eb238",
+            "idField": "c03_pat_unified_policy_number"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Серия полиса",
+            "columnSwitch": null,
+            "id": "c03_pat_unified_policy_ser_number_c5b3e565-49ca-4a58-831d-2a411cf79d8c",
+            "idField": "c03_pat_unified_policy_ser_number"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "СМО код",
+            "columnSwitch": null,
+            "id": "c03_insurance_company_code_5433b1be-734c-4081-bc9b-3e6ba1b25781",
+            "idField": "c03_insurance_company_code"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "СМО ОКАТО",
+            "columnSwitch": null,
+            "id": "c03_insurance_company_okato_oms_2954abee-5321-49fe-94e0-c3bcdeb92f95",
+            "idField": "c03_insurance_company_okato_oms"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Принято к оплате",
+            "columnSwitch": null,
+            "id": "c03_is_exported_to_foms_b81c4a0e-446a-4f1d-8a07-5364d0ce565a",
+            "idField": "c03_is_exported_to_foms"
         }
   ]
 }
