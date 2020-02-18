@@ -7,7 +7,6 @@ print("2---------------")
 
 
 
-
 for z in regular.result:
     print(z)
 

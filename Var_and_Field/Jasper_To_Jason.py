@@ -7,14 +7,8 @@ jason = jason_all['Zapros']
 
 jasper = regular.result
 
-# jasper = [
-#     "Регистрационный номер",
-#     "Время регистрации",
-#     "Расшифровка (ОД)",
-#     "Наименование",
-# ]
-
 result = []
+
 not_find = []
 
 for z in jasper:
