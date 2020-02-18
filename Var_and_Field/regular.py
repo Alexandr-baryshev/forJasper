@@ -36,7 +36,11 @@ class ="java.lang.String" >
 '''
 
 scanText = r'name = ".+?"'
-result = re.findall(scanText, xml_string)
+temp = re.findall(scanText, xml_string)
+result = []
 
-for i in result:
-    print(i)
+for i in temp:
+    result.append("{},".format(i[7:]))
+
+for z in result:
+    print(z)
