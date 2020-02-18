@@ -19,12 +19,28 @@ for z in jasper:
             app = True
             break
     if not app:
-        not_find.append(z + "  <- Не найдено")
+        not_find.append("Не найдено ->  " + z)
 
-print("----------------------")
+print("----------------------------------------------------------------------------")
 print(json.dumps(result, ensure_ascii=False, indent=4))
-print("----------------------")
+print("----------------------------------------------------------------------------")
 
-print("???????????????????????")
+
+# ----Блок отвечающий за вывод цвета----
+def out_red(text):
+    print("\033[31m {}".format(text))
+
+
+def out_yellow(text):
+    print("\033[33m {}".format(text))
+
+
+# ---------------------------------------
+
+out_yellow("")
+print('ПОЛЯ НИЖЕ НЕ НАЙДЕНЫ В ФАЙЛЕ "Zapros.json"')
+
+out_red("")
+
 for i in not_find:
     print(i)
