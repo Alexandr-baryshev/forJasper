@@ -1,18 +1,17 @@
 import json
+from Var_and_Field import regular
 
 with open('Zapros.json', encoding='UTF8') as f:
     jason_all = json.load(f)
 jason = jason_all['Zapros']
 
-with open('regular.py', encoding='UTF8') as ff:
-    jasper_all = ff
-jasper = jasper_all['regular']
+jasper = regular.result
 
 # jasper = [
 #     "Регистрационный номер",
 #     "Время регистрации",
 #     "Расшифровка (ОД)",
-#     "Наименование"
+#     "Наименование",
 # ]
 
 result = []

@@ -39,8 +39,9 @@ scanText = r'name = ".+?"'
 temp = re.findall(scanText, xml_string)
 result = []
 
-for i in temp:
-    result.append("{},".format(i[7:]))
 
-for z in result:
-    print(z)
+for i in temp:
+    result.append("{}".format(i[8:-1]))
+
+
+# print(result)
