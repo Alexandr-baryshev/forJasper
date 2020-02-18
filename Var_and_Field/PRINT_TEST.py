@@ -1,13 +1,13 @@
-from Var_and_Field import regular
+from Var_and_Field import Regular
 print("1---------------")
 
-print(regular.result)
+print(Regular.result)
 
 print("2---------------")
 
 
 
-for z in regular.result:
+for z in Regular.result:
     print(z)
 
 
