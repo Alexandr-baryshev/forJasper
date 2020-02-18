@@ -35,6 +35,8 @@ class ="java.lang.String" >
 < / field >
 '''
 
-xml_string = re.search('a')
+scanText = r'name = ".+?"'
+result = re.findall(scanText, xml_string)
 
-print(xml_string)
+for i in result:
+    print(i)
