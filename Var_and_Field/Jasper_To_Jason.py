@@ -1,3 +1,4 @@
+import pyperclip
 import json
 from Var_and_Field import Regular
 from Var_and_Field import ColorModule
@@ -25,6 +26,7 @@ for z in jasper:
 print("----------------------------------------------------------------------------")
 ColorModule.print_w('')
 print(json.dumps(result, ensure_ascii=False, indent=4))
+pyperclip.copy(json.dumps(result, ensure_ascii=False, indent=4))
 print("----------------------------------------------------------------------------")
 
 
