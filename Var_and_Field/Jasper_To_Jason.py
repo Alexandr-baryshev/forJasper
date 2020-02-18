@@ -34,13 +34,20 @@ def out_red(text):
 def out_yellow(text):
     print("\033[33m {}".format(text))
 
+def out_green(text):
+    print("\033[32m {}".format(text))
+
 
 # ---------------------------------------
+if len(not_find) > 0:
+    out_yellow('')
+    print('ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
 
-out_yellow("")
-print('ПОЛЯ НИЖЕ НЕ НАЙДЕНЫ В ФАЙЛЕ "Zapros.json"')
 
-out_red("")
+    for i in not_find:
+        out_red('')
+        print(i)
 
-for i in not_find:
-    print(i)
+if len(not_find) < 1:
+    out_green('')
+    print('ВСЕ ПОЛЯ НАЙДЕНЫ')

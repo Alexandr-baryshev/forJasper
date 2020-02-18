@@ -26,7 +26,7 @@ class ="java.lang.String" >
 < fieldDescription > <![CDATA[]] > < / fieldDescription >
 < / field >
 < field
-name = "Наименование"
+name = "Повод"
 
 
 class ="java.lang.String" >

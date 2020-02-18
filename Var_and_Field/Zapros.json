@@ -375,6 +375,14 @@
             "columnSwitch": null,
             "id": "c03_is_exported_to_foms_b81c4a0e-446a-4f1d-8a07-5364d0ce565a",
             "idField": "c03_is_exported_to_foms"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Регистрационный номер",
+            "columnSwitch": null,
+            "id": "id_ce_REG_NO_688d565d-5af4-4fbf-b3e9-9cc6fc077758",
+            "idField": "id_ce_REG_NO"
         }
   ]
 }
