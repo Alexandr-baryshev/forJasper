@@ -383,6 +383,22 @@
             "columnSwitch": null,
             "id": "id_ce_REG_NO_688d565d-5af4-4fbf-b3e9-9cc6fc077758",
             "idField": "id_ce_REG_NO"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Место работы",
+            "columnSwitch": null,
+            "id": "c03_pat_work_place_13b0374e-ee72-49d9-ad87-50299d292aa2",
+            "idField": "c03_pat_work_place"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Место проживания",
+            "columnSwitch": null,
+            "id": "c03_pat_reg_place_6175865e-7444-415d-b2a5-292e16f524d6",
+            "idField": "c03_pat_reg_place"
         }
   ]
 }

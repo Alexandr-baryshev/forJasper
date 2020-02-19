@@ -14,6 +14,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="Var_and_Field.test.Person.age" />
+          <option value="int.print" />
         </list>
       </option>
     </inspection_tool>

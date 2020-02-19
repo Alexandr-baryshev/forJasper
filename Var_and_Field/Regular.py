@@ -1,47 +1,51 @@
 import re
 
 xml_string = '''
-            < field
-name = "Регистрационный номер"
-
-
-class ="java.lang.Number" >
-
-< fieldDescription > <![CDATA[]] > < / fieldDescription >
-< / field >
-< field
-name = "Время регистрации"
-
-
-class ="java.util.Date" >
-
-< fieldDescription > <![CDATA[]] > < / fieldDescription >
-< / field >
-< field
-name = "Расшифровка (ОД)"
-
-
-class ="java.lang.String" >
-
-< fieldDescription > <![CDATA[]] > < / fieldDescription >
-< / field >
-< field
-name = "Повод"
-
-
-class ="java.lang.String" >
-
-< fieldDescription > <![CDATA[]] > < / fieldDescription >
-< / field >
+	<field name="Дата рождения" class="java.util.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Основной диагноз по карте" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ФИО пациента" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ЛПУ" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Расшифровка (ОД)" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Код (ОД)" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Место проживания" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Место работы" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Адрес" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Номер вызова" class="java.lang.Number">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Идентификатор происшествия" class="java.lang.Number">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Время регистрации" class="java.util.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
 '''
 
-scanText = r'name = ".+?"'
+scanText = r'name=".+?"'
 temp = re.findall(scanText, xml_string)
 result = []
 
 
 for i in temp:
-    result.append("{}".format(i[8:-1]))
+    result.append("{}".format(i[6:-1]))
 
 
 # print(result)
