@@ -4,16 +4,23 @@ a = 100
 
 # ВСЕ АНАЛОГИЧНО
 
-a.__sub__(5)
+a.__add__(5)
 
-builtins.int.__sub__(100, 5)
+builtins.int.__add__(100, 5)
 
 
-x = builtins.int.__sub__
+
+x = builtins.int.__add__
 
 x(100, 5)
 
 
 
-
 print()
+
+
+
+
+
+
+
