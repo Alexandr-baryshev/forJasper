@@ -1,7 +1,9 @@
-import pyperclip
 import json
-from Var_and_Field import Regular
-from Var_and_Field import ColorModule
+import pyperclip
+
+from Converter_JJ import ColorModule
+from Converter_JJ import Regular
+
 
 with open('Zapros.json', encoding='UTF8') as f:
     jason_all = json.load(f)
@@ -28,7 +30,6 @@ ColorModule.print_w('')
 print(json.dumps(result, ensure_ascii=False, indent=4))
 pyperclip.copy(json.dumps(result, ensure_ascii=False, indent=4))
 print("----------------------------------------------------------------------------")
-
 
 if len(not_find) > 0:
     ColorModule.print_yellow('')
