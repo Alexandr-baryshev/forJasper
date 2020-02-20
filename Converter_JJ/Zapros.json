@@ -439,6 +439,46 @@
             "columnSwitch": null,
             "id": "c03_pat_registration_place_type_cap_8a7b700c-3459-49b0-88f8-a32ca177cd36",
             "idField": "c03_pat_registration_place_type_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Старший бригады",
+            "columnSwitch": null,
+            "id": "c03_doctor_39823ce7-c9e7-4864-9129-ee684b75c684",
+            "idField": "c03_doctor"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Госпитализирован",
+            "columnSwitch": null,
+            "id": "c03_is_hospitalized_a4729a63-8c8a-4229-a72a-e49e3fd10a67",
+            "idField": "c03_is_hospitalized"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Содержание текста происшествия",
+            "columnSwitch": null,
+            "id": "id_ce_EVENT_TEXT_a5a3ea7b-74b3-4d67-a16a-46c0a9b322bf",
+            "idField": "id_ce_EVENT_TEXT"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Время возврата на базу",
+            "columnSwitch": null,
+            "id": "e_ct_at_b_base_time_b0d3b990-a9f7-43b3-9c34-bccc1f80ae58",
+            "idField": "e_ct_at_b_base_time"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Время выезда",
+            "columnSwitch": null,
+            "id": "e_ct_send_time_c70bff3c-2bf1-4bc0-b926-200b2de02413",
+            "idField": "e_ct_send_time"
         }
   ]
 }
