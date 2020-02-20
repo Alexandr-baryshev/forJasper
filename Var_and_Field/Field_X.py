@@ -1,4 +1,4 @@
-import clipboard
+import pyperclip
 import uuid
 import re
 
@@ -26,7 +26,7 @@ while cx <= 53:
     print(columnAndXResult)
     cx = cx + 1
 
-clipboard.copy(allResult)
+pyperclip.copy(allResult)
 
 # --- СТОЛБЕЦ конец ---------------------------------------------------------- ///
 

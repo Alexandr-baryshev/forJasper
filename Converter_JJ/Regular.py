@@ -1,40 +1,25 @@
 import re
 
 xml_string = '''
-	<field name="Дата рождения" class="java.util.Date">
+	<field name="Дней" class="java.lang.Number">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="Основной диагноз по карте" class="java.lang.String">
+	<field name="Месяцев" class="java.lang.Number">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="ФИО пациента" class="java.lang.String">
+	<field name="Место регистрации" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="ЛПУ" class="java.lang.String">
+	<field name="Характер вызова по результату" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="Расшифровка (ОД)" class="java.lang.String">
+	<field name="Пол пациента код" class="java.lang.Number">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="Код (ОД)" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Место проживания" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Место работы" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Адрес" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Номер вызова" class="java.lang.Number">
+	<field name="Лет" class="java.lang.Number">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="Идентификатор происшествия" class="java.lang.Number">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Время регистрации" class="java.util.Date">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 '''

@@ -1,4 +1,4 @@
-import clipboard
+import pyperclip
 import uuid
 import re
 
@@ -39,6 +39,6 @@ while ry <= 53:
 
 # --- СТРОКА конец ------------------------------------------------------------------------------------ ///
 
-clipboard.copy(allResult)
+pyperclip.copy(allResult)
 
 

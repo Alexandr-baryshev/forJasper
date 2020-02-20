@@ -1,4 +1,4 @@
-import clipboard
+import pyperclip
 
 # --- ПЕРЕМЕННАЯ ----------------------------------------------------------------------
 
@@ -20,4 +20,4 @@ while i <= 19:
     print(cellResult)
     i = i + 1
 
-clipboard.copy(result)
+pyperclip.copy(result)

@@ -1,4 +1,4 @@
-import clipboard
+import pyperclip
 # ФОРМИРОВАНИ ПО ПРИНЦИПУ - R1 C1,  R1 C2,  R1 C3, и тд. * простое выделение строк в редакторе
 # --- ПЕРЕМЕННАЯ ----------------------------------------------------------------------
 
@@ -14,13 +14,13 @@ allResult = ""
 # --- R СТРОКА замена X раз ----------------------->
 row = variable.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}")
 r = 1
-while r <= 53:
+while r <= 3:
     rowResult = row.format(r)
 
     # --- C СТОЛБЕЦ замена X раз ->
     column = rowResult.replace("{", "{{").replace("}", "}}").replace("C3", "C{0}")
-    c = 3
-    while c <= 19:
+    c = 1
+    while c <= 4:
         columnResult = column.format(c)
         allResult = allResult + columnResult + "\r\n"
         print(columnResult)
@@ -34,4 +34,4 @@ while r <= 53:
 
 
 # --- КОПИЯ ВСЕГО
-clipboard.copy(allResult)
+pyperclip.copy(allResult)

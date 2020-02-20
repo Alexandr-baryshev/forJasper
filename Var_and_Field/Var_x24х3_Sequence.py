@@ -1,4 +1,4 @@
-import clipboard
+import pyperclip
 import uuid
 import re
 
@@ -61,4 +61,4 @@ while i < 24:
 
 #Копирование всех серий в буфер
 
-clipboard.copy(all_gotovo)
+pyperclip.copy(all_gotovo)

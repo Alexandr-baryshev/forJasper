@@ -1,4 +1,4 @@
-import clipboard
+import pyperclip
 import re
 
 
@@ -27,6 +27,6 @@ gotovo = template.format("measure", "java.lang.Object")
 
 print(gotovo)
 
-clipboard.copy(gotovo)
+pyperclip.copy(gotovo)
 
 

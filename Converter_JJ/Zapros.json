@@ -399,6 +399,46 @@
             "columnSwitch": null,
             "id": "c03_pat_reg_place_6175865e-7444-415d-b2a5-292e16f524d6",
             "idField": "c03_pat_reg_place"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Лет",
+            "columnSwitch": null,
+            "id": "card03_age_p_y_d628c666-c98b-4f13-a93a-1adc3ae23bb8",
+            "idField": "card03_age_p_y"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Месяцев",
+            "columnSwitch": null,
+            "id": "card03_age_p_m_2402ca83-4b75-4597-81b0-cea9b860e027",
+            "idField": "card03_age_p_m"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Дней",
+            "columnSwitch": null,
+            "id": "card03_age_p_d_30b33790-f1f3-4418-a6c6-38aafc854f29",
+            "idField": "card03_age_p_d"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Пол пациента код",
+            "columnSwitch": null,
+            "id": "c03_pat_sex_id_bfadd260-4afc-467b-9f6e-dafd33753f9d",
+            "idField": "c03_pat_sex_id"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Место регистрации",
+            "columnSwitch": null,
+            "id": "c03_pat_registration_place_type_cap_8a7b700c-3459-49b0-88f8-a32ca177cd36",
+            "idField": "c03_pat_registration_place_type_cap"
         }
   ]
 }

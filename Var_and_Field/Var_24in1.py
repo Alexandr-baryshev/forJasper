@@ -1,4 +1,4 @@
-import clipboard
+import pyperclip
 import re
 
 
@@ -20,4 +20,4 @@ gotovo = template.format("тест")
 print(gotovo)
 
 
-clipboard.copy(gotovo)
+pyperclip.copy(gotovo)
