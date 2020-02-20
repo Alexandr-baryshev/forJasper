@@ -1,8 +1,9 @@
 import json
 import pyperclip
 
-from Converter_JJ import ColorModule
 from Converter_JJ import Regular
+from Converter_JJ import ColorModule
+
 
 
 with open('Zapros.json', encoding='UTF8') as f:
@@ -26,19 +27,16 @@ for z in jasper:
         not_find.append("Не найдено ->  " + z)
 
 print("----------------------------------------------------------------------------")
-ColorModule.print_w('')
-print(json.dumps(result, ensure_ascii=False, indent=4))
+ColorModule.print_w(json.dumps(result, ensure_ascii=False, indent=4))
 pyperclip.copy(json.dumps(result, ensure_ascii=False, indent=4))
 print("----------------------------------------------------------------------------")
 
 if len(not_find) > 0:
-    ColorModule.print_yellow('')
-    print('ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
+    ColorModule.print_yellow('ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
 
     for i in not_find:
-        ColorModule.print_red('')
-        print(i)
+        ColorModule.print_red('i')
 
 if len(not_find) < 1:
-    ColorModule.print_green('')
-    print('ВСЕ ПОЛЯ НАЙДЕНЫ')
+    ColorModule.print_green('ВСЕ ПОЛЯ НАЙДЕНЫ')
+

@@ -19,7 +19,7 @@ rowAndY = re.sub(r'uuid=".+?"', 'uuid="{2}"', rowAndY)
 ry = 1
 while ry <= 53:
     y = 30 * ry - 30
-    rowAndYResult = rowAndY.format(ry, y, str(uuid.uuid4()),)
+    rowAndYResult = rowAndY.format(ry, y, str(uuid.uuid4()), )
 
     # --- C СТОЛБЕЦ копипрование со сдвигом cx раз, где x = сдвиг по горизонтали ----->
     columnAndX = rowAndYResult.replace("{", "{{").replace("}", "}}").replace("C3", "C{0}").replace('x="200"', 'x="{1}"')
@@ -27,18 +27,15 @@ while ry <= 53:
     cx = 3
     while cx <= 19:
         x = 30 * cx + 110
-        columnAndXResult = columnAndX.format(cx, x, str(uuid.uuid4()),)
+        columnAndXResult = columnAndX.format(cx, x, str(uuid.uuid4()), )
 
         allResult = allResult + columnAndXResult + "\r\n"
         print(columnAndXResult)
         cx = cx + 1
         # --- СТОЛБЕЦ конец ------------------------------------------------------- ///
 
-
     ry = ry + 1
 
 # --- СТРОКА конец ------------------------------------------------------------------------------------ ///
 
 pyperclip.copy(allResult)
-
-
