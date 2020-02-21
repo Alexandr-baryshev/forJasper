@@ -243,6 +243,14 @@
         {
             "agg": null,
             "alias": null,
+            "caption": "Пол",
+            "columnSwitch": null,
+            "id": "c03_pat_sex_d_5a443d54-afee-48dc-a6b5-b6aff304c3ca",
+            "idField": "c03_pat_sex_d"
+        },
+        {
+            "agg": null,
+            "alias": null,
             "caption": "Причина НС",
             "columnSwitch": null,
             "id": "c03_acci_cause_dict_620a8b69-2e1c-43b4-bce6-d792d65793f1",
@@ -519,6 +527,30 @@
             "columnSwitch": null,
             "id": "c03_cause_no_hospitalis_cap_41352190-0349-4d8b-b7c6-63a104227bf2",
             "idField": "c03_cause_no_hospitalis_cap"
+        },
+            {
+            "agg": null,
+            "alias": null,
+            "caption": "Дата заболевания",
+            "columnSwitch": null,
+            "id": "c03_date_of_disease_943be94f-8291-41cf-8745-99eef7562257",
+            "idField": "c03_date_of_disease"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Активный вызов в ЛПУ",
+            "columnSwitch": null,
+            "id": "c03_lpu_act_50348ad6-41db-422e-be1b-c982956c6e9d",
+            "idField": "c03_lpu_act"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Телефон заявителя",
+            "columnSwitch": null,
+            "id": "id_ce_PHONE_FROM_88d2655a-b6fd-43ac-b60a-58aa1c81383b",
+            "idField": "id_ce_PHONE_FROM"
         }
   ]
 }
