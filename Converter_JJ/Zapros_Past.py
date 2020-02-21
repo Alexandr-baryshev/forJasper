@@ -1,5 +1,6 @@
+zapros_past = '''
 {
-    "columns": [XX],
+    "columns": [$$],
     "condition": {
         "conditions": [
             {
@@ -109,3 +110,4 @@
     "property": null,
     "type": "simple"
 }
+'''
