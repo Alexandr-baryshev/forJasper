@@ -479,6 +479,46 @@
             "columnSwitch": null,
             "id": "e_ct_send_time_c70bff3c-2bf1-4bc0-b926-200b2de02413",
             "idField": "e_ct_send_time"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Блок (ПО)",
+            "columnSwitch": null,
+            "id": "card03_icd10_hos_dia_block_cap_2cbbed01-15a8-4677-92f9-a25d7b43cf8c",
+            "idField": "card03_icd10_hos_dia_block_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Блок (ОД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_primary_block_cap_5707ceeb-3027-4c06-8a8f-f734b9063892",
+            "idField": "card03_icd10_primary_block_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Блок (СД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_acc_block_cap_61cbd904-022e-446f-86dc-9c0d5cad18a2",
+            "idField": "card03_icd10_acc_block_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Блок (ЗД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_final_block_cap_8ee8551d-a81e-4587-b365-a664a93ebce7",
+            "idField": "card03_icd10_final_block_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Причины отказа в госпитализации",
+            "columnSwitch": null,
+            "id": "c03_cause_no_hospitalis_cap_41352190-0349-4d8b-b7c6-63a104227bf2",
+            "idField": "c03_cause_no_hospitalis_cap"
         }
   ]
 }

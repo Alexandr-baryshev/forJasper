@@ -10,6 +10,12 @@ with open('Zapros.json', encoding='UTF8') as f:
     jason_all = json.load(f)
 jason = jason_all['Zapros']
 
+
+with open('Zapros_past.json', encoding='UTF8') as ff:
+    zapros_past = json.load(ff)
+zapros = zapros_past['columns']
+
+
 jasper = Regular.result
 
 result = []
@@ -35,7 +41,7 @@ if len(not_find) > 0:
     ColorModule.print_yellow('ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
 
     for i in not_find:
-        ColorModule.print_red('i')
+        ColorModule.print_red(i)
 
 if len(not_find) < 1:
     ColorModule.print_green('ВСЕ ПОЛЯ НАЙДЕНЫ')
