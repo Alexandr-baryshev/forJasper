@@ -3,7 +3,7 @@ import pyperclip
 
 from Converter_JJ import Regular
 from Converter_JJ import ColorModule
-from Converter_JJ import Zapros_Past
+from Converter_JJ import Novgorod
 
 with open('Zapros.json', encoding='UTF8') as f:
     jason_all = json.load(f)
@@ -34,7 +34,7 @@ if len(not_find) > 0:
         ColorModule.print_red(i)
 
 if len(not_find) < 1:
-    final_rezult = Zapros_Past.zapros_past.replace('[$$]', field_ok)
+    final_rezult = Novgorod.zapros_past.replace('[$$]', field_ok)
     ColorModule.print_w(final_rezult)
     pyperclip.copy(final_rezult)
     ColorModule.print_green('Все поля найдены и скопированы в буфер обмена, добавлены условия.')
