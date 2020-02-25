@@ -11,6 +11,14 @@ jason = jason_all['Zapros']
 
 jasper = Regular.result
 
+def test_f(not_fin):
+    if len(not_fin) > 0:
+        ColorModule.print_yellow('ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
+
+        for i in not_fin:
+            ColorModule.print_red(i)
+
+
 result = []
 
 not_find = []
@@ -28,11 +36,7 @@ for z in jasper:
 
 field_ok = json.dumps(result, ensure_ascii=False, indent=4)
 
-if len(not_find) > 0:
-    ColorModule.print_yellow('ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
-
-    for i in not_find:
-        ColorModule.print_red(i)
+test_f(not_find)
 
 if len(not_find) < 1:
     final_rezult = Novgorod.zapros_past.replace('[$$]', field_ok)
