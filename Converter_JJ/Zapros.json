@@ -599,6 +599,86 @@
             "columnSwitch": null,
             "id": "id_ce_RANK_DESCRIPTION_ae85215d-ce54-442f-8764-5523c961a668",
             "idField": "id_ce_RANK_DESCRIPTION"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Амбулаторно",
+            "columnSwitch": null,
+            "id": "c03_is_outpatient_0481fb22-63cb-4d3e-8afc-71892183a64c",
+            "idField": "c03_is_outpatient"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Признак безрезультатного вызова",
+            "columnSwitch": null,
+            "id": "c03_result_call_is_without_61157159-5abd-4e4c-9063-cff66c19b316",
+            "idField": "c03_result_call_is_without"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Характер вазова Транспортировка",
+            "columnSwitch": null,
+            "id": "c03_depa_cause_is_tran_147350cc-0639-4ca1-b2f2-7a81f4ed7925",
+            "idField": "c03_depa_cause_is_tran"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Характер по результату Транспортировка",
+            "columnSwitch": null,
+            "id": "c03_depa_cause_res_is_tran_d06c118f-7f52-4c68-84f0-6297702d97ba",
+            "idField": "c03_depa_cause_res_is_tran"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Признак роды или патологии беременности по результату",
+            "columnSwitch": null,
+            "id": "c03_depa_cause_res_is_accounting_maternity_bbeb2b3c-6f9e-4b02-8115-5e12db1092ef",
+            "idField": "c03_depa_cause_res_is_accounting_maternity"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Признак роды или патологии беременности характер вызова",
+            "columnSwitch": null,
+            "id": "c03_depa_cause_is_accounting_maternity_740fea62-14a8-4e75-ad76-c13a0eb28067",
+            "idField": "c03_depa_cause_is_accounting_maternity"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Признак внезапного заболевания по результату",
+            "columnSwitch": null,
+            "id": "c03_depa_cause_res_is_sud_illness_fdda2eb1-62d5-4757-a473-95f5d48976a0",
+            "idField": "c03_depa_cause_res_is_sud_illness"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Признак несчастного случая по результату",
+            "columnSwitch": null,
+            "id": "c03_depa_cause_res_is_accident_113c6c13-4958-47d9-ae37-10fd87e48187",
+            "idField": "c03_depa_cause_res_is_accident"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Признак несчастного случая характер вызова",
+            "columnSwitch": null,
+            "id": "c03_depa_cause_is_accident_aa431f1d-bce2-44df-820c-120646e12ecb",
+            "idField": "c03_depa_cause_is_accident"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Признак внезапного заболевания характер вызова",
+            "columnSwitch": null,
+            "id": "c03_depa_cause_is_sud_illness_0e947bf8-ba81-4434-b103-0f64cd431837",
+            "idField": "c03_depa_cause_is_sud_illness"
         }
   ]
 }
