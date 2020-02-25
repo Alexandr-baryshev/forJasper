@@ -1,16 +1,28 @@
 import re
 
 xml_string = '''
-	<field name="Дата рождения" class="java.util.Date">
+	<field name="Наименование типа сил и средств" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="Дата заболевания" class="java.util.Date">
+	<field name="Время прибытия на место происшествия" class="java.util.Date">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="Старший бригады" class="java.lang.String">
+	<field name="Время убытия с места происшествия" class="java.util.Date">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="Активный вызов в ЛПУ" class="java.lang.String">
+	<field name="Время выезда" class="java.util.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="СЛР вид остановки сердца" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="СЛР смерть наступила" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="СЛР результат" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Проведена СЛР" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="ФИО пациента" class="java.lang.String">
@@ -22,28 +34,31 @@ xml_string = '''
 	<field name="Расшифровка (ОД)" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="Код (ОД)" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Место проживания" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
 	<field name="Пол" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Место работы" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="Возраст" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
+	<field name="Состав бригады" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Старший врач подстанции" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Адрес" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
 	<field name="Номер вызова" class="java.lang.Number">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="Телефон заявителя" class="java.lang.String">
+	<field name="Время регистрации" class="java.util.Date">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="Время регистрации" class="java.util.Date">
+	<field name="Повод" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Описание повода" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="Идентификатор происшествия" class="java.lang.Integer">

@@ -320,14 +320,6 @@
             "id": "id_ce_INFORMER_5d2f7fd5-dea0-4f43-b8c1-0572e9b10c16",
             "idField": "id_ce_INFORMER"
         },
-            {
-            "agg": null,
-            "alias": null,
-            "caption": "Повод",
-            "columnSwitch": null,
-            "id": "id_ce_RANK_8dfe72a7-fe75-4dab-ab80-7c77f0c7e361",
-            "idField": "id_ce_RANK"
-        },
         {
             "agg": null,
             "alias": null,
@@ -551,6 +543,62 @@
             "columnSwitch": null,
             "id": "id_ce_PHONE_FROM_88d2655a-b6fd-43ac-b60a-58aa1c81383b",
             "idField": "id_ce_PHONE_FROM"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "СЛР смерть наступила",
+            "columnSwitch": null,
+            "id": "c03_cpr_dead_occured_6adc1871-1f13-4b2a-b5d6-036f0fb38c29",
+            "idField": "c03_cpr_dead_occured"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "СЛР результат",
+            "columnSwitch": null,
+            "id": "c03_cpr_result_cap_a979f54b-9b43-4d72-b7ec-e292c33ff8c1",
+            "idField": "c03_cpr_result_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "СЛР вид остановки сердца",
+            "columnSwitch": null,
+            "id": "c03_cpr_cardiac_arrest_cap_565cf35b-796e-45fd-ba92-a762a98bf74e",
+            "idField": "c03_cpr_cardiac_arrest_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Проведена СЛР",
+            "columnSwitch": null,
+            "id": "c03_is_perform_cpr_64a5bd7e-fe82-403b-b5fb-b61fc9e32ab3",
+            "idField": "c03_is_perform_cpr"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Состав бригады",
+            "columnSwitch": null,
+            "id": "c03_staff_fio_list_b35b18bd-fd74-485e-ae36-3019e495affb",
+            "idField": "c03_staff_fio_list"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Старший врач подстанции",
+            "columnSwitch": null,
+            "id": "c03_substation_senior_doctor_f10782c5-878e-44e5-ac7e-98458212c68f",
+            "idField": "c03_substation_senior_doctor"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Описание повода",
+            "columnSwitch": null,
+            "id": "id_ce_RANK_DESCRIPTION_ae85215d-ce54-442f-8764-5523c961a668",
+            "idField": "id_ce_RANK_DESCRIPTION"
         }
   ]
 }
