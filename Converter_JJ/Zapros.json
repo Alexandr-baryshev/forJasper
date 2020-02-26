@@ -477,8 +477,8 @@
             "alias": null,
             "caption": "Время выезда",
             "columnSwitch": null,
-            "id": "e_ct_send_time_c70bff3c-2bf1-4bc0-b926-200b2de02413",
-            "idField": "e_ct_send_time"
+            "id": "e_ct_b_send_time_2cf26139-2fb9-401b-8f15-8e71c2461a3d",
+            "idField": "e_ct_b_send_time"
         },
         {
             "agg": null,
