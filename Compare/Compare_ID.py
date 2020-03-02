@@ -1,37 +1,36 @@
-from Compare import xml_new
-from Compare import xml_old
 from Compare import Color
-
 import pyperclip
 import re
 
+with open('new.xml', 'r', encoding='UTF8') as file:
+    new = file.read()
+
+with open('old.xml', 'r', encoding='UTF8') as file:
+    old = file.read()
+
 # ----------- Фильтрация новой, оставляем только "Идентификатор происшествия" ------------------
 scanNew = r'ID > .*[1234567890]'
-tempNew = re.findall(scanNew, xml_new.var_new)
+tempNew = re.findall(scanNew, new)
 
 new_Stat = []  # x
 
 for i in tempNew:
     new_Stat.append("{}".format(i[5:]))
 
-# for i in new_Stat:
-#     print(i)
 
 # ----------- Фильтрация старой ......------------------
 scanOld = r'ID > .*[1234567890]'
-tempOld = re.findall(scanOld, xml_old.var_old)
+tempOld = re.findall(scanOld, old)
 
 old_Stat = []  # x
 
 for i in tempOld:
     old_Stat.append("{}".format(i[5:]))
 
-# for i in old_Stat:
-#     print(i)
 # ------ Фильтрация обоих закончена -------------------------------------------------------------
 
 
-Color.green('+++ Лишние в старой +++')
+Color.green('+++ Лишние в новой +++')
 for x in set(new_Stat).difference(old_Stat):
     Color.green(x)
 
