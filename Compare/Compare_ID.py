@@ -31,18 +31,17 @@ for i in tempOld:
 # ------ Фильтрация обоих закончена -------------------------------------------------------------
 
 
-
-Color.green('------- Лишние в новой ------------------')
+Color.green('+++ Лишние в старой +++')
 for x in set(new_Stat).difference(old_Stat):
     Color.green(x)
 
 
-Color.red('------- Лишние в старой ------------------')
+Color.red('+++ Лишние в старой +++')
 for z in set(old_Stat).difference(new_Stat):
     Color.red(z)
 
 
-Color.white('------- Повторы в новой ------------------')
+Color.green('\n' + ' ### Повторы в новой ###')
 new_double = []
 for x in new_Stat:
     if new_Stat.count(x) > 1:
@@ -52,7 +51,8 @@ for x in new_Stat:
 for x in new_double:
     Color.green(x)
 
-Color.white('------- Повторы в старой ------------------')
+
+Color.red('### Повторы в старой ###')
 old_double = []
 for z in old_Stat:
     if old_Stat.count(z) > 1:
@@ -61,15 +61,6 @@ for z in old_Stat:
 
 for z in old_double:
     Color.red(z)
-
-
-
-
-
-
-
-
-
 
 
 

@@ -71,6 +71,10 @@ var_old = '''
 			<reportElement uuid="eada5b21-ad9b-42d9-a29f-579cc615aa48" style="Ячейка_C_root" x="15" y="125" width="70" height="15" backcolor="#F3FCF2" origin="4" srcId="7" printId="6"/>
 			<textContent><![CDATA[ID > 927197]]></textContent>
 		</text>
+				<text textHeight="9.199219" lineSpacingFactor="1.1499023" leadingOffset="-1.5644531">
+			<reportElement uuid="eada5b21-ad9b-42d9-a29f-579cc615aa48" style="Ячейка_C_root" x="15" y="125" width="70" height="15" backcolor="#F3FCF2" origin="4" srcId="7" printId="6"/>
+			<textContent><![CDATA[ID > 927197]]></textContent>
+		</text>
 		<text textHeight="9.199219" lineSpacingFactor="1.1499023" leadingOffset="-1.5644531">
 			<reportElement uuid="eada5b21-ad9b-42d9-a29f-579cc615aa48" style="Ячейка_C_root" x="15" y="140" width="70" height="15" backcolor="#F3FCF2" origin="4" srcId="7" printId="7"/>
 			<textContent><![CDATA[ID > 927205]]></textContent>
