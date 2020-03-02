@@ -1,13 +1,35 @@
 from Compare import xml_new
+from Compare import xml_old
 from Compare import Color
 
 import pyperclip
+import re
 
-new_Stat = [11, 2, 88, 4, 88, 11, 88]  # x
-new_double = []
+# ----------- Фильтрация новой, оставляем только "Идентификатор происшествия" ------------------
+scanNew = r'ID > .*[1234567890]'
+tempNew = re.findall(scanNew, xml_new.var_new)
 
-old_Stat = [1, 2, 3, 5, 2]  # z
-old_double = []
+new_Stat = []  # x
+
+for i in tempNew:
+    new_Stat.append("{}".format(i[5:]))
+
+# for i in new_Stat:
+#     print(i)
+
+# ----------- Фильтрация старой ......------------------
+scanOld = r'ID > .*[1234567890]'
+tempOld = re.findall(scanOld, xml_old.var_old)
+
+old_Stat = []  # x
+
+for i in tempOld:
+    old_Stat.append("{}".format(i[5:]))
+
+# for i in old_Stat:
+#     print(i)
+# ------ Фильтрация обоих закончена -------------------------------------------------------------
+
 
 
 Color.green('------- Лишние в новой ------------------')
@@ -21,6 +43,7 @@ for z in set(old_Stat).difference(new_Stat):
 
 
 Color.white('------- Повторы в новой ------------------')
+new_double = []
 for x in new_Stat:
     if new_Stat.count(x) > 1:
         new_double.append(x)
@@ -30,6 +53,7 @@ for x in new_double:
     Color.green(x)
 
 Color.white('------- Повторы в старой ------------------')
+old_double = []
 for z in old_Stat:
     if old_Stat.count(z) > 1:
         old_double.append(z)
@@ -37,6 +61,16 @@ for z in old_Stat:
 
 for z in old_double:
     Color.red(z)
+
+
+
+
+
+
+
+
+
+
 
 
 

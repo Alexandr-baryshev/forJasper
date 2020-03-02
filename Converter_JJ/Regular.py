@@ -91,9 +91,8 @@ scanText = r'name=".+?"'
 temp = re.findall(scanText, xml_string)
 result = []
 
-
 for i in temp:
     result.append("{}".format(i[6:-1]))
 
-
-# print(result)
+for i in temp:
+    print(i)
