@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Анализ по заболеванию" language="groovy" pageWidth="1250" pageHeight="842" orientation="Landscape" columnWidth="1210" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="59287651-0344-4884-8a70-8353e90e86b9">
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<style name="НазваниеОтчета" mode="Opaque" forecolor="#DC0000" hTextAlign="Center" vTextAlign="Middle" fontName="Arial" fontSize="16" isBold="false">
+		<box>
+			<bottomPen lineWidth="0.75" lineColor="#505050"/>
+		</box>
+	</style>
+	<style name="ДатаВремя" mode="Opaque" forecolor="#053250" hTextAlign="Left" vTextAlign="Middle" fontName="Verdana" fontSize="9">
+		<paragraph leftIndent="3"/>
+	</style>
+	<style name="Столбец" mode="Opaque" forecolor="#053250" backcolor="#E6EBF0" hTextAlign="Center" vTextAlign="Middle" fontName="Arial" fontSize="8">
+		<box padding="1">
+			<pen lineWidth="0.5" lineColor="#282828"/>
+		</box>
+	</style>
+	<style name="СтолбецОбщий_1" style="Столбец" backcolor="#E6F0F0" fontSize="8">
+		<box padding="1"/>
+	</style>
+	<style name="СтолбецОбщий_2" style="Столбец" backcolor="#EBF0EB" fontSize="8">
+		<box padding="1"/>
+	</style>
+	<style name="СтрокаГлавная" mode="Opaque" forecolor="#000000" backcolor="#F0F0F0" hTextAlign="Left" vTextAlign="Middle" fontName="Arial" fontSize="9" isBold="true">
+		<box padding="1">
+			<pen lineWidth="0.5" lineColor="#464646"/>
+		</box>
+		<paragraph leftIndent="3"/>
+	</style>
+	<style name="Строка" style="СтрокаГлавная" backcolor="#FFFFFF" fontSize="8" isBold="false">
+		<box padding="1"/>
+		<paragraph leftIndent="15"/>
+	</style>
+	<style name="ЯчейкаГлав" style="СтрокаГлавная" hTextAlign="Center" fontSize="8">
+		<box padding="1"/>
+		<paragraph leftIndent="0"/>
+	</style>
+	<style name="Ячейка" style="ЯчейкаГлав" backcolor="#FFFFFF" fontSize="9" isBold="false">
+		<box padding="1"/>
+		<paragraph leftIndent="0"/>
+	</style>
+	<style name="Ячейка_2" style="ЯчейкаГлав" backcolor="#FFF5F5" fontSize="8" isBold="false">
+		<box padding="1"/>
+	</style>
+	<style name="RC" mode="Opaque" forecolor="#302F2F" backcolor="#E6E6E6" hTextAlign="Center" fontSize="9" isBold="false">
+		<box padding="1">
+			<pen lineWidth="0.5" lineColor="#464646"/>
+		</box>
+	</style>
+	<parameter name="Дата начала" class="java.util.Date" isForPrompting="false"/>
+	<parameter name="Справочник МКБ10 (множественный выбор)(DirectoryCaption)" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Учетная запись пользователя (sys)" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Дата окончания" class="java.util.Date" isForPrompting="false"/>
+	<parameter name="МКБ" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Дней" class="java.lang.Number">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Время регистрации" class="java.util.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Расшифровка (ОД)" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Код (ОД)" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Месяцев" class="java.lang.Number">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Место регистрации" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Результат вызова" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Характер вызова по результату" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Пол" class="java.lang.Number">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Лет" class="java.lang.Number">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Идентификатор происшествия" class="java.lang.Number">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Время прибытия на место происшествия" class="java.util.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="М" class="java.lang.Boolean" resetType="Group" resetGroup="group МКБ код">
+		<variableExpression><![CDATA[$F{Пол} == 1]]></variableExpression>
+	</variable>
+	<variable name="Ж" class="java.lang.Boolean" resetType="Group" resetGroup="group МКБ код">
+		<variableExpression><![CDATA[$F{Пол} == 2]]></variableExpression>
+	</variable>
+	<variable name="до 18" class="java.lang.Boolean" resetType="Group" resetGroup="group МКБ код">
+		<variableExpression><![CDATA[( $F{Лет} > 0 && $F{Лет} < 18 ) ||  $F{Дней} > 0 || $F{Месяцев} > 0]]></variableExpression>
+	</variable>
+	<variable name="18+" class="java.lang.Boolean" resetType="Group" resetGroup="group МКБ код">
+		<variableExpression><![CDATA[$F{Лет} >17]]></variableExpression>
+	</variable>
+	<variable name="Сельский" class="java.lang.Boolean" resetType="Group" resetGroup="group МКБ код">
+		<variableExpression><![CDATA[$F{Место регистрации} == "Житель сельской местности"]]></variableExpression>
+	</variable>
+	<variable name="R1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Идентификатор происшествия}]]></variableExpression>
+	</variable>
+	<variable name="R2" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[( $F{Время прибытия на место происшествия}.getTime() - $F{Время регистрации}.getTime()  ) < 1200000 ?
+$F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R3" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{18+} && $V{М} ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R3_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{18+} && $V{М} && $V{Сельский}? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R4" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[( $F{Лет} > 17 && $F{Лет} < 65 ) && $V{М} ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R4_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[( $F{Лет} > 17 && $F{Лет} < 65 ) && $V{М} && $V{Сельский} ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R5" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{18+} && $V{Ж} ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R5_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{18+} && $V{Ж} && $V{Сельский} ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R6" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[( $F{Лет} > 17 && $F{Лет} < 60 ) && $V{Ж} ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R6_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[( $F{Лет} > 17 && $F{Лет} < 60 ) && $V{Ж} && $V{Сельский}? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R7" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{до 18} ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R8" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Дней} > 0 || $F{Месяцев} > 0 ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R9" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Результат вызова} == "Больной обслужен, госпитализирован"
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R10" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Характер вызова по результату} == "Внезапное заболевание"
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R11" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Характер вызова по результату} == "Обострение хронического"
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R12" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Характер вызова по результату} == "Несчастный случай"
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R13" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Характер вызова по результату} == "Роды"
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R14" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Характер вызова по результату} == "Патология беременности"
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R7_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{до 18} && $V{Сельский} ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R8_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[($F{Дней} > 0 || $F{Месяцев}  > 0 ) && $V{Сельский}? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R9_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Результат вызова} == "Больной обслужен, госпитализирован" && $V{Сельский}
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R10_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Характер вызова по результату} == "Внезапное заболевание" && $V{Сельский}
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R11_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Характер вызова по результату} == "Обострение хронического" && $V{Сельский}
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R12_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Характер вызова по результату} == "Несчастный случай" && $V{Сельский}
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R13_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Характер вызова по результату} == "Роды" && $V{Сельский}
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R14_1" class="java.lang.Integer" resetType="Group" resetGroup="group МКБ код" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Характер вызова по результату} == "Патология беременности" && $V{Сельский}
+? $F{Идентификатор происшествия} : null]]></variableExpression>
+	</variable>
+	<variable name="R1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R1}]]></variableExpression>
+	</variable>
+	<variable name="R2_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R2}]]></variableExpression>
+	</variable>
+	<variable name="R3_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R3}]]></variableExpression>
+	</variable>
+	<variable name="R3_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R3_1}]]></variableExpression>
+	</variable>
+	<variable name="R4_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R4}]]></variableExpression>
+	</variable>
+	<variable name="R4_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R4_1}]]></variableExpression>
+	</variable>
+	<variable name="R5_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R5}]]></variableExpression>
+	</variable>
+	<variable name="R5_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R5_1}]]></variableExpression>
+	</variable>
+	<variable name="R6_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R6}]]></variableExpression>
+	</variable>
+	<variable name="R6_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R6_1}]]></variableExpression>
+	</variable>
+	<variable name="R7_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R7}]]></variableExpression>
+	</variable>
+	<variable name="R8_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R8}]]></variableExpression>
+	</variable>
+	<variable name="R9_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R9}]]></variableExpression>
+	</variable>
+	<variable name="R10_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R10}]]></variableExpression>
+	</variable>
+	<variable name="R11_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R11}]]></variableExpression>
+	</variable>
+	<variable name="R12_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R12}]]></variableExpression>
+	</variable>
+	<variable name="R13_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R13}]]></variableExpression>
+	</variable>
+	<variable name="R14_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R14}]]></variableExpression>
+	</variable>
+	<variable name="R7_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R7_1}]]></variableExpression>
+	</variable>
+	<variable name="R8_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R8_1}]]></variableExpression>
+	</variable>
+	<variable name="R9_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R9_1}]]></variableExpression>
+	</variable>
+	<variable name="R10_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R10_1}]]></variableExpression>
+	</variable>
+	<variable name="R11_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R11_1}]]></variableExpression>
+	</variable>
+	<variable name="R12_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R12_1}]]></variableExpression>
+	</variable>
+	<variable name="R13_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R13_1}]]></variableExpression>
+	</variable>
+	<variable name="R14_1_sum" class="java.lang.Integer" incrementType="Group" incrementGroup="group МКБ код" calculation="Sum">
+		<variableExpression><![CDATA[$V{R14_1}]]></variableExpression>
+	</variable>
+	<variable name="Всего" class="java.lang.String" incrementType="Group" incrementGroup="group МКБ код">
+		<variableExpression><![CDATA[$V{R1_sum}+$V{R2_sum}+$V{R3_sum}+$V{R4_sum}+$V{R5_sum}+$V{R6_sum}+$V{R7_sum}+$V{R8_sum}+$V{R9_sum}+$V{R10_sum}+$V{R11_sum}+$V{R12_sum}+$V{R13_sum}+$V{R14_sum}]]></variableExpression>
+	</variable>
+	<group name="group МКБ код">
+		<groupExpression><![CDATA[$F{Код (ОД)}]]></groupExpression>
+		<groupFooter>
+			<band height="20" splitType="Prevent">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="990" y="0" width="70" height="20" uuid="9029b264-4997-429d-aa90-d6bd71f6b8bb">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$V{R13} + " ( " + $V{R13_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="640" y="0" width="70" height="20" uuid="123767f6-e10f-408c-a7fd-83b68a3ef21f">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$V{R8} + " ( " + $V{R8_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Строка" stretchType="RelativeToBandHeight" x="0" y="0" width="150" height="20" uuid="b5d1d04f-fbea-4776-b598-c96be6bfd0b4">
+						<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					</reportElement>
+					<box padding="2"/>
+					<textElement>
+						<paragraph leftIndent="2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Код (ОД)} + " - " + $F{Расшифровка (ОД)}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="850" y="0" width="70" height="20" uuid="fe58a9af-5aec-46ef-ad20-8735b79179cb"/>
+					<textFieldExpression><![CDATA[$V{R11} + " ( " + $V{R11_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="920" y="0" width="70" height="20" uuid="49a34b92-b550-47f9-9e2c-3bd72f06550e"/>
+					<textFieldExpression><![CDATA[$V{R12} + " ( " + $V{R12_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="290" y="0" width="70" height="20" uuid="fd969278-17c1-4286-bbd1-e5b28a620cc9"/>
+					<textFieldExpression><![CDATA[$V{R3} + " ( " + $V{R3_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="500" y="0" width="70" height="20" uuid="92e94768-8033-4afd-9e30-8f3b9af0ffb7"/>
+					<textFieldExpression><![CDATA[$V{R6} + " ( " + $V{R6_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="360" y="0" width="70" height="20" uuid="74d3a41d-c06f-48c5-9d06-d2c0caa82146"/>
+					<textFieldExpression><![CDATA[$V{R4} + " ( " + $V{R4_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="220" y="0" width="70" height="20" uuid="eafc65ca-57aa-4e1e-b09e-a59389ae36f3"/>
+					<textFieldExpression><![CDATA[$V{R2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="780" y="0" width="70" height="20" uuid="e48527f6-47d8-4f76-ae3e-1453120f02c6"/>
+					<textFieldExpression><![CDATA[$V{R10} + " ( " + $V{R10_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="150" y="0" width="70" height="20" uuid="9fb0fe56-57e3-4be2-b686-57b123a7efe3"/>
+					<textFieldExpression><![CDATA[$V{R1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="710" y="0" width="70" height="20" uuid="021f1155-dc63-4279-ad65-7fe30bbb759d"/>
+					<textFieldExpression><![CDATA[$V{R9} + " ( " + $V{R9_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="430" y="0" width="70" height="20" uuid="63f2fc8a-a68a-4277-8088-bc652e297541"/>
+					<textFieldExpression><![CDATA[$V{R5} + " ( " + $V{R5_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="570" y="0" width="70" height="20" uuid="1094f83d-1602-4fc0-b942-fd131c21b9ab"/>
+					<textFieldExpression><![CDATA[$V{R7} + " ( " + $V{R7_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка" stretchType="RelativeToBandHeight" x="1060" y="0" width="70" height="20" uuid="9ef60aa5-bfde-4a0e-aa0d-2e213402e67f">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$V{R14} + " ( " + $V{R14_1} + " )"]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="1130" y="0" width="70" height="20" uuid="b63e97bc-c410-4506-8071-81790860ae2f">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$V{R1}+$V{R2}+$V{R3}+$V{R4}+$V{R5}+$V{R6}+$V{R7}+$V{R8}+$V{R9}+$V{R10}+$V{R11}+$V{R12}+$V{R13}+$V{R14}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement style="НазваниеОтчета" x="0" y="0" width="1200" height="29" uuid="eed40c51-c32b-48dd-828a-0dc6de6eb297">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Анализ по заболеванию]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ДатаВремя" x="0" y="30" width="55" height="20" uuid="4086d98b-dd91-4bf9-b3fc-39071088bf97">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Период с:]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="ДатаВремя" x="55" y="30" width="90" height="20" uuid="53f700c4-3591-410d-b967-97018205acba">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Дата начала} != null ? $P{Дата начала} : "НЕ ЗАДАНО"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="ДатаВремя" x="165" y="30" width="90" height="20" uuid="4a3812ac-fd19-466c-9bda-a125dfe0cc4f">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Дата окончания} != null ?$P{Дата окончания} : new Date()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="ДатаВремя" x="270" y="30" width="930" height="20" uuid="31146e54-2ae7-4eb6-977c-0dc7ac49cb26">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$P{Справочник МКБ10 (множественный выбор)(DirectoryCaption)}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="ДатаВремя" x="145" y="30" width="20" height="20" uuid="045a7366-24b7-4156-9617-76a35b5982b4"/>
+				<textElement>
+					<font isItalic="true"/>
+				</textElement>
+				<text><![CDATA[до:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="50">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement style="Столбец" x="0" y="0" width="150" height="50" uuid="4453df3a-6fe5-4b7f-bb6c-3eb7f36173e8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Диагноз]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="150" y="0" width="70" height="35" uuid="89b25611-4379-4a98-b775-d6ea50f3ed26">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Случаев
+всего]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="220" y="0" width="70" height="35" uuid="ef7218f6-2189-4c25-9d59-2e4a36287baf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Доезд
+до 20 минут]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="570" y="0" width="70" height="35" uuid="5c8856a9-17ce-44b0-a8b5-0afb279e5d27">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Дети
+(из них сельские)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="640" y="0" width="70" height="35" uuid="b557b578-fb2d-4b1c-87ab-019f057bc49e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Дети до 1 года
+(из них сельские)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="290" y="0" width="70" height="35" uuid="962e4f0d-5e89-453b-bc4a-4fff88c7cd69">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Взрослые М
+(из них сельские)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="360" y="35" width="70" height="15" uuid="efdf88c8-eccb-43f3-bdee-2a9e98329189">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="290" y="35" width="70" height="15" uuid="baa04340-cd7e-4d78-9311-d8c11630d7bb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="710" y="35" width="70" height="15" uuid="f6c9c645-cc23-41d9-bff7-eef6611c6d25">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="640" y="35" width="70" height="15" uuid="329d30e8-c96a-481d-8eea-19527430a5e9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[8]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="220" y="35" width="70" height="15" uuid="25888182-20a3-4d71-b7f7-6e518ec40fa4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="150" y="35" width="70" height="15" uuid="eb64e428-bbb0-45f1-b3ea-454a8ab32494">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="360" y="0" width="70" height="35" uuid="1e095f57-96db-444c-842d-c27bb6c08fc4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Трудоспособные мужчины
+(из них сельские)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="430" y="35" width="70" height="15" uuid="acc093a2-cc45-496f-b5b9-5ae076e0f1b1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="430" y="0" width="70" height="35" uuid="adc6f25f-3d12-45ee-b177-d05e6eeff5fd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Взрослые Ж
+(из них сельские)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="500" y="35" width="70" height="15" uuid="9227214a-e6ff-403d-8039-6071a7918c91">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="500" y="0" width="70" height="35" uuid="c6dcb23b-42a4-4550-873f-1f4a28c95286">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Трудоспособные женщины
+(из них сельские)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="570" y="35" width="70" height="15" uuid="c1f964db-201c-48b7-901d-c52494716607">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="920" y="0" width="70" height="35" uuid="54f27df9-9e7d-4834-81e4-90f738b2bb1c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Несчастные случаи]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="850" y="35" width="70" height="15" uuid="273f8cb1-2212-4816-b1e3-5ae70e23b3aa">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[11]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="920" y="35" width="70" height="15" uuid="1046f98a-d564-4144-ac55-a9d5632d2e4c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[12]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="780" y="35" width="70" height="15" uuid="27c5bcc8-a1bd-473b-9670-f61f830904b8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="990" y="35" width="70" height="15" uuid="635dc44a-97ec-4bd1-a6bf-c40a8a860871">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[13]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="780" y="0" width="70" height="35" uuid="e83bed95-a464-4c1b-a459-9b01f9477709">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Внезапные]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="850" y="0" width="70" height="35" uuid="fa22c885-8913-42d1-bd79-5efcb96fabb2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Хронические]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="990" y="0" width="70" height="35" uuid="d3a7b11f-7024-40cb-b827-83bafe3f089f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Роды]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="710" y="0" width="70" height="35" uuid="5ddff1ae-40f1-4cda-8335-54c7b3837de3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Госпитализированы
+(из них сельские)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Столбец" x="1060" y="0" width="70" height="35" uuid="fde91ea4-ee26-4e9e-97f9-b2195200f767">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Патология беременности]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="1060" y="35" width="70" height="15" uuid="a7b605ba-7f12-436e-9aa5-e9155b8bb162">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[14]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="ЯчейкаГлав" x="1130" y="0" width="70" height="35" uuid="05b19295-2a90-443c-8957-214b161cb6f0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[ИТОГО]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="RC" x="1130" y="35" width="70" height="15" uuid="ae3ab6c9-cbf9-4785-af91-7c1f6ea87300">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[15]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<summary>
+		<band height="20">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="0" y="0" width="150" height="20" uuid="25424e45-b455-48b5-a695-65f269b65756">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement>
+					<paragraph leftIndent="2"/>
+				</textElement>
+				<text><![CDATA[ИТОГО:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="1130" y="0" width="70" height="20" backcolor="#EDDDDD" uuid="f8d1fa19-e839-4546-be3e-30ef214cd309">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$V{Всего}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="990" y="0" width="70" height="20" uuid="fecd837c-f37d-47c3-bd6b-c0cc5663e1b2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$V{R13_sum} + " ( " + $V{R13_1_sum}+ " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="850" y="0" width="70" height="20" uuid="8a76c74a-3f41-4b61-8fc3-516b05ab6d8a"/>
+				<textFieldExpression><![CDATA[$V{R11_sum} + " ( " + $V{R11_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="640" y="0" width="70" height="20" uuid="75dc9598-1e3b-4d4a-a1c7-8ac7f3fdf66c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$V{R8_sum} + " ( " + $V{R8_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="150" y="0" width="70" height="20" uuid="2c91ff74-be42-4116-81f4-bbfcb3d65078"/>
+				<textFieldExpression><![CDATA[$V{R1_sum}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="570" y="0" width="70" height="20" uuid="cb72cab9-fc7e-42eb-8de7-0754f08a6bb7"/>
+				<textFieldExpression><![CDATA[$V{R7_sum} + " ( " + $V{R7_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="290" y="0" width="70" height="20" uuid="6080e017-43bf-4ec6-b9c3-80c767043233"/>
+				<textFieldExpression><![CDATA[$V{R3_sum} + " ( " + $V{R3_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="220" y="0" width="70" height="20" uuid="315306c2-7bd5-4a05-ac1f-93661cf2d68e"/>
+				<textFieldExpression><![CDATA[$V{R2_sum}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="1060" y="0" width="70" height="20" uuid="dfb88866-3c7c-45d2-9db6-71e809e39992">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$V{R14_sum} + " ( " + $V{R14_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="500" y="0" width="70" height="20" uuid="1ddc6214-0cdf-4868-9193-efba4e5fc1de"/>
+				<textFieldExpression><![CDATA[$V{R6_sum} + " ( " + $V{R6_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="430" y="0" width="70" height="20" uuid="8b62b2c1-81cb-4b0c-8b96-5a0569016858"/>
+				<textFieldExpression><![CDATA[$V{R5_sum} + " ( " + $V{R5_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="920" y="0" width="70" height="20" uuid="fbd8c6af-2fc0-4abb-ba72-ae660d2d8a17"/>
+				<textFieldExpression><![CDATA[$V{R12_sum} + " ( " + $V{R12_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="360" y="0" width="70" height="20" uuid="7605c18b-cedd-4740-8389-2023f8bac733"/>
+				<textFieldExpression><![CDATA[$V{R4_sum} + " ( " + $V{R4_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="780" y="0" width="70" height="20" uuid="8c3c2aa2-4ac4-4abf-8591-cf7918a64cf8"/>
+				<textFieldExpression><![CDATA[$V{R10_sum} + " ( " + $V{R10_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="ЯчейкаГлав" stretchType="RelativeToBandHeight" x="710" y="0" width="70" height="20" uuid="ed1c8c9a-12de-4481-8422-75c72618ee3f"/>
+				<textFieldExpression><![CDATA[$V{R9_sum} + " ( " + $V{R9_1_sum} + " )"]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

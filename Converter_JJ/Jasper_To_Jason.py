@@ -1,15 +1,32 @@
 import json
 import pyperclip
+import re
 
-from Converter_JJ import Regular
-from Converter_JJ import ColorModule
+from Converter_JJ import Color
 from Converter_JJ import Novgorod
 
 with open('Zapros.json', encoding='UTF8') as f:
     jason_all = json.load(f)
 jason = jason_all['Zapros']
 
-jasper = Regular.result
+
+
+# --- Field.xml - Открытие и выделение полей из файла -------------------
+with open('Field.xml', 'r', encoding='UTF8') as file:
+    field = file.read()
+
+scanField = r'field name=".+?"'
+temp = re.findall(scanField, field)
+
+resultField = []
+for i in temp:
+    resultField.append("{}".format(i[12:-1]))
+# --- Field.xml - Обработка закончена -------------------
+
+
+
+
+jasper = resultField
 
 result = []
 
@@ -29,16 +46,16 @@ for z in jasper:
 field_ok = json.dumps(result, ensure_ascii=False, indent=4)
 
 if len(not_find) > 0:
-    ColorModule.print_yellow('ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
+    Color.print_yellow('ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
 
     for i in not_find:
-        ColorModule.print_red(i)
+        Color.print_red(i)
 
 if len(not_find) < 1:
     final_rezult = Novgorod.zapros_past.replace('[$$]', field_ok)
-    ColorModule.print_w(final_rezult)
+    Color.print_w(final_rezult)
     pyperclip.copy(final_rezult)
-    ColorModule.print_green('Все поля найдены и скопированы в буфер обмена, добавлены условия.')
+    Color.print_green('Все поля найдены и скопированы в буфер обмена, добавлены условия.')
 
     # ColorModule.print_w(field_ok)
     # pyperclip.copy(field_ok)
