@@ -1,7 +1,6 @@
 import json
 import pyperclip
 
-from Converter_JJ import Field
 from Converter_JJ import Color
 from Converter_JJ import Novgorod
 

@@ -25,7 +25,6 @@ for i in temp:
 
 
 
-
 jasper = resultField
 
 result = []
@@ -45,6 +44,8 @@ for z in jasper:
 
 field_ok = json.dumps(result, ensure_ascii=False, indent=4)
 
+
+
 if len(not_find) > 0:
     Color.print_yellow('ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
 
@@ -56,6 +57,7 @@ if len(not_find) < 1:
     Color.print_w(final_rezult)
     pyperclip.copy(final_rezult)
     Color.print_green('Все поля найдены и скопированы в буфер обмена, добавлены условия.')
+
 
     # ColorModule.print_w(field_ok)
     # pyperclip.copy(field_ok)

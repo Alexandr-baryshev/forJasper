@@ -679,6 +679,62 @@
             "columnSwitch": null,
             "id": "c03_depa_cause_is_sud_illness_0e947bf8-ba81-4434-b103-0f64cd431837",
             "idField": "c03_depa_cause_is_sud_illness"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "ФИО работника",
+            "columnSwitch": null,
+            "id": "c03_staff_fio_469668ca-e016-41a5-bd40-ff130137ab4f",
+            "idField": "c03_staff_fio"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Должность",
+            "columnSwitch": null,
+            "id": "c03_staff_appoint_38763aa7-cac1-44ac-ba07-ace5a5671bcd",
+            "idField": "c03_staff_appoint"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Служба владелец бригады",
+            "columnSwitch": null,
+            "id": "e_b_pult_caption_6c45cc96-eadb-4f47-a8bc-00cbd812ec70",
+            "idField": "e_b_pult_caption"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Основной диагноз по карте (ОД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_primary_text_b27a7581-53ec-4771-bacd-e7c605bd329f",
+            "idField": "card03_icd10_primary_text"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Сигнальный лист",
+            "columnSwitch": null,
+            "id": "с03_pat_signal_list_c15997a9-5c3e-4f91-915f-68eb2a6852ef",
+            "idField": "с03_pat_signal_list"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Адрес заявителя",
+            "columnSwitch": null,
+            "id": "id_ce_inf_ADRESS_807c2684-befe-47c9-87aa-bae432f8f66e",
+            "idField": "id_ce_inf_ADRESS"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Повод описание",
+            "columnSwitch": null,
+            "id": "id_ce_RANK_DESCRIPTION_3a80bb6b-3ee1-428b-86b8-669461cb94ef",
+            "idField": "id_ce_RANK_DESCRIPTION"
         }
   ]
 }
