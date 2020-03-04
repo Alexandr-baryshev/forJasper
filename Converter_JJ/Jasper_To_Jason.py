@@ -1,6 +1,7 @@
 import json
 import pyperclip
 import re
+import INFO
 
 from Converter_JJ import Color
 from Converter_JJ import Novgorod
@@ -22,7 +23,6 @@ resultField = []
 for i in temp:
     resultField.append("{}".format(i[12:-1]))
 # --- Field.xml - Обработка закончена -------------------
-
 
 
 jasper = resultField
