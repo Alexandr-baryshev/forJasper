@@ -735,6 +735,30 @@
             "columnSwitch": null,
             "id": "id_ce_RANK_DESCRIPTION_3a80bb6b-3ee1-428b-86b8-669461cb94ef",
             "idField": "id_ce_RANK_DESCRIPTION"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Пол код",
+            "columnSwitch": null,
+            "id": "c03_pat_sex_id_12f5a252-7909-45ba-ab11-06263a1ab0df",
+            "idField": "c03_pat_sex_id"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Место вызова",
+            "columnSwitch": null,
+            "id": "c03_call_place_cap_82d8d5eb-9d59-4039-91b4-8d674f9e3f30",
+            "idField": "c03_call_place_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Город",
+            "columnSwitch": null,
+            "id": "id_addr_CITY_NAME_227296f3-7c5d-413e-b781-84b301eafc73",
+            "idField": "id_addr_CITY_NAME"
         }
   ]
 }
