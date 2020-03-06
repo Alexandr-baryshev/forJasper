@@ -2,6 +2,9 @@ import pyperclip
 import uuid
 import re
 
+from colorama import Fore, Back, Style
+print(Fore.LIGHTRED_EX + 'Красный текст')
+
 # --- ПОЛЕ ----------------------------------------------------------------------
 field = '''
 			<textField>

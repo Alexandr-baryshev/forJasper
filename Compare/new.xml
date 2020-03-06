@@ -17339,7 +17339,7 @@
 		</text>
 		<text textHeight="9.199219" lineSpacingFactor="1.1499023" leadingOffset="-1.5644531">
 			<reportElement uuid="db4609e5-1580-4484-9178-e21e0d1de012" style="Ячейка_C_root" x="203" y="285" width="70" height="15" backcolor="#F7E9E9" origin="1" srcId="1" printId="4321"/>
-			<textContent><![CDATA[ID > 942558]]></textContent>
+			<textContent><![CDATA[ID > 142558]]></textContent>
 		</text>
 		<text textHeight="9.199219" lineSpacingFactor="1.1499023" leadingOffset="-1.5644531">
 			<reportElement uuid="db4609e5-1580-4484-9178-e21e0d1de012" style="Ячейка_C_root" x="203" y="300" width="70" height="15" backcolor="#F7E9E9" origin="1" srcId="1" printId="4322"/>

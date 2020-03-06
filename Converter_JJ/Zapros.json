@@ -759,6 +759,86 @@
             "columnSwitch": null,
             "id": "id_addr_CITY_NAME_227296f3-7c5d-413e-b781-84b301eafc73",
             "idField": "id_addr_CITY_NAME"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Общее состояние",
+            "columnSwitch": null,
+            "id": "c03_apod_overall_state_cap_323c8d33-1074-4d94-88e5-6ab3a8a7b959",
+            "idField": "c03_apod_overall_state_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "АОН",
+            "columnSwitch": null,
+            "id": "id_ce_AON_6a0195d2-bd30-4911-ab69-abc828f6f580",
+            "idField": "id_ce_AON"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Расшифровка (ВПП)",
+            "columnSwitch": null,
+            "id": "card03_icd10_ec_cap_3420be46-f1a1-4479-ba01-c726a3683342",
+            "idField": "card03_icd10_ec_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Код (ВПП)",
+            "columnSwitch": null,
+            "id": "card03_icd10_ec_cod_ce8d5a11-88e9-4754-9c2c-758736c6a31e",
+            "idField": "card03_icd10_ec_cod"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Код (ОПС)",
+            "columnSwitch": null,
+            "id": "card03_icd10_bcd_cod_f6df0cbb-50a3-4490-a8a0-80311ff89002",
+            "idField": "card03_icd10_bcd_cod"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Расшифровка (ОПС)",
+            "columnSwitch": null,
+            "id": "card03_icd10_bcd_cap_378ebef2-1f74-4745-a9a5-fee8ec0dc88f",
+            "idField": "card03_icd10_bcd_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Код (НПС)",
+            "columnSwitch": null,
+            "id": "card03_icd10_icd_cod_571dfc9a-16fb-4783-ae48-3030381d0c43",
+            "idField": "card03_icd10_icd_cod"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Расшифровка (НПС)",
+            "columnSwitch": null,
+            "id": "card03_icd10_icd_cap_fe953ea7-a71d-4706-b11e-5458a2aa0aed",
+            "idField": "card03_icd10_icd_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Время констатации смерти",
+            "columnSwitch": null,
+            "id": "c03_pat_deathday_52608395-bc76-45f0-a0fb-7000e8e400c1",
+            "idField": "c03_pat_deathday"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Отказ от госпитализации",
+            "columnSwitch": null,
+            "id": "c03_is_not_hospitalized_e3099729-6ba0-40ae-92ce-99cc73be0a51",
+            "idField": "c03_is_not_hospitalized"
         }
   ]
 }
