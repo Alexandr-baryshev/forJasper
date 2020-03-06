@@ -6,11 +6,27 @@ from colorama import init
 init(autoreset=True)
 colorama.init()
 
-with open('new.xml', 'r', encoding='UTF8') as file:
-    new = file.read()
+
+newInput = ""
+while (newInput != "F" or newInput != "f" or newInput != "exit") and newInput.__len__() < 100:
+    newInput = input('Вставьте xml данные новой, или введите F для загрузки из файла ' + 'new.xml' + "\n")
+    if newInput == "F" or newInput == "f":
+        with open('new.xml', 'r', encoding='UTF8') as file:
+            new = file.read()
+            break
+    if newInput != "F" and newInput.__len__() > 100:
+        new = newInput
+        break
+    if newInput == 'exit':
+        break
+    else:
+        print(Fore.RED + '   Данные не соответсвуют')
+
+
 
 with open('old.xml', 'r', encoding='UTF8') as file:
     old = file.read()
+
 
 # ----------- Фильтрация новой, оставляем только "Идентификатор происшествия" ------------------
 scanNew = r'ID > .*[1234567890]'
@@ -58,7 +74,7 @@ for x in new_double:
     print(Fore.LIGHTGREEN_EX + x)
 
 
-print(Fore.LIGHTRED_EX  + '### Повторы в старой ###')
+print(Fore.LIGHTRED_EX + '### Повторы в старой ###')
 old_double = []
 for z in old_Stat:
     if old_Stat.count(z) > 1:
@@ -68,37 +84,5 @@ for z in old_Stat:
 for z in old_double:
     print(Fore.LIGHTRED_EX + z)
 
+input()
 
-
-
-# new = True
-# old = True
-#
-# Color.green('------- new_Stat -------------------------------')
-#
-# for x in new_Stat:  # выводит лишние поля из новой
-#     zEnd = 0
-#
-#     for z in old_Stat:
-#         zEnd = zEnd + 1
-#         if x == z:
-#             break
-#         if x != z and zEnd == len(old_Stat):
-#             Color.yellow(x)
-#             new = False
-#
-# Color.red('------- old_Stat -------------------------------' + '\n')
-#
-# for z in old_Stat:  # выводит лишние поля из старой
-#     xEnd = 0
-#
-#     for x in new_Stat:
-#         xEnd = xEnd + 1
-#         if x == z:
-#             break
-#         if x != z and xEnd == len(new_Stat):
-#             Color.red(z)
-#             old = False
-#
-# if new is True and old is True:
-#     Color.green("Все поля совпали")
