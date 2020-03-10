@@ -839,6 +839,22 @@
             "columnSwitch": null,
             "id": "c03_is_not_hospitalized_e3099729-6ba0-40ae-92ce-99cc73be0a51",
             "idField": "c03_is_not_hospitalized"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Наименование ПМУ",
+            "columnSwitch": null,
+            "id": "id_03_help_d_cap_a1e7ca4d-143a-470f-9d8c-cbbb2e49f1e5",
+            "idField": "id_03_help_d_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Источник финансирования",
+            "columnSwitch": null,
+            "id": "c03_ist_fin_cap_2c767b3d-b6d1-4a84-963d-ed784369246f",
+            "idField": "c03_ist_fin_cap"
         }
   ]
 }
