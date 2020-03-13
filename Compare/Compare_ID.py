@@ -7,22 +7,24 @@ init(autoreset=True)
 colorama.init()
 
 
-newInput = ""
-while (newInput != "F" or newInput != "f" or newInput != "exit") and newInput.__len__() < 100:
-    newInput = input('Вставьте xml данные новой, или введите F для загрузки из файла ' + 'new.xml' + "\n")
-    if newInput == "F" or newInput == "f":
-        with open('new.xml', 'r', encoding='UTF8') as file:
-            new = file.read()
-            break
-    if newInput != "F" and newInput.__len__() > 100:
-        new = newInput
-        break
-    if newInput == 'exit':
-        break
-    else:
-        print(Fore.RED + '   Данные не соответсвуют')
+# newInput = ""
+# while (newInput != "F" or newInput != "f" or newInput != "exit") and newInput.__len__() < 100:
+#     newInput = input('Вставьте xml данные новой, или введите F для загрузки из файла ' + 'new.xml' + "\n")
+#     if newInput == "F" or newInput == "f":
+#         with open('new.xml', 'r', encoding='UTF8') as file:
+#             new = file.read()
+#             break
+#     if newInput != "F" and newInput.__len__() > 100:
+#         new = newInput
+#         break
+#     if newInput == 'exit':
+#         break
+#     else:
+#         print(Fore.RED + '   Данные не соответсвуют')
 
 
+with open('new.xml', 'r', encoding='UTF8') as file:
+    new = file.read()
 
 with open('old.xml', 'r', encoding='UTF8') as file:
     old = file.read()
@@ -84,5 +86,5 @@ for z in old_Stat:
 for z in old_double:
     print(Fore.LIGHTRED_EX + z)
 
-input()
+
 

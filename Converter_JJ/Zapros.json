@@ -855,6 +855,110 @@
             "columnSwitch": null,
             "id": "c03_ist_fin_cap_2c767b3d-b6d1-4a84-963d-ed784369246f",
             "idField": "c03_ist_fin_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Гражданство",
+            "columnSwitch": null,
+            "id": "card03_country_caption_57f319d6-9763-4892-be74-f733723222d0",
+            "idField": "card03_country_caption"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Проведена тромболитическая терапия",
+            "columnSwitch": null,
+            "id": "c03_is_trombolisis_applied_93390c9f-0d3c-4eb1-8f8e-86ae87c49cd9",
+            "idField": "c03_is_trombolisis_applied"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Район",
+            "columnSwitch": null,
+            "id": "id_addr_CITY_AREA_d_a7be0918-1e49-4bdb-8f5b-ea830dbf226c",
+            "idField": "id_addr_CITY_AREA_d"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Подъем сегмента ST до",
+            "columnSwitch": null,
+            "id": "c03_isdB_st_cf7f1f2b-440a-46e1-8b22-adb6375eea8f",
+            "idField": "c03_isdB_st"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Подъем сегмента ST после",
+            "columnSwitch": null,
+            "id": "c03_isdA_st_0fcdbec2-1ab3-47a3-ae4d-792c37518cf0",
+            "idField": "c03_isdA_st"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Класс (ОД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_primary_class_cap_1e77f5a2-2916-48ca-83cd-01b7f8ad26c6",
+            "idField": "card03_icd10_primary_class_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Класс (ПО)",
+            "columnSwitch": null,
+            "id": "card03_icd10_hos_dia_class_cap_903ebe84-6e44-4359-aad2-590faa4ed97b",
+            "idField": "card03_icd10_hos_dia_class_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Класс (СД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_acc_class_cap_f1dd9ee7-e1f6-48e9-8837-cc98d387cea0",
+            "idField": "card03_icd10_acc_class_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Класс (НПС)",
+            "columnSwitch": null,
+            "id": "card03_icd10_icd_class_cap_4cba5bb0-2a1c-46e5-b38b-cda7e82a3ee4",
+            "idField": "card03_icd10_icd_class_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Класс (ВПП)",
+            "columnSwitch": null,
+            "id": "card03_icd10_ec_class_cap_47d21b1e-15d3-489d-a0a6-dea0d1c78df3",
+            "idField": "card03_icd10_ec_class_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Класс (ЗД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_final_class_cap_cf7b7921-f1ff-4925-bc9b-5ee5ab199ad8",
+            "idField": "card03_icd10_final_class_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Класс (ОПС)",
+            "columnSwitch": null,
+            "id": "card03_icd10_bcd_class_cap_3561163f-e9a4-4ad7-ae2e-7eee713d7156",
+            "idField": "card03_icd10_bcd_class_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Класс (Ф)",
+            "columnSwitch": null,
+            "id": "card03_icd10_foms_class_cap_883ff70b-cab4-4fb9-b70d-697cc4079b87",
+            "idField": "card03_icd10_foms_class_cap"
         }
   ]
 }
