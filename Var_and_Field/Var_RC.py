@@ -3,8 +3,8 @@ import pyperclip
 # --- ПЕРЕМЕННАЯ ----------------------------------------------------------------------
 
 variable = '''
-	<variable name="R1 C3" class="java.lang.Integer" calculation="DistinctCount">
-		<variableExpression><![CDATA[$V{R1} && $V{C3} ? $F{Идентификатор происшествия} : null]]></variableExpression>
+	<variable name="R1 C1" class="java.lang.Integer" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{R1} && $V{C1} ? $F{Идентификатор происшествия} : null]]></variableExpression>
 	</variable>
  '''
 # -------------------------------------------------------------------
@@ -14,13 +14,13 @@ allResult = ""
 # --- R СТРОКА замена X раз ----------------------->
 row = variable.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}")
 r = 1
-while r <= 3:
+while r <= 8:
     rowResult = row.format(r)
 
     # --- C СТОЛБЕЦ замена X раз ->
-    column = rowResult.replace("{", "{{").replace("}", "}}").replace("C3", "C{0}")
+    column = rowResult.replace("{", "{{").replace("}", "}}").replace("C1", "C{0}")
     c = 1
-    while c <= 4:
+    while c <= 6:
         columnResult = column.format(c)
         allResult = allResult + columnResult + "\r\n"
         print(columnResult)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Частота вызовов СМП на участках взрослой поликлиники" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="812" leftMargin="15" rightMargin="15" topMargin="15" bottomMargin="15" uuid="fff97ae0-0e72-4d2d-a77b-c087b4672212">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Журнал учета инфарктных больных" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="812" leftMargin="15" rightMargin="15" topMargin="15" bottomMargin="15" uuid="b47a5e9a-3e26-4307-8bfb-35910a2d7f87">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<property name="com.jaspersoft.studio.unit." value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
@@ -11,13 +11,13 @@
 	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
 	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
-	<style name="Название" mode="Opaque" forecolor="#DC0000" hTextAlign="Left" vTextAlign="Middle" fontName="Arial" fontSize="14" isBold="false">
+	<style name="Название" mode="Opaque" forecolor="#DC0000" hTextAlign="Center" vTextAlign="Middle" fontName="Arial" fontSize="14" isBold="false">
 		<box>
 			<bottomPen lineWidth="0.75" lineColor="#505050"/>
 		</box>
 		<paragraph leftIndent="20"/>
 	</style>
-	<style name="ДатаВремя" mode="Opaque" forecolor="#053250" hTextAlign="Left" vTextAlign="Middle" fontName="Arial" fontSize="9">
+	<style name="ДатаВремя" mode="Opaque" forecolor="#053250" hTextAlign="Left" vTextAlign="Middle" fontName="Verdana" fontSize="9">
 		<paragraph leftIndent="3"/>
 	</style>
 	<style name="Номер" mode="Opaque" forecolor="#505A78" backcolor="#F0F0F0" hTextAlign="Center" vTextAlign="Middle" fontName="Arial" fontSize="9" isBold="false">
@@ -37,10 +37,6 @@
 		<box padding="1">
 			<pen lineWidth="0.5" lineColor="#464646"/>
 		</box>
-		<conditionalStyle>
-			<conditionExpression><![CDATA[$V{N/pp} % 2 == 0]]></conditionExpression>
-			<style mode="Opaque" forecolor="#323232" backcolor="#FAFAF7"/>
-		</conditionalStyle>
 	</style>
 	<style name="Ячейка_C_b" style="Ячейка_C_root" isBold="true"/>
 	<style name="Ячейка_C_b_fill" style="Ячейка_C_root" backcolor="#E8E8E8" isBold="true"/>
@@ -66,7 +62,13 @@
 	<field name="Дата рождения" class="java.util.Date">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
+	<field name="Время выезда" class="java.util.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
 	<field name="ФИО пациента" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Время окончания транспортировки" class="java.util.Date">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="ЛПУ" class="java.lang.String">
@@ -78,15 +80,6 @@
 	<field name="Код (ОД)" class="java.lang.String">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="Результат вызова" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Возраст" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
-	<field name="Адрес" class="java.lang.String">
-		<fieldDescription><![CDATA[]]></fieldDescription>
-	</field>
 	<field name="Номер вызова" class="java.lang.Number">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
@@ -96,59 +89,102 @@
 	<field name="Время регистрации" class="java.util.Date">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<variable name="N/pp" class="java.lang.Long" incrementType="Group" incrementGroup="Идентификатор" calculation="Count">
-		<variableExpression><![CDATA[$F{Идентификатор происшествия}]]></variableExpression>
+	<field name="Код ПМУ" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Время прибытия на место происшествия" class="java.util.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Время получения команды на выезд" class="java.util.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<sortField name="Идентификатор происшествия"/>
+	<variable name="ТЛТ" class="java.lang.Long" resetType="Group" resetGroup="По происшествию" calculation="Count">
+		<variableExpression><![CDATA[IF($F{Код ПМУ} == "В100006"
+	, 1, null
+	)]]></variableExpression>
 	</variable>
-	<group name="Идентификатор">
+	<variable name="Всего" class="java.lang.Long" incrementType="Group" incrementGroup="По происшествию" calculation="Count">
+		<variableExpression><![CDATA[$V{REPORT_COUNT}]]></variableExpression>
+	</variable>
+	<variable name="Доезд" class="java.lang.Long">
+		<variableExpression><![CDATA[$F{Время прибытия на место происшествия}.getTime() - $F{Время выезда}.getTime()]]></variableExpression>
+	</variable>
+	<group name="По происшествию">
 		<groupExpression><![CDATA[$F{Идентификатор происшествия}]]></groupExpression>
 		<groupFooter>
 			<band height="20" splitType="Prevent">
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="230" y="0" width="60" height="20" uuid="7cb21755-53ce-4536-81ed-a46158791fbb">
-						<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					</reportElement>
-					<textFieldExpression><![CDATA[$F{Возраст} + "\n" + DATEFORMAT($F{Дата рождения},"dd.MM.yyyy")]]></textFieldExpression>
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="65" y="0" width="50" height="20" uuid="f2a401db-96f4-46ac-9b58-3acd7d6f0b35"/>
+					<textFieldExpression><![CDATA[DATEFORMAT($F{Время регистрации}, "dd.MM.yyyy")]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="650" y="0" width="160" height="20" uuid="7d2e0abf-0855-417f-843b-58eea9d6f23e">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="115" y="0" width="85" height="20" uuid="c6175c2e-8125-424c-9735-614b40d64888">
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
-						<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					</reportElement>
-					<textFieldExpression><![CDATA[T($F{Результат вызова}) + "\r\n" + T($F{ЛПУ})]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="30" y="0" width="50" height="20" uuid="a2c5f925-7a7c-4ae7-b9ab-586effae509e">
-						<property name="com.jaspersoft.studio.unit.width" value="px"/>
-						<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					</reportElement>
-					<textFieldExpression><![CDATA[DATEFORMAT($F{Время регистрации},"dd.MM.yy\nHH:mm") + "\n" + "№ " + $F{Номер вызова}]]></textFieldExpression>
-				</textField>
-				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="80" y="0" width="150" height="20" uuid="e33f9fe4-8efd-4313-9741-0f977f85a2d8">
-						<property name="com.jaspersoft.studio.unit.width" value="px"/>
-						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					</reportElement>
 					<textFieldExpression><![CDATA[$F{ФИО пациента}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="290" y="0" width="200" height="20" uuid="b78a9ecc-80a6-4afd-afa0-3fed3f71c37d">
-						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="500" y="0" width="130" height="20" uuid="58455196-2aa0-477d-8167-c3497e140efc">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
-					<textFieldExpression><![CDATA[$F{Адрес}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{Код (ОД)} + "  " + $F{Расшифровка (ОД)}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="490" y="0" width="160" height="20" uuid="804b8e46-3a6d-4e17-a867-b56df2f8a9e0">
-						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="630" y="0" width="80" height="20" uuid="463530e7-0101-488a-ac00-1998925e65cd">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 					</reportElement>
-					<textFieldExpression><![CDATA[T($F{Код (ОД)}) + " " + T($F{Расшифровка (ОД)})]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{ЛПУ}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
-					<reportElement style="Номер" stretchType="RelativeToBandHeight" x="0" y="0" width="30" height="20" uuid="8e7e8403-2b91-4d4d-947a-0d1670f03a9d">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="710" y="0" width="30" height="20" uuid="7d0601cc-4980-4683-ab1b-230b4945c572"/>
+					<textFieldExpression><![CDATA[$V{ТЛТ} >= 1 ? "Да" : ""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="25" y="0" width="40" height="20" uuid="7d1b1b41-8ea0-4a60-892c-9c0fa4cc7bc1">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$F{Номер вызова}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="250" y="0" width="50" height="20" uuid="6fdd7d42-13e2-49c0-8f77-56a0b7424b62"/>
+					<textFieldExpression><![CDATA[DATEFORMAT($F{Время регистрации}, "dd.MM.yyyy HH:mm")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="200" y="0" width="50" height="20" uuid="56968bb0-1e15-4bf4-a1fb-82a395b9bace">
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
 						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[DATEFORMAT($F{Дата рождения},"dd.MM.yyyy")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="300" y="0" width="50" height="20" uuid="cb1f0d9d-fa6b-4856-9a9f-60cadea8c165"/>
+					<textFieldExpression><![CDATA[DATEFORMAT($F{Время получения команды на выезд}, "dd.MM.yyyy HH:mm")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="400" y="0" width="50" height="20" uuid="08349736-e435-438d-9372-75665740b404"/>
+					<textFieldExpression><![CDATA[PRINT_DURATION($V{Доезд}, "H:M:S")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="450" y="0" width="50" height="20" uuid="aefbf230-fae1-45a7-a2e0-ad77157e269a"/>
+					<textFieldExpression><![CDATA[$F{Время окончания транспортировки}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="740" y="0" width="70" height="20" uuid="1250a51d-2599-461f-a9ad-05a53cbe0880"/>
+					<textFieldExpression><![CDATA[" "]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="350" y="0" width="50" height="20" uuid="2d654fa9-b2b5-4902-94f9-d9b187f2fa53">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[DATEFORMAT($F{Время прибытия на место происшествия}, "dd.MM.yyyy HH:mm")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement style="Ячейка_C_root" stretchType="RelativeToBandHeight" x="0" y="0" width="25" height="20" uuid="2220395f-0beb-4072-ba8d-ffa037f64377">
 						<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					</reportElement>
-					<textFieldExpression><![CDATA[$V{N/pp}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{Номер вызова}]]></textFieldExpression>
 				</textField>
 			</band>
 		</groupFooter>
@@ -158,15 +194,14 @@
 	</background>
 	<title>
 		<band height="50" splitType="Stretch">
-			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<staticText>
-				<reportElement style="Название" x="0" y="0" width="812" height="25" uuid="e4e1951e-e1ab-4f2e-8c97-841896672865">
+				<reportElement style="Название" x="0" y="0" width="800" height="25" uuid="af2a5fa6-3810-4043-bc2a-ab6dbd88b812">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
-				<text><![CDATA[Частота вызовов СМП на участках взрослой поликлиники]]></text>
+				<text><![CDATA[ШАБЛОН]]></text>
 			</staticText>
-			<textField>
-				<reportElement style="ДатаВремя" x="0" y="30" width="270" height="15" uuid="2f4867ec-045d-4471-b518-4a118ab35be6">
+			<textField isBlankWhenNull="true">
+				<reportElement style="ДатаВремя" x="0" y="30" width="230" height="15" uuid="5e5d990c-22f6-45c2-9c3f-1bafe5cdc44b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -175,88 +210,93 @@
 		</band>
 	</title>
 	<columnHeader>
-		<band height="45" splitType="Stretch">
+		<band height="50" splitType="Prevent">
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<staticText>
-				<reportElement style="Строка_Столбец_root" stretchType="RelativeToBandHeight" x="30" y="0" width="50" height="30" uuid="55184314-7e95-469e-8b20-e49fc4c3e669">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<text><![CDATA[Дата, время
-№ вызова]]></text>
+				<reportElement style="Строка_Столбец_root" x="65" y="0" width="50" height="35" uuid="f28e84d9-9506-4abf-94ea-730ac81461e0"/>
+				<text><![CDATA[Дата]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Строка_Столбец_root" stretchType="RelativeToBandHeight" x="80" y="0" width="150" height="30" uuid="89229f8d-605b-4138-8c20-c6105e815340">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<text><![CDATA[Ф. И. О. пациента]]></text>
-			</staticText>
-			<staticText>
-				<reportElement style="Строка_Столбец_root" stretchType="RelativeToBandHeight" x="230" y="0" width="60" height="30" uuid="682a342d-aafd-4ee5-9303-9d8ffe2f7596">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<text><![CDATA[Возраст,
-дата рождения]]></text>
-			</staticText>
-			<staticText>
-				<reportElement style="Строка_Столбец_root" stretchType="RelativeToBandHeight" x="490" y="0" width="160" height="30" uuid="b0b0c007-418f-45b9-8743-4f9bc35c125f">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<text><![CDATA[Диагноз]]></text>
-			</staticText>
-			<staticText>
-				<reportElement style="Строка_Столбец_root" stretchType="RelativeToBandHeight" x="650" y="0" width="160" height="30" uuid="1a6ecc80-3a29-4bd2-994b-3217df42504c">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<text><![CDATA[Результат вызова,
-Доставлен в]]></text>
-			</staticText>
-			<staticText>
-				<reportElement style="Строка_Столбец_root" stretchType="RelativeToBandHeight" x="290" y="0" width="200" height="30" uuid="eae8d776-1529-4643-9b36-457db8728ad7">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<text><![CDATA[Адрес вызова]]></text>
-			</staticText>
-			<staticText>
-				<reportElement style="Строка_Столбец_root" stretchType="RelativeToBandHeight" x="0" y="0" width="30" height="45" uuid="e0918cad-5af8-4d67-96e8-4c5371b2c2ee">
+				<reportElement style="Строка_Столбец_root" x="115" y="0" width="85" height="35" uuid="37bec5be-3f33-4ce6-b81c-2247937ed088">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
+				<text><![CDATA[Ф.И.О.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Строка_Столбец_root" x="630" y="0" width="80" height="35" uuid="75eb2a6c-5eb4-483e-a2de-69ea9fe54170"/>
+				<text><![CDATA[ЛПУ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Строка_Столбец_root" x="500" y="0" width="130" height="35" uuid="5a97b1d7-33aa-49c7-b675-2184cd52fe82"/>
+				<text><![CDATA[Диагноз ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Строка_Столбец_root" x="200" y="0" width="50" height="35" uuid="5543ac9f-35f0-4871-8b0a-7631535108a2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<text><![CDATA[Дата
+рождения]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Строка_Столбец_root" stretchType="RelativeToBandHeight" x="710" y="0" width="30" height="35" uuid="7a243f68-684a-408b-8417-de073aaafc08">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[ТЛТ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Строка_Столбец_root" x="25" y="0" width="40" height="35" uuid="54df04d5-5b6a-46a9-bf32-d83fd9a1973e"/>
 				<text><![CDATA[№
-п\п]]></text>
+вызова]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Номер" stretchType="RelativeToBandHeight" x="30" y="30" width="50" height="15" uuid="e71dc949-a1e2-4709-9a2e-6d6e989e54be">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<text><![CDATA[1]]></text>
+				<reportElement style="Строка_Столбец_root" x="250" y="0" width="50" height="35" uuid="44881c42-dabd-44cb-b6fc-b66de791c42c"/>
+				<text><![CDATA[Время приема вызова]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Номер" stretchType="RelativeToBandHeight" x="650" y="30" width="160" height="15" uuid="61085dec-edd2-468d-8506-78f7a8d2ece9">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<text><![CDATA[6]]></text>
+				<reportElement style="Строка_Столбец_root" x="300" y="0" width="50" height="35" uuid="c5a68d78-edc1-433c-842b-ae8e32c0e308"/>
+				<text><![CDATA[Время передачи вызова]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Номер" stretchType="RelativeToBandHeight" x="490" y="30" width="160" height="15" uuid="b7c8d709-4673-49d8-8f8d-7d66f4dbf22d"/>
-				<text><![CDATA[5]]></text>
+				<reportElement style="Строка_Столбец_root" x="400" y="0" width="50" height="35" uuid="ed2f2552-9ad5-416f-96f6-8ee37190d4a9"/>
+				<text><![CDATA[Время доезда]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Номер" stretchType="RelativeToBandHeight" x="230" y="30" width="60" height="15" uuid="47dd453e-a8fb-4612-a033-3cd1036c934d"/>
-				<text><![CDATA[3]]></text>
+				<reportElement style="Строка_Столбец_root" x="450" y="0" width="50" height="35" uuid="493fe91e-c7af-458d-a541-036ca175f3d4"/>
+				<text><![CDATA[Время доставки в стационар]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Номер" stretchType="RelativeToBandHeight" x="290" y="30" width="200" height="15" uuid="8b32bc1e-721f-4e35-8a77-54bc41b18fb7"/>
-				<text><![CDATA[4]]></text>
+				<reportElement style="Строка_Столбец_root" x="740" y="0" width="70" height="35" isRemoveLineWhenBlank="true" uuid="169e0cdc-5d02-46af-b07b-9801cdc5f3ef"/>
+				<text><![CDATA[Результат]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Номер" stretchType="RelativeToBandHeight" x="80" y="30" width="150" height="15" uuid="a28f2713-b5ea-4b3b-be8c-5971c0c8ceee">
+				<reportElement style="Строка_Столбец_root" x="350" y="0" width="50" height="35" uuid="0dedd938-76ed-4f9b-8892-29c661c7774e">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
-				<text><![CDATA[2]]></text>
+				<text><![CDATA[Время
+прибытия на место]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Строка_Столбец_root" x="0" y="0" width="25" height="50" uuid="ece2e719-76a6-4f6e-9f60-209008849408"/>
+				<text><![CDATA[№
+п.п]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
+	<summary>
+		<band height="20" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement style="Ячейка_C_b_fill" x="705" y="0" width="44" height="20" uuid="61f1dd96-50d3-405d-90bd-a8ed0bef6ccf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<text><![CDATA[Всего:]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="Ячейка_C_b_fill" x="750" y="0" width="60" height="20" uuid="09b33538-b095-4a07-b7cf-9ef276cdd77e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$V{Всего}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
 </jasperReport>

@@ -851,6 +851,14 @@
         {
             "agg": null,
             "alias": null,
+            "caption": "Код ПМУ",
+            "columnSwitch": null,
+            "id": "id_03_help_d_CODE_c852a344-8970-4faf-8b6f-09df1d5df33d",
+            "idField": "id_03_help_d_CODE"
+        },
+        {
+            "agg": null,
+            "alias": null,
             "caption": "Источник финансирования",
             "columnSwitch": null,
             "id": "c03_ist_fin_cap_2c767b3d-b6d1-4a84-963d-ed784369246f",
@@ -959,6 +967,278 @@
             "columnSwitch": null,
             "id": "card03_icd10_foms_class_cap_883ff70b-cab4-4fb9-b70d-697cc4079b87",
             "idField": "card03_icd10_foms_class_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "СМО код",
+            "columnSwitch": null,
+            "id": "c03_insurance_company_code_04b62a44-bae9-4752-9ef1-a73da86ed476",
+            "idField": "c03_insurance_company_code"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "СМО наименование",
+            "columnSwitch": null,
+            "id": "c03_insurance_company_cap_3bf83149-7ec9-4f7b-b353-f08c343872e7",
+            "idField": "c03_insurance_company_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "СМО ОКАТО",
+            "columnSwitch": null,
+            "id": "c03_insurance_company_okato_oms_caf57a30-5b47-4109-a85b-c4cf39770c6c",
+            "idField": "c03_insurance_company_okato_oms"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Диапазон блока (ОД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_primary_block_reg_9a408a2b-e17b-4b94-8f83-f5240c2f7883",
+            "idField": "card03_icd10_primary_block_reg"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Диапазон блока (ПО)",
+            "columnSwitch": null,
+            "id": "card03_icd10_hos_dia_block_reg_bff6ec75-91bc-4a99-9777-0e83914d14d8",
+            "idField": "card03_icd10_hos_dia_block_reg"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Диапазон блока (СД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_acc_block_reg_680b1eef-9d2f-4efd-ae0c-5f4976ef6e21",
+            "idField": "card03_icd10_acc_block_reg"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Диапазон блока (НПС)",
+            "columnSwitch": null,
+            "id": "card03_icd10_icd_block_reg_ed7c5bfd-a5fc-45ae-b3d6-86c1c4f82357",
+            "idField": "card03_icd10_icd_block_reg"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Диапазон блока (ВПП)",
+            "columnSwitch": null,
+            "id": "card03_icd10_ec_block_reg_8b8ab312-a52e-493f-b6a4-2f8509316fab",
+            "idField": "card03_icd10_ec_block_reg"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Диапазон блока (ЗД)",
+            "columnSwitch": null,
+            "id": "card03_icd10_final_block_reg_bab0d98c-5914-480d-b8cc-86ebe8c8ba9b",
+            "idField": "card03_icd10_final_block_reg"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Диапазон блока (ОПС)",
+            "columnSwitch": null,
+            "id": "card03_icd10_bcd_block_reg_554e39d2-76c3-43bf-ab11-91726ff14d3f",
+            "idField": "card03_icd10_bcd_block_reg"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Диапазон блока (Ф)",
+            "columnSwitch": null,
+            "id": "card03_icd10_foms_block_reg_d56669f0-6018-44ce-aed1-8276f6c0a555",
+            "idField": "card03_icd10_foms_block_reg"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Диапазон блока (О)",
+            "columnSwitch": null,
+            "id": "card03_icd10_comp_block_reg_425d8387-f40e-4199-a8ad-df9ae5af9307",
+            "idField": "card03_icd10_comp_block_reg"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОДМ 1",
+            "columnSwitch": null,
+            "id": "c03_lqc1Edm_3d9d8fca-b1ec-4331-ae4c-28d6725804a5",
+            "idField": "c03_lqc1Edm"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОД 1",
+            "columnSwitch": null,
+            "id": "c03_lqc1Ed_01e15336-15dd-4d89-8ba8-a855b3e2661b",
+            "idField": "c03_lqc1Ed"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОКВ 1",
+            "columnSwitch": null,
+            "id": "c03_lqc1Ecc_372caf5e-1e68-4e8f-a0d1-cb752447044e",
+            "idField": "c03_lqc1Ecc"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОМП 1",
+            "columnSwitch": null,
+            "id": "c03_lqc1Ea_f9a41ce0-8057-4726-acba-a4632eec5b73",
+            "idField": "c03_lqc1Ea"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОДМ 2",
+            "columnSwitch": null,
+            "id": "c03_lqc2Edm_10c30acb-28a4-44cd-87f0-f57ba3190dab",
+            "idField": "c03_lqc2Edm"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОД 2",
+            "columnSwitch": null,
+            "id": "c03_lqc2Ed_a6032cc5-e685-470e-a5d3-cb5d423b30ca",
+            "idField": "c03_lqc2Ed"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОКВ 2",
+            "columnSwitch": null,
+            "id": "c03_lqc2Ecc_22a0c11e-0f3f-4eea-bbb5-53cdaadfdd9d",
+            "idField": "c03_lqc2Ecc"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОМП 2",
+            "columnSwitch": null,
+            "id": "c03_lqc2Ea_6a4c6ff3-b090-4fe4-802e-ac529879603f",
+            "idField": "c03_lqc2Ea"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОДМ 3",
+            "columnSwitch": null,
+            "id": "c03_lqc3Edm_ccf858e1-024b-42c6-8961-2f078e68b7b2",
+            "idField": "c03_lqc3Edm"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОД 3",
+            "columnSwitch": null,
+            "id": "c03_lqc3Ed_89b47f6c-bf82-4e6b-ac20-9abb5ec1e9d2",
+            "idField": "c03_lqc3Ed"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОКВ 3",
+            "columnSwitch": null,
+            "id": "c03_lqc3Ecc_dbdf0089-a4bf-463e-8f51-ae16716f9ee0",
+            "idField": "c03_lqc3Ecc"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "УКЛ ОМП 3",
+            "columnSwitch": null,
+            "id": "c03_lqc3Ea_4814ebac-eea0-4301-8cc8-3ed6953503ac",
+            "idField": "c03_lqc3Ea"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Результат вызова код",
+            "columnSwitch": null,
+            "id": "c03_depa_result_cod_7069f45b-c69c-4a5d-8b46-9cb17768606f",
+            "idField": "c03_depa_result_cod"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Способ передачи вызова",
+            "columnSwitch": null,
+            "id": "e_ct_sent_type_b_cap_ee39dc4b-5946-478d-a097-aafdf90520af",
+            "idField": "e_ct_sent_type_b_cap"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Доставка в",
+            "columnSwitch": null,
+            "id": "c03_pat_place_deliv_58576e55-6b47-40bc-b816-aa5dc27aab3e",
+            "idField": "c03_pat_place_deliv"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Признак повторного вызова",
+            "columnSwitch": null,
+            "id": "id_ce_IS_REPEATED_913bbd8c-3582-40a9-9df1-dc76df1a554f",
+            "idField": "id_ce_IS_REPEATED"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Признак первичного вызова",
+            "columnSwitch": null,
+            "id": "id_ce_IS_FIRST_CALL_aeb5853d-3230-4059-82b1-be66f86f8437",
+            "idField": "id_ce_IS_FIRST_CALL"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Признак попутного вызова",
+            "columnSwitch": null,
+            "id": "id_ce_IS_PASSING_CALL_f2b45c5c-72c1-41ef-899a-d2c936dfaa60",
+            "idField": "id_ce_IS_PASSING_CALL"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Старший врач оперативного отдела",
+            "columnSwitch": null,
+            "id": "c03_op_division_senior_doctor_0800d405-b4d7-4c7c-92aa-9052aa1da04f",
+            "idField": "c03_op_division_senior_doctor"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Номер вызова основного вызова",
+            "columnSwitch": null,
+            "id": "ce_ref_CALL_NUMB_ded983d6-27bb-4e37-a479-f5e34f741ba7",
+            "idField": "ce_ref_CALL_NUMB"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Идентификатор основного вызова",
+            "columnSwitch": null,
+            "id": "ce_ref_ID_b06801cc-7b97-40e4-ae0f-d3418142795b",
+            "idField": "ce_ref_ID"
+        },
+        {
+            "agg": null,
+            "alias": null,
+            "caption": "Время регистрации основного вызова",
+            "columnSwitch": null,
+            "id": "ce_ref_TIME_REG_4f404a2d-fc94-4e0c-aeac-c52ac67eec56",
+            "idField": "ce_ref_TIME_REG"
         }
   ]
 }
