@@ -7,7 +7,7 @@ init(autoreset=True)
 colorama.init()
 
 
-# newInput = ""
+# newInput = "" -----------------------------+++++++++++++++++
 # while (newInput != "F" or newInput != "f" or newInput != "exit") and newInput.__len__() < 100:
 #     newInput = input('Вставьте xml данные новой, или введите F для загрузки из файла ' + 'new.xml' + "\n")
 #     if newInput == "F" or newInput == "f":
