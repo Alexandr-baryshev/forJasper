@@ -3,18 +3,19 @@ import pyperclip
 # ФОРМИРОВАНИ ПО ПРИНЦИПУ - C1 R1,  C1 R2,  C1 R3, и тд. * простое выделение столбцов в редакторе
 # --- ПЕРЕМЕННАЯ ----------------------------------------------------------------------
 
-q = input("Встаить содержимое из буфера? Y / N" + "\n")
+q = input("Встаить содержимое из буфера?  \n  Y / N  \n")
+
 
 if q == "Y" or q == "y":
     variable = pyperclip.paste()
 else:
     exit()
 
-variable22 = '''
+'''
 	<variable name="R1 C1" class="java.lang.Integer" calculation="Sum">
 		<variableExpression><![CDATA[$V{R1} ? $V{C1} : null]]></variableExpression>
 	</variable>
- '''
+'''
 
 
 # --- C СТОЛБЕЦ замена X раз ----------------------->
@@ -22,7 +23,6 @@ variable22 = '''
 
 def Cx_Rx(C_Start=int(input("Старт колонки от - ")), C_Size=int(input("Размер клонки - ")),
           R_Start=int(input("Старт строки от - ")), R_Size=int(input("Размер строки - "))):
-
     allResult = ""
     row = variable.replace("{", "{{").replace("}", "}}").replace("C1", "C{0}")
     c = C_Start
