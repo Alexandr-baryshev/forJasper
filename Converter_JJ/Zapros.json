@@ -619,7 +619,7 @@
         {
             "agg": null,
             "alias": null,
-            "caption": "Характер вазова Транспортировка",
+            "caption": "Характер вызова Транспортировка",
             "columnSwitch": null,
             "id": "c03_depa_cause_is_tran_147350cc-0639-4ca1-b2f2-7a81f4ed7925",
             "idField": "c03_depa_cause_is_tran"
