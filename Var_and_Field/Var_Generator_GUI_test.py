@@ -4,7 +4,7 @@ from tkinter import ttk
 from colorama import Fore
 
 # Образец переменной
-variable = '''
+'''
 	<variable name="R1 C1" class="java.lang.Integer" calculation="DistinctCount">
 		<variableExpression><![CDATA[$V{R1} && $V{C1} ? $F{Идентификатор происшествия} : null]]></variableExpression>
 	</variable>
@@ -12,7 +12,7 @@ variable = '''
 
 
 # Приоритет колонки
-def Cx_Rx(R_Start, R_Size, C_Start, C_Size):
+def Cx_Rx(variable, R_Start, R_Size, C_Start, C_Size):
     allResult = ""
     row = variable.replace("{", "{{").replace("}", "}}").replace("C1", "C{0}")
     c = C_Start
@@ -35,7 +35,7 @@ def Cx_Rx(R_Start, R_Size, C_Start, C_Size):
 
 
 # Приоритет строки
-def Rx_Cx(R_Start, R_Size, C_Start, C_Size):
+def Rx_Cx(variable, R_Start, R_Size, C_Start, C_Size):
     allResult = ""
     row = variable.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}")
     r = R_Start
@@ -66,9 +66,10 @@ R_Size = Entry(root, width=5, font=15)
 C_Start = Entry(root, width=5, font=15)
 C_Size = Entry(root, width=5, font=15)
 prioritet = Entry(root, width=5, font=15, bg="red")
+textInput = Text(root, bg="#c4dbed")
 
 buttonGen = Button(root, text="Генерировать")
-labelGen = Text(root, bg="#c4dbed")
+textOut = Text(root, bg="#c4dbed")
 
 R_Start.grid(row=0, column=0)
 R_Size.grid(row=0, column=1)
@@ -77,23 +78,24 @@ C_Size.grid(row=0, column=3)
 prioritet.grid(row=0, column=4)
 
 buttonGen.grid(row=0, column=5)
-labelGen.grid(row=1, column=0, columnspan=6, sticky="nsew")
+textInput.grid(row=1, column=0, columnspan=6, sticky="nsew")
+textOut.grid(row=2, column=0, columnspan=6, sticky="nsew")
 
 
 def output(event):
-    labelGen.edit_reset()
-    labelGen.insert(1.0, Cx_Rx(int(R_Start.get()), int(R_Size.get()), int(C_Start.get()), int(C_Size.get())))
-    # if prioritet.get() == "c":
-    #     labelGen["text"] = Cx_Rx(int(R_Start.get()), int(R_Size.get()), int(C_Start.get()), int(C_Size.get()))
-    # if prioritet.get() == "r":
-    #     labelGen["text"] = Rx_Cx(int(R_Start.get()), int(R_Size.get()), int(C_Start.get()), int(C_Size.get()))
+    textOut.delete(1.0, END)
+    if prioritet.get() == "c":
+        textOut.insert(1.0, Cx_Rx(textInput.get(1.0, END), int(R_Start.get()), int(R_Size.get()), int(C_Start.get()), int(C_Size.get())))
+    if prioritet.get() == "r":
+        textOut.insert(1.0, Rx_Cx(textInput.get(1.0, END), int(R_Start.get()), int(R_Size.get()), int(C_Start.get()), int(C_Size.get())))
 
 
 buttonGen.bind("<Button-1>", output)
 
+
 # Конфигурация
 root.columnconfigure(4, weight=1)
 root.rowconfigure(1, weight=1)
-
+root.rowconfigure(2, weight=2)
 
 root.mainloop()

@@ -1,5 +1,6 @@
 import pyperclip
 from tkinter import *
+from tkinter import ttk
 from colorama import Fore
 
 # Образец переменной
@@ -9,10 +10,9 @@ from colorama import Fore
 	</variable>
 '''
 
-variable: str
 
 # Приоритет колонки
-def Cx_Rx(R_Start, R_Size, C_Start, C_Size):
+def Cx_Rx(variable, R_Start, R_Size, C_Start, C_Size):
     allResult = ""
     row = variable.replace("{", "{{").replace("}", "}}").replace("C1", "C{0}")
     c = C_Start
@@ -35,7 +35,7 @@ def Cx_Rx(R_Start, R_Size, C_Start, C_Size):
 
 
 # Приоритет строки
-def Rx_Cx(R_Start, R_Size, C_Start, C_Size):
+def Rx_Cx(variable, R_Start, R_Size, C_Start, C_Size):
     allResult = ""
     row = variable.replace("{", "{{").replace("}", "}}").replace("R1", "R{0}")
     r = R_Start
@@ -56,44 +56,56 @@ def Rx_Cx(R_Start, R_Size, C_Start, C_Size):
     return allResult
 
 
-# Цикл выбора приоритета
-# prioritet = ""
-# while prioritet != "c" or prioritet != "r":
-#     if prioritet == "c":
-#         Cx_Rx()
-#     if prioritet == "r":
-#         Rx_Cx()
-
 # ================ GUI =============================
+
 root = Tk()
 root.title("Генератор переменных")
 
-entry1 = Entry(root, width=10, font=15)
-entry2 = Entry(root, width=10, font=15)
-entry3 = Entry(root, width=10, font=15)
-entry4 = Entry(root, width=10, font=15)
+R_Start = Entry(root, width=10, font=3)
+R_Start.insert(END, 'Начало строки')
 
-button1 = Button(root, text="Генерировать")
-label1 = Label(root, width=20, font=15)
+R_Size = Entry(root, width=10, font=10)
+R_Size.insert(END, 'Размер строки')
 
-entry1.grid(row=0, column=0)
-entry2.grid(row=0, column=1)
-entry3.grid(row=0, column=2)
-entry4.grid(row=0, column=3)
+C_Start = Entry(root, width=10, font=10)
+C_Start.insert(END, 'Начало колонки')
 
-button1.grid(row=0, column=4)
-label1.grid(row=0, column=5)
+C_Size = Entry(root, width=10, font=10)
+C_Size.insert(END, 'Размер колонки')
+
+prioritet = Entry(root, width=10, font=10, bg="red")
+prioritet.insert(END, 'Приоритет R / C')
+
+textInput = Text(root, bg="#c4dbed")
+
+buttonGen = Button(root, text="Генерировать")
+textOut = Text(root, bg="#c4dbed")
+
+R_Start.grid(row=0, column=0)
+R_Size.grid(row=0, column=1)
+C_Start.grid(row=0, column=2)
+C_Size.grid(row=0, column=3)
+prioritet.grid(row=0, column=4)
+
+buttonGen.grid(row=0, column=5)
+textInput.grid(row=1, column=0, columnspan=6, sticky="nsew")
+textOut.grid(row=2, column=0, columnspan=6, sticky="nsew")
 
 
 def output(event):
-    p1 = entry1.get()
-    p2 = entry2.get()
-    p3 = entry3.get()
-    p4 = entry4.get()
-    Rx_Cx(int(p1), int(p2), int(p3), int(p4))
+    textOut.delete(1.0, END)
+    if prioritet.get() == "c":
+        textOut.insert(1.0, Cx_Rx(textInput.get(1.0, END), int(R_Start.get()), int(R_Size.get()), int(C_Start.get()), int(C_Size.get())))
+    if prioritet.get() == "r":
+        textOut.insert(1.0, Rx_Cx(textInput.get(1.0, END), int(R_Start.get()), int(R_Size.get()), int(C_Start.get()), int(C_Size.get())))
 
 
+buttonGen.bind("<Button-1>", output)
 
-button1.bind("<Button-1>", output)
+
+# Конфигурация
+root.columnconfigure(4, weight=1)
+root.rowconfigure(1, weight=1)
+root.rowconfigure(2, weight=2)
 
 root.mainloop()
