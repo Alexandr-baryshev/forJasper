@@ -1,8 +1,6 @@
 import pyperclip
 from colorama import Fore
 
-# ФОРМИРОВАНИ ПО ПРИНЦИПУ - C1 R1,  C1 R2,  C1 R3, и тд. * простое выделение столбцов в редакторе
-
 # Образец переменной
 '''
 	<variable name="R1 C1" class="java.lang.Integer" calculation="DistinctCount">
@@ -10,9 +8,8 @@ from colorama import Fore
 	</variable>
 '''
 
-print("-------------- Содержимое буфера ---------------------------------------------------------")
-
 # Цикл проверки содержимого буфера обмена
+print("-------------- Содержимое буфера ---------------------------------------------------------")
 q = ""
 while q != "y":
     variable = pyperclip.paste()
@@ -20,8 +17,6 @@ while q != "y":
     q = input(Fore.RESET + "-------------- Продолжить? -------------- " + Fore.RED + "Y / N -> ").casefold()
     if q == "n":
         exit()
-
-# --- C СТОЛБЕЦ замена X раз ----------------------->
 
 p1 = int(input("Старт строки от - "))
 p2 = int(input("Размер строки - "))
@@ -74,8 +69,8 @@ def Rx_Cx(R_Start=p1, R_Size=p2, C_Start=p3, C_Size=p4):
     return allResult
 
 
+# Цикл выбора приоритета
 prioritet = ""
-
 while prioritet != "c" or prioritet != "r":
     prioritet = input(Fore.BLUE + "Приоритет строки - R / Приоритет колонки - С / Выход - E -> ").casefold()
     if prioritet == "c":
@@ -87,5 +82,3 @@ while prioritet != "c" or prioritet != "r":
     if prioritet == "e":
         exit()
 
-
-# --- СТРОКА конец ------------------------------ ///
