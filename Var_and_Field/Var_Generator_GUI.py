@@ -1,7 +1,5 @@
 import pyperclip
 from tkinter import *
-from tkinter import ttk
-from colorama import Fore
 
 # Образец переменной
 '''
@@ -61,35 +59,39 @@ def Rx_Cx(variable, R_Start, R_Size, C_Start, C_Size):
 root = Tk()
 root.title("Генератор переменных")
 
-R_Start = Entry(root, width=10, font=3)
-R_Start.insert(END, 'Начало строки')
+p1 = Label(root, width=15, text="Начало строки")
+p1.grid(row=0, column=0)
+R_Start = Entry(root, width=15)
+R_Start.grid(row=1, column=0)
 
-R_Size = Entry(root, width=10, font=10)
-R_Size.insert(END, 'Размер строки')
+p2 = Label(root, width=15, text="Размер строки")
+p2.grid(row=0, column=1)
+R_Size = Entry(root, width=15)
+R_Size.grid(row=1, column=1)
 
-C_Start = Entry(root, width=10, font=10)
-C_Start.insert(END, 'Начало колонки')
+p3 = Label(root, width=15, text="Начало колонки")
+p3.grid(row=0, column=2)
+C_Start = Entry(root, width=15)
+C_Start.grid(row=1, column=2)
 
-C_Size = Entry(root, width=10, font=10)
-C_Size.insert(END, 'Размер колонки')
+p4 = Label(root, width=15, text="Размер строки")
+p4.grid(row=0, column=3)
+C_Size = Entry(root, width=15)
+C_Size.grid(row=1, column=3)
 
-prioritet = Entry(root, width=10, font=10, bg="red")
-prioritet.insert(END, 'Приоритет R / C')
+p5 = Label(root, width=15, text="Приоритет R / C")
+p5.grid(row=0, column=4)
+prioritet = Entry(root, width=15, bg="#f5ebc6")
+prioritet.grid(row=1, column=4)
 
-textInput = Text(root, bg="#c4dbed")
+buttonGen = Button(root, text="Генерировать", bg="#ffd7a3")
+buttonGen.grid(row=0, column=5, rowspan=2, sticky="nse")
 
-buttonGen = Button(root, text="Генерировать")
+textInput = Text(root, bg="#f3ffe8")
+textInput.grid(row=2, column=0, columnspan=6, sticky="nsew")
+
 textOut = Text(root, bg="#c4dbed")
-
-R_Start.grid(row=0, column=0)
-R_Size.grid(row=0, column=1)
-C_Start.grid(row=0, column=2)
-C_Size.grid(row=0, column=3)
-prioritet.grid(row=0, column=4)
-
-buttonGen.grid(row=0, column=5)
-textInput.grid(row=1, column=0, columnspan=6, sticky="nsew")
-textOut.grid(row=2, column=0, columnspan=6, sticky="nsew")
+textOut.grid(row=3, column=0, columnspan=6, sticky="nsew")
 
 
 def output(event):
@@ -104,8 +106,8 @@ buttonGen.bind("<Button-1>", output)
 
 
 # Конфигурация
-root.columnconfigure(4, weight=1)
-root.rowconfigure(1, weight=1)
-root.rowconfigure(2, weight=2)
+root.columnconfigure(5, weight=1)
+root.rowconfigure(2, weight=1)
+root.rowconfigure(3, weight=2)
 
 root.mainloop()
