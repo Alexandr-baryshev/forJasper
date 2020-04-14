@@ -1,28 +1,32 @@
 import pyperclip
+from colorama import Fore
 
 # ФОРМИРОВАНИ ПО ПРИНЦИПУ - C1 R1,  C1 R2,  C1 R3, и тд. * простое выделение столбцов в редакторе
-# --- ПЕРЕМЕННАЯ ----------------------------------------------------------------------
 
-q = input("Встаить содержимое из буфера?  \n  Y / N  \n")
-
-
-if q == "Y" or q == "y":
-    variable = pyperclip.paste()
-else:
-    exit()
-
+# Образец переменной
 '''
-	<variable name="R1 C1" class="java.lang.Integer" calculation="Sum">
-		<variableExpression><![CDATA[$V{R1} ? $V{C1} : null]]></variableExpression>
+	<variable name="R1 C1" class="java.lang.Integer" calculation="DistinctCount">
+		<variableExpression><![CDATA[$V{R1} && $V{C1} ? $F{Идентификатор происшествия} : null]]></variableExpression>
 	</variable>
 '''
+
+print("-------------- Содержимое буфера ---------------------------------------------------------")
+
+# Цикл проверки содержимого буфера обмена
+q = ""
+while q != "y":
+    variable = pyperclip.paste()
+    print(Fore.LIGHTGREEN_EX + variable)
+    q = input(Fore.RESET + "-------------- Продолжить? -------------- " + Fore.RED + "Y / N -> ").casefold()
+    if q == "n":
+        exit()
 
 
 # --- C СТОЛБЕЦ замена X раз ----------------------->
 
 
-def Cx_Rx(C_Start=int(input("Старт колонки от - ")), C_Size=int(input("Размер клонки - ")),
-          R_Start=int(input("Старт строки от - ")), R_Size=int(input("Размер строки - "))):
+def Cx_Rx(R_Start=int(input("Старт строки от - ")), R_Size=int(input("Размер строки - ")),
+          C_Start=int(input("Старт колонки от - ")), C_Size=int(input("Размер клонки - "))):
     allResult = ""
     row = variable.replace("{", "{{").replace("}", "}}").replace("C1", "C{0}")
     c = C_Start
@@ -48,4 +52,4 @@ def Cx_Rx(C_Start=int(input("Старт колонки от - ")), C_Size=int(in
 
 Cx_Rx()
 
-print(Cx_Rx())
+print(Fore.LIGHTGREEN_EX + Cx_Rx())

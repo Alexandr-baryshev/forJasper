@@ -3,18 +3,18 @@ import re
 import sys
 
 
-# a = 100
+a = 100
 
 # --- Встроеные классы и фунции -----------------------
 
-# a.__add__(5)
-# builtins.int.__add__(100, 5)
-#
-# x = builtins.int.__add__
-# x(100, 5)
-#
-# y = builtins.int
-# y.__add__(100, 5)
+a.__add__(5)
+builtins.int.__add__(100, 5)
+
+x = builtins.int.__add__
+x(100, 5)
+
+y = builtins.int
+y.__add__(100, 5)
 
 
 # --- ТЕСТЫ своих классов и функций -------------------
