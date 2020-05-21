@@ -97,13 +97,14 @@ textOut.grid(row=3, column=0, columnspan=6, sticky="nsew")
 def output(event):
     textOut.delete(1.0, END)
     if prioritet.get() == "c":
-        textOut.insert(1.0, Cx_Rx(textInput.get(1.0, END), int(R_Start.get()), int(R_Size.get()), int(C_Start.get()), int(C_Size.get())))
+        textOut.insert(1.0, Cx_Rx(textInput.get(1.0, END), int(R_Start.get()), int(R_Size.get()), int(C_Start.get()),
+                                  int(C_Size.get())))
     if prioritet.get() == "r":
-        textOut.insert(1.0, Rx_Cx(textInput.get(1.0, END), int(R_Start.get()), int(R_Size.get()), int(C_Start.get()), int(C_Size.get())))
+        textOut.insert(1.0, Rx_Cx(textInput.get(1.0, END), int(R_Start.get()), int(R_Size.get()), int(C_Start.get()),
+                                  int(C_Size.get())))
 
 
 buttonGen.bind("<Button-1>", output)
-
 
 # Конфигурация
 root.columnconfigure(5, weight=1)
