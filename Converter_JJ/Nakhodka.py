@@ -1,6 +1,6 @@
 zapros_past = '''
 {
-    "columns": [],
+    "columns": [$$],
     "condition": {
         "conditions": [
             {
