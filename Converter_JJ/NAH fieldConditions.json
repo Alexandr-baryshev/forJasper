@@ -1,0 +1,62 @@
+    "fieldConditions": [
+        {
+            "action": null,
+            "caption": "Время регистрации",
+            "description": null,
+            "dictionary": null,
+            "id": "id_ce_TIME_REG_8611e60f-8f63-4796-9f73-70fc06f30de3",
+            "idField": "id_ce_TIME_REG",
+            "property": null,
+            "type": "dateTime",
+            "value": [
+                {
+                    "value": "2020-04-01T00:00:00",
+                    "value1": "2020-04-02T00:00:00"
+                }
+            ]
+        },
+        {
+            "action": null,
+            "caption": "ФИО работника",
+            "description": null,
+            "dictionary": "dic_stuff",
+            "id": "c03_staff_fio_6116b3d2-cd4b-4344-a2dd-7854b52b4ba9",
+            "idField": "c03_staff_fio",
+            "property": null,
+            "type": "dictionary",
+            "value": []
+        },
+        {
+            "action": null,
+            "caption": "Смена",
+            "description": null,
+            "dictionary": "dic_root_duty_shift_plan",
+            "id": "e_ct_b_dutys_sh_r_d_66d0606c-2d2f-49e8-b680-03a50b2d22fb",
+            "idField": "e_ct_b_dutys_sh_r_d",
+            "property": null,
+            "type": "dictionary",
+            "value": []
+        },        
+        {
+            "action": null,
+            "caption": "Бригада",
+            "description": null,
+            "dictionary": "dic_brig",
+            "id": "e_ct_b_caption_5f9395c6-12e2-4443-9d6e-9a7376a44dd3",
+            "idField": "e_ct_b_caption",
+            "property": null,
+            "type": "dictionary",
+            "value": []
+        },
+        {
+            "action": null,
+            "caption": "Техника",
+            "description": null,
+            "dictionary": "dic_technika",
+            "id": "e_ct_caption_d_996b7e3f-5342-4d14-8e0b-2bd2d7dcc589",
+            "idField": "e_ct_caption_d",
+            "property": null,
+            "type": "dictionary",
+            "value": []
+        }        
+    ]
