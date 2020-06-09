@@ -5,6 +5,7 @@ import re
 
 from Converter_JJ import Color
 from Converter_JJ import Novgorod
+from Converter_JJ import Nakhodka
 
 with open('Zapros.json', encoding='UTF8') as f:
     jason_all = json.load(f)
@@ -53,7 +54,7 @@ if len(not_find) > 0:
         Color.print_red(i)
 
 if len(not_find) < 1:
-    final_rezult = Novgorod.zapros_past.replace('[$$]', field_ok)
+    final_rezult = Nakhodka.zapros_past.replace('[$$]', field_ok)
     Color.print_w(final_rezult)
     pyperclip.copy(final_rezult)
     Color.print_green('Все поля найдены и скопированы в буфер обмена, добавлены условия.')
