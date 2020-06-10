@@ -10,8 +10,8 @@
             "type": "dateTime",
             "value": [
                 {
-                    "value": "2020-04-01T00:00:00",
-                    "value1": "2020-04-02T00:00:00"
+                    "value": "2020-06-01T00:00:00",
+                    "value1": "2020-06-02T00:00:00"
                 }
             ]
         },
@@ -36,7 +36,7 @@
             "property": null,
             "type": "dictionary",
             "value": []
-        },        
+        },
         {
             "action": null,
             "caption": "Бригада",
@@ -58,5 +58,5 @@
             "property": null,
             "type": "dictionary",
             "value": []
-        }        
+        }
     ]

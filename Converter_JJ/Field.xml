@@ -1,18 +1,40 @@
-<field name="Гражданство" class="java.lang.String">
-	<fieldDescription><![CDATA[]]></fieldDescription>
+<field name="Причина НС" class="java.lang.String">
+   <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Номер полиса" class="java.lang.String">
+<field name="СЛР смерть наступила" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="ФИО пациента" class="java.lang.String">
+<field name="ЛПУ" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Адрес" class="java.lang.String">
+<field name="Код (ОД)" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Номер вызова" class="java.lang.Number">
+<field name="Результат вызова" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Время регистрации" class="java.util.Date">
+<field name="Место вызова" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Категория вызова" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Проведение тромболитической терапии" class="java.lang.Number">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Идентификатор происшествия" class="java.lang.Number">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Причина завершения происшествия (результат)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Время прибытия на место происшествия" class="java.util.Date">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Время получения команды на выезд" class="java.util.Date">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+
+<field name="Тип происшествия" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>

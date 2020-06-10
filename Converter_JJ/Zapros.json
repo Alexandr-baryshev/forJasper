@@ -1,1244 +1,1300 @@
 {
   "Zapros": [
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Идентификатор происшествия",
-            "columnSwitch": null,
-            "id": "id_ce_ID_a71c094e-cb88-4608-ac0a-e461b4ba4b13",
-            "idField": "id_ce_ID"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время регистрации",
-            "columnSwitch": null,
-            "id": "id_ce_TIME_REG_5f14ebfe-7a39-421e-ad22-cbde79f1932d",
-            "idField": "id_ce_TIME_REG"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Номер вызова",
-            "columnSwitch": null,
-            "id": "id_ce_CALL_NUMB_1980e272-59c4-48d0-b46b-987cdb242d39",
-            "idField": "id_ce_CALL_NUMB"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Причина завершения происшествия (результат)",
-            "columnSwitch": null,
-            "id": "id_ce_RETREAT_REASON_d8516e4e-d8ce-474a-9302-b23ff3b49ba1",
-            "idField": "id_ce_RETREAT_REASON"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Повод",
-            "columnSwitch": null,
-            "id": "id_ce_RANK_8dfe72a7-fe75-4dab-ab80-7c77f0c7e361",
-            "idField": "id_ce_RANK"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Тип происшествия",
-            "columnSwitch": null,
-            "id": "id_ce_RANK_f341009d-b5ac-4313-b74a-2c55c0d87077",
-            "idField": "id_ce_RANK"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Адрес",
-            "columnSwitch": null,
-            "id": "id_addr_ADRESS_64169fec-c563-4cdc-97fd-325bda21028e",
-            "idField": "id_addr_ADRESS"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Бригада Позывной",
-            "columnSwitch": null,
-            "id": "e_ct_b_name_609eb4be-d878-49f7-a712-a35aea3acde4",
-            "idField": "e_ct_b_name"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Техника Позывной",
-            "columnSwitch": null,
-            "id": "e_ct_name_ad216b5a-121d-47d7-a427-a2865a7f2ac3",
-            "idField": "e_ct_name"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время прибытия на место происшествия",
-            "columnSwitch": null,
-            "id": "e_ct_b_place_time_a0a90b4e-063f-45f6-a09b-1b0d4da8d8fb",
-            "idField": "e_ct_b_place_time"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время убытия с места происшествия",
-            "columnSwitch": null,
-            "id": "e_ct_b_return_time_42baccf3-c87a-4398-8e0a-f0bb03a35de9",
-            "idField": "e_ct_b_return_time"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время получения команды на выезд",
-            "columnSwitch": null,
-            "id": "e_ct_b_receive_time_9b2178dc-1d7c-4452-86ff-2e167efbc379",
-            "idField": "e_ct_b_receive_time"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время получения отбоя",
-            "columnSwitch": null,
-            "id": "e_ct_b_retreat_time_f92b9a36-aa92-4810-b940-0b09f6dec3cb",
-            "idField": "e_ct_b_retreat_time"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время начала транспортировки",
-            "columnSwitch": null,
-            "id": "e_ct_b_to_hospital_62854d52-ed3c-41b3-ab81-5ead8deeb925",
-            "idField": "e_ct_b_to_hospital"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время окончания транспортировки",
-            "columnSwitch": null,
-            "id": "e_ct_b_at_hospital_89b769d9-16ba-436f-8dbd-48a32a13816c",
-            "idField": "e_ct_b_at_hospital"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время отправки",
-            "columnSwitch": null,
-            "id": "e_ct_b_send_time_f8981462-d270-44f5-ae5c-e5756d50f14c",
-            "idField": "e_ct_b_send_time"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Наименование сил и средств",
-            "columnSwitch": null,
-            "id": "e_ct_b_caption_2d9527b9-19da-466d-95e3-f7a18cdad666",
-            "idField": "e_ct_b_caption"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Наименование типа сил и средств",
-            "columnSwitch": null,
-            "id": "e_ct_b_tt_884f8200-7182-430f-9fb8-25231b65a16c",
-            "idField": "e_ct_b_tt"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "ФИО пациента",
-            "columnSwitch": null,
-            "id": "card03_p_c6bf0b90-00fd-4529-85f0-e8bdb3045e6a",
-            "idField": "card03_p"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Возраст",
-            "columnSwitch": null,
-            "id": "card03_age_p_3a02fa8d-a9bf-4fe6-a836-dae547ab31c2",
-            "idField": "card03_age_p"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Код (ОД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_primary_cod_ecfefbf0-abd9-4bbb-a42d-e4246ff86f17",
-            "idField": "card03_icd10_primary_cod"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Код (ПО)",
-            "columnSwitch": null,
-            "id": "card03_icd10_hos_dia_cod_2b2b206d-6c86-4b75-84b2-0af5050e23e2",
-            "idField": "card03_icd10_hos_dia_cod"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Код (СД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_acc_cod_44366247-2290-4b35-8600-098641c78cc2",
-            "idField": "card03_icd10_acc_cod"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Код (ЗД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_final_cod_599476b1-9361-4df4-936f-606337096452",
-            "idField": "card03_icd10_final_cod"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Расшифровка (ОД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_primary_cap_c693408c-0ac3-4dc0-97c7-ff85a77122fe",
-            "idField": "card03_icd10_primary_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Расшифровка (ПО)",
-            "columnSwitch": null,
-            "id": "card03_icd10_hos_dia_cap_f3571c5a-044b-442d-887d-f80fbc82d240",
-            "idField": "card03_icd10_hos_dia_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Расшифровка (СД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_acc_cap_3547d0c8-9727-4f74-af89-66633ed099ad",
-            "idField": "card03_icd10_acc_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Расшифровка (ЗД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_final_cap_e0e11cf4-35a0-47d8-98f8-66bcd5e7ca1c",
-            "idField": "card03_icd10_final_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "ЛПУ",
-            "columnSwitch": null,
-            "id": "c03_hospital_66b77e4e-31cd-44e2-a3e2-7f02ac45820c",
-            "idField": "c03_hospital"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Пол пациента",
-            "columnSwitch": null,
-            "id": "c03_pat_sex_d_5a443d54-afee-48dc-a6b5-b6aff304c3ca",
-            "idField": "c03_pat_sex_d"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Пол",
-            "columnSwitch": null,
-            "id": "c03_pat_sex_d_5a443d54-afee-48dc-a6b5-b6aff304c3ca",
-            "idField": "c03_pat_sex_d"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Причина НС",
-            "columnSwitch": null,
-            "id": "c03_acci_cause_dict_620a8b69-2e1c-43b4-bce6-d792d65793f1",
-            "idField": "c03_acci_cause_dict"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Характер вызова по результату",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_res_a768f845-fc30-4be7-a88a-0412da1adf6e",
-            "idField": "c03_depa_cause_res"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Характер вызова",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_88daf86b-b77d-4f48-834e-146e044c2190",
-            "idField": "c03_depa_cause"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Результат вызова",
-            "columnSwitch": null,
-            "id": "c03_depa_result_8024adac-a582-401f-b206-34715e949225",
-            "idField": "c03_depa_result"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Категория вызова",
-            "columnSwitch": null,
-            "id": "c03_category_call_d_0269c629-122f-493c-ba77-bbbbd42c5c52",
-            "idField": "c03_category_call_d"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Категория вызова по результату",
-            "columnSwitch": null,
-            "id": "c03_category_call_res_d_3f8dde65-66de-44b8-8875-278d7a92dfb1",
-            "idField": "c03_category_call_res_d"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "ФИО работника",
-            "columnSwitch": null,
-            "id": "c03_staff_fio_a443dd42-86c8-49f8-a502-15b3e33d508a",
-            "idField": "c03_staff_fio"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Должность",
-            "columnSwitch": null,
-            "id": "c03_staff_appoint_f277f64b-f767-4918-a7c9-1136d2455b0d",
-            "idField": "c03_staff_appoint"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Заявитель",
-            "columnSwitch": null,
-            "id": "id_ce_INFORMER_5d2f7fd5-dea0-4f43-b8c1-0572e9b10c16",
-            "idField": "id_ce_INFORMER"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Дата рождения",
-            "columnSwitch": null,
-            "id": "c03_pat_birthday_1d817ae5-7108-4876-9f79-b521438865c4",
-            "idField": "c03_pat_birthday"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Основной диагноз по карте",
-            "columnSwitch": null,
-            "id": "card03_icd10_primary_text_4ee8f9dd-132b-4619-a1ff-0be382809e13",
-            "idField": "card03_icd10_primary_text"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Номер полиса",
-            "columnSwitch": null,
-            "id": "c03_pat_unified_policy_number_9a1093f8-e546-42c8-8d34-4fd0403eb238",
-            "idField": "c03_pat_unified_policy_number"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Серия полиса",
-            "columnSwitch": null,
-            "id": "c03_pat_unified_policy_ser_number_c5b3e565-49ca-4a58-831d-2a411cf79d8c",
-            "idField": "c03_pat_unified_policy_ser_number"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "СМО код",
-            "columnSwitch": null,
-            "id": "c03_insurance_company_code_5433b1be-734c-4081-bc9b-3e6ba1b25781",
-            "idField": "c03_insurance_company_code"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "СМО ОКАТО",
-            "columnSwitch": null,
-            "id": "c03_insurance_company_okato_oms_2954abee-5321-49fe-94e0-c3bcdeb92f95",
-            "idField": "c03_insurance_company_okato_oms"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Принято к оплате",
-            "columnSwitch": null,
-            "id": "c03_is_exported_to_foms_b81c4a0e-446a-4f1d-8a07-5364d0ce565a",
-            "idField": "c03_is_exported_to_foms"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Регистрационный номер",
-            "columnSwitch": null,
-            "id": "id_ce_REG_NO_688d565d-5af4-4fbf-b3e9-9cc6fc077758",
-            "idField": "id_ce_REG_NO"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Место работы",
-            "columnSwitch": null,
-            "id": "c03_pat_work_place_13b0374e-ee72-49d9-ad87-50299d292aa2",
-            "idField": "c03_pat_work_place"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Место проживания",
-            "columnSwitch": null,
-            "id": "c03_pat_reg_place_6175865e-7444-415d-b2a5-292e16f524d6",
-            "idField": "c03_pat_reg_place"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Лет",
-            "columnSwitch": null,
-            "id": "card03_age_p_y_d628c666-c98b-4f13-a93a-1adc3ae23bb8",
-            "idField": "card03_age_p_y"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Месяцев",
-            "columnSwitch": null,
-            "id": "card03_age_p_m_2402ca83-4b75-4597-81b0-cea9b860e027",
-            "idField": "card03_age_p_m"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Дней",
-            "columnSwitch": null,
-            "id": "card03_age_p_d_30b33790-f1f3-4418-a6c6-38aafc854f29",
-            "idField": "card03_age_p_d"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Пол пациента код",
-            "columnSwitch": null,
-            "id": "c03_pat_sex_id_bfadd260-4afc-467b-9f6e-dafd33753f9d",
-            "idField": "c03_pat_sex_id"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Место регистрации",
-            "columnSwitch": null,
-            "id": "c03_pat_registration_place_type_cap_8a7b700c-3459-49b0-88f8-a32ca177cd36",
-            "idField": "c03_pat_registration_place_type_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Старший бригады",
-            "columnSwitch": null,
-            "id": "c03_doctor_39823ce7-c9e7-4864-9129-ee684b75c684",
-            "idField": "c03_doctor"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Госпитализирован",
-            "columnSwitch": null,
-            "id": "c03_is_hospitalized_a4729a63-8c8a-4229-a72a-e49e3fd10a67",
-            "idField": "c03_is_hospitalized"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Содержание текста происшествия",
-            "columnSwitch": null,
-            "id": "id_ce_EVENT_TEXT_a5a3ea7b-74b3-4d67-a16a-46c0a9b322bf",
-            "idField": "id_ce_EVENT_TEXT"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время возврата на базу",
-            "columnSwitch": null,
-            "id": "e_ct_at_b_base_time_b0d3b990-a9f7-43b3-9c34-bccc1f80ae58",
-            "idField": "e_ct_at_b_base_time"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время выезда",
-            "columnSwitch": null,
-            "id": "e_ct_b_send_time_2cf26139-2fb9-401b-8f15-8e71c2461a3d",
-            "idField": "e_ct_b_send_time"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Блок (ПО)",
-            "columnSwitch": null,
-            "id": "card03_icd10_hos_dia_block_cap_2cbbed01-15a8-4677-92f9-a25d7b43cf8c",
-            "idField": "card03_icd10_hos_dia_block_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Блок (ОД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_primary_block_cap_5707ceeb-3027-4c06-8a8f-f734b9063892",
-            "idField": "card03_icd10_primary_block_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Блок (СД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_acc_block_cap_61cbd904-022e-446f-86dc-9c0d5cad18a2",
-            "idField": "card03_icd10_acc_block_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Блок (ЗД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_final_block_cap_8ee8551d-a81e-4587-b365-a664a93ebce7",
-            "idField": "card03_icd10_final_block_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Причины отказа в госпитализации",
-            "columnSwitch": null,
-            "id": "c03_cause_no_hospitalis_cap_41352190-0349-4d8b-b7c6-63a104227bf2",
-            "idField": "c03_cause_no_hospitalis_cap"
-        },
-            {
-            "agg": null,
-            "alias": null,
-            "caption": "Дата заболевания",
-            "columnSwitch": null,
-            "id": "c03_date_of_disease_943be94f-8291-41cf-8745-99eef7562257",
-            "idField": "c03_date_of_disease"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Активный вызов в ЛПУ",
-            "columnSwitch": null,
-            "id": "c03_lpu_act_50348ad6-41db-422e-be1b-c982956c6e9d",
-            "idField": "c03_lpu_act"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Телефон заявителя",
-            "columnSwitch": null,
-            "id": "id_ce_PHONE_FROM_88d2655a-b6fd-43ac-b60a-58aa1c81383b",
-            "idField": "id_ce_PHONE_FROM"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "СЛР смерть наступила",
-            "columnSwitch": null,
-            "id": "c03_cpr_dead_occured_6adc1871-1f13-4b2a-b5d6-036f0fb38c29",
-            "idField": "c03_cpr_dead_occured"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "СЛР результат",
-            "columnSwitch": null,
-            "id": "c03_cpr_result_cap_a979f54b-9b43-4d72-b7ec-e292c33ff8c1",
-            "idField": "c03_cpr_result_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "СЛР вид остановки сердца",
-            "columnSwitch": null,
-            "id": "c03_cpr_cardiac_arrest_cap_565cf35b-796e-45fd-ba92-a762a98bf74e",
-            "idField": "c03_cpr_cardiac_arrest_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Проведена СЛР",
-            "columnSwitch": null,
-            "id": "c03_is_perform_cpr_64a5bd7e-fe82-403b-b5fb-b61fc9e32ab3",
-            "idField": "c03_is_perform_cpr"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Состав бригады",
-            "columnSwitch": null,
-            "id": "c03_staff_fio_list_b35b18bd-fd74-485e-ae36-3019e495affb",
-            "idField": "c03_staff_fio_list"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Старший врач подстанции",
-            "columnSwitch": null,
-            "id": "c03_substation_senior_doctor_f10782c5-878e-44e5-ac7e-98458212c68f",
-            "idField": "c03_substation_senior_doctor"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Описание повода",
-            "columnSwitch": null,
-            "id": "id_ce_RANK_DESCRIPTION_ae85215d-ce54-442f-8764-5523c961a668",
-            "idField": "id_ce_RANK_DESCRIPTION"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Амбулаторно",
-            "columnSwitch": null,
-            "id": "c03_is_outpatient_0481fb22-63cb-4d3e-8afc-71892183a64c",
-            "idField": "c03_is_outpatient"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Признак безрезультатного вызова",
-            "columnSwitch": null,
-            "id": "c03_result_call_is_without_61157159-5abd-4e4c-9063-cff66c19b316",
-            "idField": "c03_result_call_is_without"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Характер вызова Транспортировка",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_is_tran_147350cc-0639-4ca1-b2f2-7a81f4ed7925",
-            "idField": "c03_depa_cause_is_tran"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Характер по результату Транспортировка",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_res_is_tran_d06c118f-7f52-4c68-84f0-6297702d97ba",
-            "idField": "c03_depa_cause_res_is_tran"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Признак роды или патологии беременности по результату",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_res_is_accounting_maternity_bbeb2b3c-6f9e-4b02-8115-5e12db1092ef",
-            "idField": "c03_depa_cause_res_is_accounting_maternity"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Признак роды или патологии беременности характер вызова",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_is_accounting_maternity_740fea62-14a8-4e75-ad76-c13a0eb28067",
-            "idField": "c03_depa_cause_is_accounting_maternity"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Признак внезапного заболевания по результату",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_res_is_sud_illness_fdda2eb1-62d5-4757-a473-95f5d48976a0",
-            "idField": "c03_depa_cause_res_is_sud_illness"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Признак несчастного случая по результату",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_res_is_accident_113c6c13-4958-47d9-ae37-10fd87e48187",
-            "idField": "c03_depa_cause_res_is_accident"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Признак несчастного случая характер вызова",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_is_accident_aa431f1d-bce2-44df-820c-120646e12ecb",
-            "idField": "c03_depa_cause_is_accident"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Признак внезапного заболевания характер вызова",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_is_sud_illness_0e947bf8-ba81-4434-b103-0f64cd431837",
-            "idField": "c03_depa_cause_is_sud_illness"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "ФИО работника",
-            "columnSwitch": null,
-            "id": "c03_staff_fio_469668ca-e016-41a5-bd40-ff130137ab4f",
-            "idField": "c03_staff_fio"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Должность",
-            "columnSwitch": null,
-            "id": "c03_staff_appoint_38763aa7-cac1-44ac-ba07-ace5a5671bcd",
-            "idField": "c03_staff_appoint"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Служба владелец бригады",
-            "columnSwitch": null,
-            "id": "e_b_pult_caption_6c45cc96-eadb-4f47-a8bc-00cbd812ec70",
-            "idField": "e_b_pult_caption"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Основной диагноз по карте (ОД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_primary_text_b27a7581-53ec-4771-bacd-e7c605bd329f",
-            "idField": "card03_icd10_primary_text"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Сигнальный лист",
-            "columnSwitch": null,
-            "id": "с03_pat_signal_list_c15997a9-5c3e-4f91-915f-68eb2a6852ef",
-            "idField": "с03_pat_signal_list"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Адрес заявителя",
-            "columnSwitch": null,
-            "id": "id_ce_inf_ADRESS_807c2684-befe-47c9-87aa-bae432f8f66e",
-            "idField": "id_ce_inf_ADRESS"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Повод описание",
-            "columnSwitch": null,
-            "id": "id_ce_RANK_DESCRIPTION_3a80bb6b-3ee1-428b-86b8-669461cb94ef",
-            "idField": "id_ce_RANK_DESCRIPTION"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Пол код",
-            "columnSwitch": null,
-            "id": "c03_pat_sex_id_12f5a252-7909-45ba-ab11-06263a1ab0df",
-            "idField": "c03_pat_sex_id"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Место вызова",
-            "columnSwitch": null,
-            "id": "c03_call_place_cap_82d8d5eb-9d59-4039-91b4-8d674f9e3f30",
-            "idField": "c03_call_place_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Город",
-            "columnSwitch": null,
-            "id": "id_addr_CITY_NAME_227296f3-7c5d-413e-b781-84b301eafc73",
-            "idField": "id_addr_CITY_NAME"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Общее состояние",
-            "columnSwitch": null,
-            "id": "c03_apod_overall_state_cap_323c8d33-1074-4d94-88e5-6ab3a8a7b959",
-            "idField": "c03_apod_overall_state_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "АОН",
-            "columnSwitch": null,
-            "id": "id_ce_AON_6a0195d2-bd30-4911-ab69-abc828f6f580",
-            "idField": "id_ce_AON"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Расшифровка (ВПП)",
-            "columnSwitch": null,
-            "id": "card03_icd10_ec_cap_3420be46-f1a1-4479-ba01-c726a3683342",
-            "idField": "card03_icd10_ec_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Код (ВПП)",
-            "columnSwitch": null,
-            "id": "card03_icd10_ec_cod_ce8d5a11-88e9-4754-9c2c-758736c6a31e",
-            "idField": "card03_icd10_ec_cod"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Код (ОПС)",
-            "columnSwitch": null,
-            "id": "card03_icd10_bcd_cod_f6df0cbb-50a3-4490-a8a0-80311ff89002",
-            "idField": "card03_icd10_bcd_cod"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Расшифровка (ОПС)",
-            "columnSwitch": null,
-            "id": "card03_icd10_bcd_cap_378ebef2-1f74-4745-a9a5-fee8ec0dc88f",
-            "idField": "card03_icd10_bcd_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Код (НПС)",
-            "columnSwitch": null,
-            "id": "card03_icd10_icd_cod_571dfc9a-16fb-4783-ae48-3030381d0c43",
-            "idField": "card03_icd10_icd_cod"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Расшифровка (НПС)",
-            "columnSwitch": null,
-            "id": "card03_icd10_icd_cap_fe953ea7-a71d-4706-b11e-5458a2aa0aed",
-            "idField": "card03_icd10_icd_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время констатации смерти",
-            "columnSwitch": null,
-            "id": "c03_pat_deathday_52608395-bc76-45f0-a0fb-7000e8e400c1",
-            "idField": "c03_pat_deathday"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Отказ от госпитализации",
-            "columnSwitch": null,
-            "id": "c03_is_not_hospitalized_e3099729-6ba0-40ae-92ce-99cc73be0a51",
-            "idField": "c03_is_not_hospitalized"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Наименование ПМУ",
-            "columnSwitch": null,
-            "id": "id_03_help_d_cap_a1e7ca4d-143a-470f-9d8c-cbbb2e49f1e5",
-            "idField": "id_03_help_d_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Код ПМУ",
-            "columnSwitch": null,
-            "id": "id_03_help_d_CODE_c852a344-8970-4faf-8b6f-09df1d5df33d",
-            "idField": "id_03_help_d_CODE"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Источник финансирования",
-            "columnSwitch": null,
-            "id": "c03_ist_fin_cap_2c767b3d-b6d1-4a84-963d-ed784369246f",
-            "idField": "c03_ist_fin_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Гражданство",
-            "columnSwitch": null,
-            "id": "card03_country_caption_57f319d6-9763-4892-be74-f733723222d0",
-            "idField": "card03_country_caption"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Проведена тромболитическая терапия",
-            "columnSwitch": null,
-            "id": "c03_is_trombolisis_applied_93390c9f-0d3c-4eb1-8f8e-86ae87c49cd9",
-            "idField": "c03_is_trombolisis_applied"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Район",
-            "columnSwitch": null,
-            "id": "id_addr_CITY_AREA_d_a7be0918-1e49-4bdb-8f5b-ea830dbf226c",
-            "idField": "id_addr_CITY_AREA_d"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Подъем сегмента ST до",
-            "columnSwitch": null,
-            "id": "c03_isdB_st_cf7f1f2b-440a-46e1-8b22-adb6375eea8f",
-            "idField": "c03_isdB_st"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Подъем сегмента ST после",
-            "columnSwitch": null,
-            "id": "c03_isdA_st_0fcdbec2-1ab3-47a3-ae4d-792c37518cf0",
-            "idField": "c03_isdA_st"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Класс (ОД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_primary_class_cap_1e77f5a2-2916-48ca-83cd-01b7f8ad26c6",
-            "idField": "card03_icd10_primary_class_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Класс (ПО)",
-            "columnSwitch": null,
-            "id": "card03_icd10_hos_dia_class_cap_903ebe84-6e44-4359-aad2-590faa4ed97b",
-            "idField": "card03_icd10_hos_dia_class_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Класс (СД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_acc_class_cap_f1dd9ee7-e1f6-48e9-8837-cc98d387cea0",
-            "idField": "card03_icd10_acc_class_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Класс (НПС)",
-            "columnSwitch": null,
-            "id": "card03_icd10_icd_class_cap_4cba5bb0-2a1c-46e5-b38b-cda7e82a3ee4",
-            "idField": "card03_icd10_icd_class_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Класс (ВПП)",
-            "columnSwitch": null,
-            "id": "card03_icd10_ec_class_cap_47d21b1e-15d3-489d-a0a6-dea0d1c78df3",
-            "idField": "card03_icd10_ec_class_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Класс (ЗД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_final_class_cap_cf7b7921-f1ff-4925-bc9b-5ee5ab199ad8",
-            "idField": "card03_icd10_final_class_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Класс (ОПС)",
-            "columnSwitch": null,
-            "id": "card03_icd10_bcd_class_cap_3561163f-e9a4-4ad7-ae2e-7eee713d7156",
-            "idField": "card03_icd10_bcd_class_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Класс (Ф)",
-            "columnSwitch": null,
-            "id": "card03_icd10_foms_class_cap_883ff70b-cab4-4fb9-b70d-697cc4079b87",
-            "idField": "card03_icd10_foms_class_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "СМО код",
-            "columnSwitch": null,
-            "id": "c03_insurance_company_code_04b62a44-bae9-4752-9ef1-a73da86ed476",
-            "idField": "c03_insurance_company_code"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "СМО наименование",
-            "columnSwitch": null,
-            "id": "c03_insurance_company_cap_3bf83149-7ec9-4f7b-b353-f08c343872e7",
-            "idField": "c03_insurance_company_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "СМО ОКАТО",
-            "columnSwitch": null,
-            "id": "c03_insurance_company_okato_oms_caf57a30-5b47-4109-a85b-c4cf39770c6c",
-            "idField": "c03_insurance_company_okato_oms"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Диапазон блока (ОД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_primary_block_reg_9a408a2b-e17b-4b94-8f83-f5240c2f7883",
-            "idField": "card03_icd10_primary_block_reg"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Диапазон блока (ПО)",
-            "columnSwitch": null,
-            "id": "card03_icd10_hos_dia_block_reg_bff6ec75-91bc-4a99-9777-0e83914d14d8",
-            "idField": "card03_icd10_hos_dia_block_reg"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Диапазон блока (СД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_acc_block_reg_680b1eef-9d2f-4efd-ae0c-5f4976ef6e21",
-            "idField": "card03_icd10_acc_block_reg"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Диапазон блока (НПС)",
-            "columnSwitch": null,
-            "id": "card03_icd10_icd_block_reg_ed7c5bfd-a5fc-45ae-b3d6-86c1c4f82357",
-            "idField": "card03_icd10_icd_block_reg"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Диапазон блока (ВПП)",
-            "columnSwitch": null,
-            "id": "card03_icd10_ec_block_reg_8b8ab312-a52e-493f-b6a4-2f8509316fab",
-            "idField": "card03_icd10_ec_block_reg"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Диапазон блока (ЗД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_final_block_reg_bab0d98c-5914-480d-b8cc-86ebe8c8ba9b",
-            "idField": "card03_icd10_final_block_reg"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Диапазон блока (ОПС)",
-            "columnSwitch": null,
-            "id": "card03_icd10_bcd_block_reg_554e39d2-76c3-43bf-ab11-91726ff14d3f",
-            "idField": "card03_icd10_bcd_block_reg"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Диапазон блока (Ф)",
-            "columnSwitch": null,
-            "id": "card03_icd10_foms_block_reg_d56669f0-6018-44ce-aed1-8276f6c0a555",
-            "idField": "card03_icd10_foms_block_reg"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Диапазон блока (О)",
-            "columnSwitch": null,
-            "id": "card03_icd10_comp_block_reg_425d8387-f40e-4199-a8ad-df9ae5af9307",
-            "idField": "card03_icd10_comp_block_reg"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОДМ 1",
-            "columnSwitch": null,
-            "id": "c03_lqc1Edm_3d9d8fca-b1ec-4331-ae4c-28d6725804a5",
-            "idField": "c03_lqc1Edm"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОД 1",
-            "columnSwitch": null,
-            "id": "c03_lqc1Ed_01e15336-15dd-4d89-8ba8-a855b3e2661b",
-            "idField": "c03_lqc1Ed"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОКВ 1",
-            "columnSwitch": null,
-            "id": "c03_lqc1Ecc_372caf5e-1e68-4e8f-a0d1-cb752447044e",
-            "idField": "c03_lqc1Ecc"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОМП 1",
-            "columnSwitch": null,
-            "id": "c03_lqc1Ea_f9a41ce0-8057-4726-acba-a4632eec5b73",
-            "idField": "c03_lqc1Ea"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОДМ 2",
-            "columnSwitch": null,
-            "id": "c03_lqc2Edm_10c30acb-28a4-44cd-87f0-f57ba3190dab",
-            "idField": "c03_lqc2Edm"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОД 2",
-            "columnSwitch": null,
-            "id": "c03_lqc2Ed_a6032cc5-e685-470e-a5d3-cb5d423b30ca",
-            "idField": "c03_lqc2Ed"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОКВ 2",
-            "columnSwitch": null,
-            "id": "c03_lqc2Ecc_22a0c11e-0f3f-4eea-bbb5-53cdaadfdd9d",
-            "idField": "c03_lqc2Ecc"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОМП 2",
-            "columnSwitch": null,
-            "id": "c03_lqc2Ea_6a4c6ff3-b090-4fe4-802e-ac529879603f",
-            "idField": "c03_lqc2Ea"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОДМ 3",
-            "columnSwitch": null,
-            "id": "c03_lqc3Edm_ccf858e1-024b-42c6-8961-2f078e68b7b2",
-            "idField": "c03_lqc3Edm"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОД 3",
-            "columnSwitch": null,
-            "id": "c03_lqc3Ed_89b47f6c-bf82-4e6b-ac20-9abb5ec1e9d2",
-            "idField": "c03_lqc3Ed"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОКВ 3",
-            "columnSwitch": null,
-            "id": "c03_lqc3Ecc_dbdf0089-a4bf-463e-8f51-ae16716f9ee0",
-            "idField": "c03_lqc3Ecc"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "УКЛ ОМП 3",
-            "columnSwitch": null,
-            "id": "c03_lqc3Ea_4814ebac-eea0-4301-8cc8-3ed6953503ac",
-            "idField": "c03_lqc3Ea"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Результат вызова код",
-            "columnSwitch": null,
-            "id": "c03_depa_result_cod_7069f45b-c69c-4a5d-8b46-9cb17768606f",
-            "idField": "c03_depa_result_cod"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Способ передачи вызова",
-            "columnSwitch": null,
-            "id": "e_ct_sent_type_b_cap_ee39dc4b-5946-478d-a097-aafdf90520af",
-            "idField": "e_ct_sent_type_b_cap"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Доставка в",
-            "columnSwitch": null,
-            "id": "c03_pat_place_deliv_58576e55-6b47-40bc-b816-aa5dc27aab3e",
-            "idField": "c03_pat_place_deliv"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Признак повторного вызова",
-            "columnSwitch": null,
-            "id": "id_ce_IS_REPEATED_913bbd8c-3582-40a9-9df1-dc76df1a554f",
-            "idField": "id_ce_IS_REPEATED"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Признак первичного вызова",
-            "columnSwitch": null,
-            "id": "id_ce_IS_FIRST_CALL_aeb5853d-3230-4059-82b1-be66f86f8437",
-            "idField": "id_ce_IS_FIRST_CALL"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Признак попутного вызова",
-            "columnSwitch": null,
-            "id": "id_ce_IS_PASSING_CALL_f2b45c5c-72c1-41ef-899a-d2c936dfaa60",
-            "idField": "id_ce_IS_PASSING_CALL"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Старший врач оперативного отдела",
-            "columnSwitch": null,
-            "id": "c03_op_division_senior_doctor_0800d405-b4d7-4c7c-92aa-9052aa1da04f",
-            "idField": "c03_op_division_senior_doctor"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Номер вызова основного вызова",
-            "columnSwitch": null,
-            "id": "ce_ref_CALL_NUMB_ded983d6-27bb-4e37-a479-f5e34f741ba7",
-            "idField": "ce_ref_CALL_NUMB"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Идентификатор основного вызова",
-            "columnSwitch": null,
-            "id": "ce_ref_ID_b06801cc-7b97-40e4-ae0f-d3418142795b",
-            "idField": "ce_ref_ID"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время регистрации основного вызова",
-            "columnSwitch": null,
-            "id": "ce_ref_TIME_REG_4f404a2d-fc94-4e0c-aeac-c52ac67eec56",
-            "idField": "ce_ref_TIME_REG"
-        }
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Идентификатор происшествия",
+      "columnSwitch": null,
+      "id": "id_ce_ID_a71c094e-cb88-4608-ac0a-e461b4ba4b13",
+      "idField": "id_ce_ID"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время регистрации",
+      "columnSwitch": null,
+      "id": "id_ce_TIME_REG_5f14ebfe-7a39-421e-ad22-cbde79f1932d",
+      "idField": "id_ce_TIME_REG"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Номер вызова",
+      "columnSwitch": null,
+      "id": "id_ce_CALL_NUMB_1980e272-59c4-48d0-b46b-987cdb242d39",
+      "idField": "id_ce_CALL_NUMB"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Причина завершения происшествия (результат)",
+      "columnSwitch": null,
+      "id": "id_ce_RETREAT_REASON_d8516e4e-d8ce-474a-9302-b23ff3b49ba1",
+      "idField": "id_ce_RETREAT_REASON"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Повод",
+      "columnSwitch": null,
+      "id": "id_ce_RANK_8dfe72a7-fe75-4dab-ab80-7c77f0c7e361",
+      "idField": "id_ce_RANK"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Тип происшествия",
+      "columnSwitch": null,
+      "id": "id_ce_RANK_f341009d-b5ac-4313-b74a-2c55c0d87077",
+      "idField": "id_ce_RANK"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Адрес",
+      "columnSwitch": null,
+      "id": "id_addr_ADRESS_64169fec-c563-4cdc-97fd-325bda21028e",
+      "idField": "id_addr_ADRESS"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Бригада Позывной",
+      "columnSwitch": null,
+      "id": "e_ct_b_name_609eb4be-d878-49f7-a712-a35aea3acde4",
+      "idField": "e_ct_b_name"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Техника Позывной",
+      "columnSwitch": null,
+      "id": "e_ct_name_ad216b5a-121d-47d7-a427-a2865a7f2ac3",
+      "idField": "e_ct_name"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время прибытия на место происшествия",
+      "columnSwitch": null,
+      "id": "e_ct_b_place_time_a0a90b4e-063f-45f6-a09b-1b0d4da8d8fb",
+      "idField": "e_ct_b_place_time"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время убытия с места происшествия",
+      "columnSwitch": null,
+      "id": "e_ct_b_return_time_42baccf3-c87a-4398-8e0a-f0bb03a35de9",
+      "idField": "e_ct_b_return_time"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время получения команды на выезд",
+      "columnSwitch": null,
+      "id": "e_ct_b_receive_time_9b2178dc-1d7c-4452-86ff-2e167efbc379",
+      "idField": "e_ct_b_receive_time"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время получения отбоя",
+      "columnSwitch": null,
+      "id": "e_ct_b_retreat_time_f92b9a36-aa92-4810-b940-0b09f6dec3cb",
+      "idField": "e_ct_b_retreat_time"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время начала транспортировки",
+      "columnSwitch": null,
+      "id": "e_ct_b_to_hospital_62854d52-ed3c-41b3-ab81-5ead8deeb925",
+      "idField": "e_ct_b_to_hospital"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время окончания транспортировки",
+      "columnSwitch": null,
+      "id": "e_ct_b_at_hospital_89b769d9-16ba-436f-8dbd-48a32a13816c",
+      "idField": "e_ct_b_at_hospital"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время отправки",
+      "columnSwitch": null,
+      "id": "e_ct_b_send_time_f8981462-d270-44f5-ae5c-e5756d50f14c",
+      "idField": "e_ct_b_send_time"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Наименование сил и средств",
+      "columnSwitch": null,
+      "id": "e_ct_b_caption_2d9527b9-19da-466d-95e3-f7a18cdad666",
+      "idField": "e_ct_b_caption"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Наименование типа сил и средств",
+      "columnSwitch": null,
+      "id": "e_ct_b_tt_884f8200-7182-430f-9fb8-25231b65a16c",
+      "idField": "e_ct_b_tt"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "ФИО пациента",
+      "columnSwitch": null,
+      "id": "card03_p_c6bf0b90-00fd-4529-85f0-e8bdb3045e6a",
+      "idField": "card03_p"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Возраст",
+      "columnSwitch": null,
+      "id": "card03_age_p_3a02fa8d-a9bf-4fe6-a836-dae547ab31c2",
+      "idField": "card03_age_p"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Код (ОД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_primary_cod_ecfefbf0-abd9-4bbb-a42d-e4246ff86f17",
+      "idField": "card03_icd10_primary_cod"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Код (ПО)",
+      "columnSwitch": null,
+      "id": "card03_icd10_hos_dia_cod_2b2b206d-6c86-4b75-84b2-0af5050e23e2",
+      "idField": "card03_icd10_hos_dia_cod"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Код (СД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_acc_cod_44366247-2290-4b35-8600-098641c78cc2",
+      "idField": "card03_icd10_acc_cod"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Код (ЗД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_final_cod_599476b1-9361-4df4-936f-606337096452",
+      "idField": "card03_icd10_final_cod"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Расшифровка (ОД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_primary_cap_c693408c-0ac3-4dc0-97c7-ff85a77122fe",
+      "idField": "card03_icd10_primary_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Расшифровка (ПО)",
+      "columnSwitch": null,
+      "id": "card03_icd10_hos_dia_cap_f3571c5a-044b-442d-887d-f80fbc82d240",
+      "idField": "card03_icd10_hos_dia_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Расшифровка (СД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_acc_cap_3547d0c8-9727-4f74-af89-66633ed099ad",
+      "idField": "card03_icd10_acc_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Расшифровка (ЗД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_final_cap_e0e11cf4-35a0-47d8-98f8-66bcd5e7ca1c",
+      "idField": "card03_icd10_final_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "ЛПУ",
+      "columnSwitch": null,
+      "id": "c03_hospital_66b77e4e-31cd-44e2-a3e2-7f02ac45820c",
+      "idField": "c03_hospital"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Пол пациента",
+      "columnSwitch": null,
+      "id": "c03_pat_sex_d_5a443d54-afee-48dc-a6b5-b6aff304c3ca",
+      "idField": "c03_pat_sex_d"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Пол",
+      "columnSwitch": null,
+      "id": "c03_pat_sex_d_5a443d54-afee-48dc-a6b5-b6aff304c3ca",
+      "idField": "c03_pat_sex_d"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Причина НС",
+      "columnSwitch": null,
+      "id": "c03_acci_cause_dict_620a8b69-2e1c-43b4-bce6-d792d65793f1",
+      "idField": "c03_acci_cause_dict"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Характер вызова по результату",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_res_a768f845-fc30-4be7-a88a-0412da1adf6e",
+      "idField": "c03_depa_cause_res"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Характер вызова",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_88daf86b-b77d-4f48-834e-146e044c2190",
+      "idField": "c03_depa_cause"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Результат вызова",
+      "columnSwitch": null,
+      "id": "c03_depa_result_8024adac-a582-401f-b206-34715e949225",
+      "idField": "c03_depa_result"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Категория вызова",
+      "columnSwitch": null,
+      "id": "c03_category_call_d_0269c629-122f-493c-ba77-bbbbd42c5c52",
+      "idField": "c03_category_call_d"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Категория вызова по результату",
+      "columnSwitch": null,
+      "id": "c03_category_call_res_d_3f8dde65-66de-44b8-8875-278d7a92dfb1",
+      "idField": "c03_category_call_res_d"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "ФИО работника",
+      "columnSwitch": null,
+      "id": "c03_staff_fio_a443dd42-86c8-49f8-a502-15b3e33d508a",
+      "idField": "c03_staff_fio"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Должность",
+      "columnSwitch": null,
+      "id": "c03_staff_appoint_f277f64b-f767-4918-a7c9-1136d2455b0d",
+      "idField": "c03_staff_appoint"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Заявитель",
+      "columnSwitch": null,
+      "id": "id_ce_INFORMER_5d2f7fd5-dea0-4f43-b8c1-0572e9b10c16",
+      "idField": "id_ce_INFORMER"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Дата рождения",
+      "columnSwitch": null,
+      "id": "c03_pat_birthday_1d817ae5-7108-4876-9f79-b521438865c4",
+      "idField": "c03_pat_birthday"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Основной диагноз по карте",
+      "columnSwitch": null,
+      "id": "card03_icd10_primary_text_4ee8f9dd-132b-4619-a1ff-0be382809e13",
+      "idField": "card03_icd10_primary_text"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Номер полиса",
+      "columnSwitch": null,
+      "id": "c03_pat_unified_policy_number_9a1093f8-e546-42c8-8d34-4fd0403eb238",
+      "idField": "c03_pat_unified_policy_number"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Серия полиса",
+      "columnSwitch": null,
+      "id": "c03_pat_unified_policy_ser_number_c5b3e565-49ca-4a58-831d-2a411cf79d8c",
+      "idField": "c03_pat_unified_policy_ser_number"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "СМО код",
+      "columnSwitch": null,
+      "id": "c03_insurance_company_code_5433b1be-734c-4081-bc9b-3e6ba1b25781",
+      "idField": "c03_insurance_company_code"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "СМО ОКАТО",
+      "columnSwitch": null,
+      "id": "c03_insurance_company_okato_oms_2954abee-5321-49fe-94e0-c3bcdeb92f95",
+      "idField": "c03_insurance_company_okato_oms"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Принято к оплате",
+      "columnSwitch": null,
+      "id": "c03_is_exported_to_foms_b81c4a0e-446a-4f1d-8a07-5364d0ce565a",
+      "idField": "c03_is_exported_to_foms"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Регистрационный номер",
+      "columnSwitch": null,
+      "id": "id_ce_REG_NO_688d565d-5af4-4fbf-b3e9-9cc6fc077758",
+      "idField": "id_ce_REG_NO"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Место работы",
+      "columnSwitch": null,
+      "id": "c03_pat_work_place_13b0374e-ee72-49d9-ad87-50299d292aa2",
+      "idField": "c03_pat_work_place"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Место проживания",
+      "columnSwitch": null,
+      "id": "c03_pat_reg_place_6175865e-7444-415d-b2a5-292e16f524d6",
+      "idField": "c03_pat_reg_place"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Лет",
+      "columnSwitch": null,
+      "id": "card03_age_p_y_d628c666-c98b-4f13-a93a-1adc3ae23bb8",
+      "idField": "card03_age_p_y"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Месяцев",
+      "columnSwitch": null,
+      "id": "card03_age_p_m_2402ca83-4b75-4597-81b0-cea9b860e027",
+      "idField": "card03_age_p_m"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Дней",
+      "columnSwitch": null,
+      "id": "card03_age_p_d_30b33790-f1f3-4418-a6c6-38aafc854f29",
+      "idField": "card03_age_p_d"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Пол пациента код",
+      "columnSwitch": null,
+      "id": "c03_pat_sex_id_bfadd260-4afc-467b-9f6e-dafd33753f9d",
+      "idField": "c03_pat_sex_id"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Место регистрации",
+      "columnSwitch": null,
+      "id": "c03_pat_registration_place_type_cap_8a7b700c-3459-49b0-88f8-a32ca177cd36",
+      "idField": "c03_pat_registration_place_type_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Старший бригады",
+      "columnSwitch": null,
+      "id": "c03_doctor_39823ce7-c9e7-4864-9129-ee684b75c684",
+      "idField": "c03_doctor"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Госпитализирован",
+      "columnSwitch": null,
+      "id": "c03_is_hospitalized_a4729a63-8c8a-4229-a72a-e49e3fd10a67",
+      "idField": "c03_is_hospitalized"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Содержание текста происшествия",
+      "columnSwitch": null,
+      "id": "id_ce_EVENT_TEXT_a5a3ea7b-74b3-4d67-a16a-46c0a9b322bf",
+      "idField": "id_ce_EVENT_TEXT"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время возврата на базу",
+      "columnSwitch": null,
+      "id": "e_ct_at_b_base_time_b0d3b990-a9f7-43b3-9c34-bccc1f80ae58",
+      "idField": "e_ct_at_b_base_time"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время выезда",
+      "columnSwitch": null,
+      "id": "e_ct_b_send_time_2cf26139-2fb9-401b-8f15-8e71c2461a3d",
+      "idField": "e_ct_b_send_time"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Блок (ПО)",
+      "columnSwitch": null,
+      "id": "card03_icd10_hos_dia_block_cap_2cbbed01-15a8-4677-92f9-a25d7b43cf8c",
+      "idField": "card03_icd10_hos_dia_block_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Блок (ОД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_primary_block_cap_5707ceeb-3027-4c06-8a8f-f734b9063892",
+      "idField": "card03_icd10_primary_block_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Блок (СД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_acc_block_cap_61cbd904-022e-446f-86dc-9c0d5cad18a2",
+      "idField": "card03_icd10_acc_block_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Блок (ЗД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_final_block_cap_8ee8551d-a81e-4587-b365-a664a93ebce7",
+      "idField": "card03_icd10_final_block_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Причины отказа в госпитализации",
+      "columnSwitch": null,
+      "id": "c03_cause_no_hospitalis_cap_41352190-0349-4d8b-b7c6-63a104227bf2",
+      "idField": "c03_cause_no_hospitalis_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Дата заболевания",
+      "columnSwitch": null,
+      "id": "c03_date_of_disease_943be94f-8291-41cf-8745-99eef7562257",
+      "idField": "c03_date_of_disease"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Активный вызов в ЛПУ",
+      "columnSwitch": null,
+      "id": "c03_lpu_act_50348ad6-41db-422e-be1b-c982956c6e9d",
+      "idField": "c03_lpu_act"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Телефон заявителя",
+      "columnSwitch": null,
+      "id": "id_ce_PHONE_FROM_88d2655a-b6fd-43ac-b60a-58aa1c81383b",
+      "idField": "id_ce_PHONE_FROM"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "СЛР смерть наступила",
+      "columnSwitch": null,
+      "id": "c03_cpr_dead_occured_6adc1871-1f13-4b2a-b5d6-036f0fb38c29",
+      "idField": "c03_cpr_dead_occured"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "СЛР результат",
+      "columnSwitch": null,
+      "id": "c03_cpr_result_cap_a979f54b-9b43-4d72-b7ec-e292c33ff8c1",
+      "idField": "c03_cpr_result_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "СЛР вид остановки сердца",
+      "columnSwitch": null,
+      "id": "c03_cpr_cardiac_arrest_cap_565cf35b-796e-45fd-ba92-a762a98bf74e",
+      "idField": "c03_cpr_cardiac_arrest_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Проведена СЛР",
+      "columnSwitch": null,
+      "id": "c03_is_perform_cpr_64a5bd7e-fe82-403b-b5fb-b61fc9e32ab3",
+      "idField": "c03_is_perform_cpr"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Состав бригады",
+      "columnSwitch": null,
+      "id": "c03_staff_fio_list_b35b18bd-fd74-485e-ae36-3019e495affb",
+      "idField": "c03_staff_fio_list"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Старший врач подстанции",
+      "columnSwitch": null,
+      "id": "c03_substation_senior_doctor_f10782c5-878e-44e5-ac7e-98458212c68f",
+      "idField": "c03_substation_senior_doctor"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Описание повода",
+      "columnSwitch": null,
+      "id": "id_ce_RANK_DESCRIPTION_ae85215d-ce54-442f-8764-5523c961a668",
+      "idField": "id_ce_RANK_DESCRIPTION"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Амбулаторно",
+      "columnSwitch": null,
+      "id": "c03_is_outpatient_0481fb22-63cb-4d3e-8afc-71892183a64c",
+      "idField": "c03_is_outpatient"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак безрезультатного вызова",
+      "columnSwitch": null,
+      "id": "c03_result_call_is_without_61157159-5abd-4e4c-9063-cff66c19b316",
+      "idField": "c03_result_call_is_without"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Характер вызова Транспортировка",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_is_tran_147350cc-0639-4ca1-b2f2-7a81f4ed7925",
+      "idField": "c03_depa_cause_is_tran"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Характер по результату Транспортировка",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_res_is_tran_d06c118f-7f52-4c68-84f0-6297702d97ba",
+      "idField": "c03_depa_cause_res_is_tran"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак роды или патологии беременности по результату",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_res_is_accounting_maternity_bbeb2b3c-6f9e-4b02-8115-5e12db1092ef",
+      "idField": "c03_depa_cause_res_is_accounting_maternity"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак роды или патологии беременности характер вызова",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_is_accounting_maternity_740fea62-14a8-4e75-ad76-c13a0eb28067",
+      "idField": "c03_depa_cause_is_accounting_maternity"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак внезапного заболевания по результату",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_res_is_sud_illness_fdda2eb1-62d5-4757-a473-95f5d48976a0",
+      "idField": "c03_depa_cause_res_is_sud_illness"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак несчастного случая по результату",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_res_is_accident_113c6c13-4958-47d9-ae37-10fd87e48187",
+      "idField": "c03_depa_cause_res_is_accident"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак несчастного случая характер вызова",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_is_accident_aa431f1d-bce2-44df-820c-120646e12ecb",
+      "idField": "c03_depa_cause_is_accident"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак внезапного заболевания характер вызова",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_is_sud_illness_0e947bf8-ba81-4434-b103-0f64cd431837",
+      "idField": "c03_depa_cause_is_sud_illness"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "ФИО работника",
+      "columnSwitch": null,
+      "id": "c03_staff_fio_469668ca-e016-41a5-bd40-ff130137ab4f",
+      "idField": "c03_staff_fio"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Должность",
+      "columnSwitch": null,
+      "id": "c03_staff_appoint_38763aa7-cac1-44ac-ba07-ace5a5671bcd",
+      "idField": "c03_staff_appoint"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Служба владелец бригады",
+      "columnSwitch": null,
+      "id": "e_b_pult_caption_6c45cc96-eadb-4f47-a8bc-00cbd812ec70",
+      "idField": "e_b_pult_caption"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Основной диагноз по карте (ОД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_primary_text_b27a7581-53ec-4771-bacd-e7c605bd329f",
+      "idField": "card03_icd10_primary_text"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Сигнальный лист",
+      "columnSwitch": null,
+      "id": "с03_pat_signal_list_c15997a9-5c3e-4f91-915f-68eb2a6852ef",
+      "idField": "с03_pat_signal_list"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Адрес заявителя",
+      "columnSwitch": null,
+      "id": "id_ce_inf_ADRESS_807c2684-befe-47c9-87aa-bae432f8f66e",
+      "idField": "id_ce_inf_ADRESS"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Повод описание",
+      "columnSwitch": null,
+      "id": "id_ce_RANK_DESCRIPTION_3a80bb6b-3ee1-428b-86b8-669461cb94ef",
+      "idField": "id_ce_RANK_DESCRIPTION"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Пол код",
+      "columnSwitch": null,
+      "id": "c03_pat_sex_id_12f5a252-7909-45ba-ab11-06263a1ab0df",
+      "idField": "c03_pat_sex_id"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Место вызова",
+      "columnSwitch": null,
+      "id": "c03_call_place_cap_82d8d5eb-9d59-4039-91b4-8d674f9e3f30",
+      "idField": "c03_call_place_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Город",
+      "columnSwitch": null,
+      "id": "id_addr_CITY_NAME_227296f3-7c5d-413e-b781-84b301eafc73",
+      "idField": "id_addr_CITY_NAME"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Общее состояние",
+      "columnSwitch": null,
+      "id": "c03_apod_overall_state_cap_323c8d33-1074-4d94-88e5-6ab3a8a7b959",
+      "idField": "c03_apod_overall_state_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "АОН",
+      "columnSwitch": null,
+      "id": "id_ce_AON_6a0195d2-bd30-4911-ab69-abc828f6f580",
+      "idField": "id_ce_AON"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Расшифровка (ВПП)",
+      "columnSwitch": null,
+      "id": "card03_icd10_ec_cap_3420be46-f1a1-4479-ba01-c726a3683342",
+      "idField": "card03_icd10_ec_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Код (ВПП)",
+      "columnSwitch": null,
+      "id": "card03_icd10_ec_cod_ce8d5a11-88e9-4754-9c2c-758736c6a31e",
+      "idField": "card03_icd10_ec_cod"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Код (ОПС)",
+      "columnSwitch": null,
+      "id": "card03_icd10_bcd_cod_f6df0cbb-50a3-4490-a8a0-80311ff89002",
+      "idField": "card03_icd10_bcd_cod"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Расшифровка (ОПС)",
+      "columnSwitch": null,
+      "id": "card03_icd10_bcd_cap_378ebef2-1f74-4745-a9a5-fee8ec0dc88f",
+      "idField": "card03_icd10_bcd_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Код (НПС)",
+      "columnSwitch": null,
+      "id": "card03_icd10_icd_cod_571dfc9a-16fb-4783-ae48-3030381d0c43",
+      "idField": "card03_icd10_icd_cod"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Расшифровка (НПС)",
+      "columnSwitch": null,
+      "id": "card03_icd10_icd_cap_fe953ea7-a71d-4706-b11e-5458a2aa0aed",
+      "idField": "card03_icd10_icd_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время констатации смерти",
+      "columnSwitch": null,
+      "id": "c03_pat_deathday_52608395-bc76-45f0-a0fb-7000e8e400c1",
+      "idField": "c03_pat_deathday"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Отказ от госпитализации",
+      "columnSwitch": null,
+      "id": "c03_is_not_hospitalized_e3099729-6ba0-40ae-92ce-99cc73be0a51",
+      "idField": "c03_is_not_hospitalized"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Наименование ПМУ",
+      "columnSwitch": null,
+      "id": "id_03_help_d_cap_a1e7ca4d-143a-470f-9d8c-cbbb2e49f1e5",
+      "idField": "id_03_help_d_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Код ПМУ",
+      "columnSwitch": null,
+      "id": "id_03_help_d_CODE_c852a344-8970-4faf-8b6f-09df1d5df33d",
+      "idField": "id_03_help_d_CODE"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Источник финансирования",
+      "columnSwitch": null,
+      "id": "c03_ist_fin_cap_2c767b3d-b6d1-4a84-963d-ed784369246f",
+      "idField": "c03_ist_fin_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Гражданство",
+      "columnSwitch": null,
+      "id": "card03_country_caption_57f319d6-9763-4892-be74-f733723222d0",
+      "idField": "card03_country_caption"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Проведена тромболитическая терапия",
+      "columnSwitch": null,
+      "id": "c03_is_trombolisis_applied_93390c9f-0d3c-4eb1-8f8e-86ae87c49cd9",
+      "idField": "c03_is_trombolisis_applied"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Район",
+      "columnSwitch": null,
+      "id": "id_addr_CITY_AREA_d_a7be0918-1e49-4bdb-8f5b-ea830dbf226c",
+      "idField": "id_addr_CITY_AREA_d"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Подъем сегмента ST до",
+      "columnSwitch": null,
+      "id": "c03_isdB_st_cf7f1f2b-440a-46e1-8b22-adb6375eea8f",
+      "idField": "c03_isdB_st"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Подъем сегмента ST после",
+      "columnSwitch": null,
+      "id": "c03_isdA_st_0fcdbec2-1ab3-47a3-ae4d-792c37518cf0",
+      "idField": "c03_isdA_st"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Класс (ОД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_primary_class_cap_1e77f5a2-2916-48ca-83cd-01b7f8ad26c6",
+      "idField": "card03_icd10_primary_class_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Класс (ПО)",
+      "columnSwitch": null,
+      "id": "card03_icd10_hos_dia_class_cap_903ebe84-6e44-4359-aad2-590faa4ed97b",
+      "idField": "card03_icd10_hos_dia_class_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Класс (СД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_acc_class_cap_f1dd9ee7-e1f6-48e9-8837-cc98d387cea0",
+      "idField": "card03_icd10_acc_class_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Класс (НПС)",
+      "columnSwitch": null,
+      "id": "card03_icd10_icd_class_cap_4cba5bb0-2a1c-46e5-b38b-cda7e82a3ee4",
+      "idField": "card03_icd10_icd_class_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Класс (ВПП)",
+      "columnSwitch": null,
+      "id": "card03_icd10_ec_class_cap_47d21b1e-15d3-489d-a0a6-dea0d1c78df3",
+      "idField": "card03_icd10_ec_class_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Класс (ЗД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_final_class_cap_cf7b7921-f1ff-4925-bc9b-5ee5ab199ad8",
+      "idField": "card03_icd10_final_class_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Класс (ОПС)",
+      "columnSwitch": null,
+      "id": "card03_icd10_bcd_class_cap_3561163f-e9a4-4ad7-ae2e-7eee713d7156",
+      "idField": "card03_icd10_bcd_class_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Класс (Ф)",
+      "columnSwitch": null,
+      "id": "card03_icd10_foms_class_cap_883ff70b-cab4-4fb9-b70d-697cc4079b87",
+      "idField": "card03_icd10_foms_class_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "СМО код",
+      "columnSwitch": null,
+      "id": "c03_insurance_company_code_04b62a44-bae9-4752-9ef1-a73da86ed476",
+      "idField": "c03_insurance_company_code"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "СМО наименование",
+      "columnSwitch": null,
+      "id": "c03_insurance_company_cap_3bf83149-7ec9-4f7b-b353-f08c343872e7",
+      "idField": "c03_insurance_company_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "СМО ОКАТО",
+      "columnSwitch": null,
+      "id": "c03_insurance_company_okato_oms_caf57a30-5b47-4109-a85b-c4cf39770c6c",
+      "idField": "c03_insurance_company_okato_oms"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диапазон блока (ОД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_primary_block_reg_9a408a2b-e17b-4b94-8f83-f5240c2f7883",
+      "idField": "card03_icd10_primary_block_reg"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диапазон блока (ПО)",
+      "columnSwitch": null,
+      "id": "card03_icd10_hos_dia_block_reg_bff6ec75-91bc-4a99-9777-0e83914d14d8",
+      "idField": "card03_icd10_hos_dia_block_reg"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диапазон блока (СД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_acc_block_reg_680b1eef-9d2f-4efd-ae0c-5f4976ef6e21",
+      "idField": "card03_icd10_acc_block_reg"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диапазон блока (НПС)",
+      "columnSwitch": null,
+      "id": "card03_icd10_icd_block_reg_ed7c5bfd-a5fc-45ae-b3d6-86c1c4f82357",
+      "idField": "card03_icd10_icd_block_reg"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диапазон блока (ВПП)",
+      "columnSwitch": null,
+      "id": "card03_icd10_ec_block_reg_8b8ab312-a52e-493f-b6a4-2f8509316fab",
+      "idField": "card03_icd10_ec_block_reg"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диапазон блока (ЗД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_final_block_reg_bab0d98c-5914-480d-b8cc-86ebe8c8ba9b",
+      "idField": "card03_icd10_final_block_reg"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диапазон блока (ОПС)",
+      "columnSwitch": null,
+      "id": "card03_icd10_bcd_block_reg_554e39d2-76c3-43bf-ab11-91726ff14d3f",
+      "idField": "card03_icd10_bcd_block_reg"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диапазон блока (Ф)",
+      "columnSwitch": null,
+      "id": "card03_icd10_foms_block_reg_d56669f0-6018-44ce-aed1-8276f6c0a555",
+      "idField": "card03_icd10_foms_block_reg"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диапазон блока (О)",
+      "columnSwitch": null,
+      "id": "card03_icd10_comp_block_reg_425d8387-f40e-4199-a8ad-df9ae5af9307",
+      "idField": "card03_icd10_comp_block_reg"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОДМ 1",
+      "columnSwitch": null,
+      "id": "c03_lqc1Edm_3d9d8fca-b1ec-4331-ae4c-28d6725804a5",
+      "idField": "c03_lqc1Edm"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОД 1",
+      "columnSwitch": null,
+      "id": "c03_lqc1Ed_01e15336-15dd-4d89-8ba8-a855b3e2661b",
+      "idField": "c03_lqc1Ed"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОКВ 1",
+      "columnSwitch": null,
+      "id": "c03_lqc1Ecc_372caf5e-1e68-4e8f-a0d1-cb752447044e",
+      "idField": "c03_lqc1Ecc"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОМП 1",
+      "columnSwitch": null,
+      "id": "c03_lqc1Ea_f9a41ce0-8057-4726-acba-a4632eec5b73",
+      "idField": "c03_lqc1Ea"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОДМ 2",
+      "columnSwitch": null,
+      "id": "c03_lqc2Edm_10c30acb-28a4-44cd-87f0-f57ba3190dab",
+      "idField": "c03_lqc2Edm"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОД 2",
+      "columnSwitch": null,
+      "id": "c03_lqc2Ed_a6032cc5-e685-470e-a5d3-cb5d423b30ca",
+      "idField": "c03_lqc2Ed"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОКВ 2",
+      "columnSwitch": null,
+      "id": "c03_lqc2Ecc_22a0c11e-0f3f-4eea-bbb5-53cdaadfdd9d",
+      "idField": "c03_lqc2Ecc"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОМП 2",
+      "columnSwitch": null,
+      "id": "c03_lqc2Ea_6a4c6ff3-b090-4fe4-802e-ac529879603f",
+      "idField": "c03_lqc2Ea"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОДМ 3",
+      "columnSwitch": null,
+      "id": "c03_lqc3Edm_ccf858e1-024b-42c6-8961-2f078e68b7b2",
+      "idField": "c03_lqc3Edm"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОД 3",
+      "columnSwitch": null,
+      "id": "c03_lqc3Ed_89b47f6c-bf82-4e6b-ac20-9abb5ec1e9d2",
+      "idField": "c03_lqc3Ed"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОКВ 3",
+      "columnSwitch": null,
+      "id": "c03_lqc3Ecc_dbdf0089-a4bf-463e-8f51-ae16716f9ee0",
+      "idField": "c03_lqc3Ecc"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "УКЛ ОМП 3",
+      "columnSwitch": null,
+      "id": "c03_lqc3Ea_4814ebac-eea0-4301-8cc8-3ed6953503ac",
+      "idField": "c03_lqc3Ea"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Результат вызова код",
+      "columnSwitch": null,
+      "id": "c03_depa_result_cod_7069f45b-c69c-4a5d-8b46-9cb17768606f",
+      "idField": "c03_depa_result_cod"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Способ передачи вызова",
+      "columnSwitch": null,
+      "id": "e_ct_sent_type_b_cap_ee39dc4b-5946-478d-a097-aafdf90520af",
+      "idField": "e_ct_sent_type_b_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Доставка в",
+      "columnSwitch": null,
+      "id": "c03_pat_place_deliv_58576e55-6b47-40bc-b816-aa5dc27aab3e",
+      "idField": "c03_pat_place_deliv"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак повторного вызова",
+      "columnSwitch": null,
+      "id": "id_ce_IS_REPEATED_913bbd8c-3582-40a9-9df1-dc76df1a554f",
+      "idField": "id_ce_IS_REPEATED"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак первичного вызова",
+      "columnSwitch": null,
+      "id": "id_ce_IS_FIRST_CALL_aeb5853d-3230-4059-82b1-be66f86f8437",
+      "idField": "id_ce_IS_FIRST_CALL"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак попутного вызова",
+      "columnSwitch": null,
+      "id": "id_ce_IS_PASSING_CALL_f2b45c5c-72c1-41ef-899a-d2c936dfaa60",
+      "idField": "id_ce_IS_PASSING_CALL"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Старший врач оперативного отдела",
+      "columnSwitch": null,
+      "id": "c03_op_division_senior_doctor_0800d405-b4d7-4c7c-92aa-9052aa1da04f",
+      "idField": "c03_op_division_senior_doctor"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Номер вызова основного вызова",
+      "columnSwitch": null,
+      "id": "ce_ref_CALL_NUMB_ded983d6-27bb-4e37-a479-f5e34f741ba7",
+      "idField": "ce_ref_CALL_NUMB"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Идентификатор основного вызова",
+      "columnSwitch": null,
+      "id": "ce_ref_ID_b06801cc-7b97-40e4-ae0f-d3418142795b",
+      "idField": "ce_ref_ID"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время регистрации основного вызова",
+      "columnSwitch": null,
+      "id": "ce_ref_TIME_REG_4f404a2d-fc94-4e0c-aeac-c52ac67eec56",
+      "idField": "ce_ref_TIME_REG"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Поликлиника ответственная за активный вызов",
+      "columnSwitch": null,
+      "id": "c03_afterwards_doctor_visit_clinic_f5d50b89-2bc4-41ad-96e9-1fd7cc388b6c",
+      "idField": "c03_afterwards_doctor_visit_clinic"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диспетчер зарегистрировший вызов",
+      "columnSwitch": null,
+      "id": "user_ce_reg_d_f1643a54-9f51-44cd-aa7c-c1710f3cb130",
+      "idField": "user_ce_reg_d"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диспетче передавший вызов",
+      "columnSwitch": null,
+      "id": "user_tex_send_call_ev_d_b0751e43-8d00-4262-8a46-af9074db5664",
+      "idField": "user_tex_send_call_ev_d"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диспетче отправивший бригаду",
+      "columnSwitch": null,
+      "id": "user_tex_b_send_cap_d3ea7f68-d016-453a-a028-27a12e8595ec",
+      "idField": "user_tex_b_send_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диспетче отправивший технику",
+      "columnSwitch": null,
+      "id": "user_tex_t_send_cap_28089283-1b84-4c0c-a302-adb7068e272d",
+      "idField": "user_tex_t_send_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диспетчер заполнивший КТС 03",
+      "columnSwitch": null,
+      "id": "user_fill_dop_talon_cap_5cb035bc-ad5f-4c97-8ad3-8a795883dcaf",
+      "idField": "user_fill_dop_talon_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Диспетчер завершивший вызов",
+      "columnSwitch": null,
+      "id": "user_retreat_cap_88cc4aef-56cd-419b-a1d1-5bae48a2a633",
+      "idField": "user_retreat_cap"
+    }
   ]
 }
