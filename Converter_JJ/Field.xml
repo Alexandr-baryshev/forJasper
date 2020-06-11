@@ -1,15 +1,30 @@
-<field name="Первичный случай ДТП" class="java.lang.String">
+<field name="Адрес" class="java.lang.String">
    <fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Идентификатор происшествия" class="java.lang.Number">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Заявитель" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Телефон заявителя" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Время завершения" class="java.util.Date">
+<fieldDescription><![CDATA[]]></fieldDescription>
 </field>
 <field name="Время регистрации" class="java.util.Date">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Время прибытия на место происшествия" class="java.util.Date">
+<field name="Бригада позывной" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Время убытия с места происшествия" class="java.util.Date">
+<field name="Наименование типа сил и средств" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Идентификатор происшествия" class="java.lang.Number">
+<field name="Содержание текста происшествия" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Причина завершения происшествия (результат)" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>

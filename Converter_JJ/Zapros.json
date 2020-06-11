@@ -83,6 +83,14 @@
     {
       "agg": null,
       "alias": null,
+      "caption": "Время завершения",
+      "columnSwitch": null,
+      "id": "id_ce_RETREAT_TIME_2c7c68ff-7400-4edc-9380-6f7e071e18f5",
+      "idField": "id_ce_RETREAT_TIME"
+    },
+    {
+      "agg": null,
+      "alias": null,
       "caption": "Время прибытия на место происшествия",
       "columnSwitch": null,
       "id": "e_ct_b_place_time_a0a90b4e-063f-45f6-a09b-1b0d4da8d8fb",
