@@ -11,6 +11,14 @@
     {
       "agg": null,
       "alias": null,
+      "caption": "Первичный случай ДТП",
+      "columnSwitch": null,
+      "id": "c03_is_primary_damage_waiver_32dcbfdc-b534-41fc-a541-8474e2db8cb4",
+      "idField": "c03_is_primary_damage_waiver"
+    },
+    {
+      "agg": null,
+      "alias": null,
       "caption": "Время регистрации",
       "columnSwitch": null,
       "id": "id_ce_TIME_REG_5f14ebfe-7a39-421e-ad22-cbde79f1932d",

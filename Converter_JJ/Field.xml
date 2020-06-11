@@ -1,30 +1,15 @@
-<field name="Дней" class="java.lang.Number">
+<field name="Первичный случай ДТП" class="java.lang.String">
    <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Госпитализирован" class="java.lang.String">
+<field name="Время регистрации" class="java.util.Date">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Месяцев" class="java.lang.Number">
+<field name="Время прибытия на место происшествия" class="java.util.Date">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Место регистрации" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Результат вызова" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Характер вызова по результату" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Пол код" class="java.lang.Number">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Лет" class="java.lang.Number">
+<field name="Время убытия с места происшествия" class="java.util.Date">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
 <field name="Идентификатор происшествия" class="java.lang.Number">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Признак попутного вызова" class="java.lang.Number">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
