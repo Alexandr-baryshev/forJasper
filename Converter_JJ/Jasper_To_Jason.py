@@ -2,16 +2,19 @@ import json
 import pyperclip
 import re
 
+import colorama
+from colorama import Fore, Back, Style
+from colorama import init
 
-from Converter_JJ import Color
+init(autoreset=True)
+colorama.init()
+
 from Converter_JJ import Novgorod
 from Converter_JJ import Nakhodka
 
 with open('Zapros.json', encoding='UTF8') as f:
     jason_all = json.load(f)
 jason = jason_all['Zapros']
-
-
 
 # --- Field.xml - Открытие и выделение полей из файла -------------------
 with open('Field.xml', 'r', encoding='UTF8') as file:
@@ -45,24 +48,19 @@ for z in jasper:
 
 field_ok = json.dumps(result, ensure_ascii=False, indent=4)
 
-
-
 if len(not_find) > 0:
-    Color.print_yellow('ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
+    print(Fore.YELLOW + 'ПОЛЯ, НЕ НАЙДЕНЫЕ В ФАЙЛЕ "Zapros.json"')
 
     for i in not_find:
-        Color.print_red(i)
+        print(Fore.RED + i)
 
 if len(not_find) < 1:
     final_rezult = Nakhodka.zapros_past.replace('[$$]', field_ok)
-    Color.print_w(final_rezult)
+    print(Fore.LIGHTGREEN_EX + '.................................................................')
+    print(final_rezult)
     pyperclip.copy(final_rezult)
-    Color.print_green('Все поля найдены и скопированы в буфер обмена, добавлены условия.')
+    print(Fore.LIGHTGREEN_EX + 'Все поля найдены и скопированы в буфер обмена, добавлены условия.')
 
-
-    # ColorModule.print_w(field_ok)
+    # print(Fore.WHITE + field_ok)
     # pyperclip.copy(field_ok)
-    # ColorModule.print_green('СКОПИРОВАНЫ ТОЛЬКО ПОЛЯ')
-
-
-
+    # print(Fore.LIGHTGREEN_EX +'СКОПИРОВАНЫ ТОЛЬКО ПОЛЯ')

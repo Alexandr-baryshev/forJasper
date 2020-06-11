@@ -1295,6 +1295,46 @@
       "columnSwitch": null,
       "id": "user_retreat_cap_88cc4aef-56cd-419b-a1d1-5bae48a2a633",
       "idField": "user_retreat_cap"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Тип смена бригады",
+      "columnSwitch": null,
+      "id": "e_ct_b_dutys_sh_r_d_c1556090-eaa3-4a7d-b293-9f7f75e4748c",
+      "idField": "e_ct_b_dutys_sh_r_d"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Результат помощи",
+      "columnSwitch": null,
+      "id": "c03_assistance_result_b9a88120-0c21-48de-847d-717a42c1a8e3",
+      "idField": "c03_assistance_result"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Простой список состава",
+      "columnSwitch": null,
+      "id": "c03_staff_fio_list_7bc89f8a-a29f-440b-a93b-60904e3c5cb0",
+      "idField": "c03_staff_fio_list"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Медикамент",
+      "columnSwitch": null,
+      "id": "id_03_med_caption_955d6cac-485a-4d81-a24b-dbfbd085470a",
+      "idField": "id_03_med_caption"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Простой список услуг",
+      "columnSwitch": null,
+      "id": "vw_sc_help_list_usl_list_373dce19-208e-4052-8baa-1d156dd8d5d1",
+      "idField": "vw_sc_help_list_usl_list"
     }
   ]
 }

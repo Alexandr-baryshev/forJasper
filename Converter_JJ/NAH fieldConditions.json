@@ -36,7 +36,7 @@
             "property": null,
             "type": "dictionary",
             "value": []
-        },
+        },        
         {
             "action": null,
             "caption": "Бригада",
@@ -58,5 +58,5 @@
             "property": null,
             "type": "dictionary",
             "value": []
-        }
+        }        
     ]
