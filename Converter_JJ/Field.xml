@@ -1,28 +1,10 @@
-<field name="Причина НС" class="java.lang.String">
+<field name="Дата рождения" class="java.util.Date">
    <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Причина несчастного случая (Прочее)" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Дата рождения" class="java.util.Date">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Основной диагноз по карте" class="java.lang.String">
+<field name="СЛР смерть наступила" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
 <field name="ФИО пациента" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="ЛПУ" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Код (ОД)" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Общее состояние" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Место проживания" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
 <field name="Пол" class="java.lang.String">
@@ -31,9 +13,48 @@
 <field name="Время передачи в полицию" class="java.util.Date">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Адрес" class="java.lang.String">
+<field name="Время констатации смерти" class="java.util.Date">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="По карте (ПО)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Код (ПО)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Расшифровка (ПО)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="По карте (НПС)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Код (НПС)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Расшифровка (НПС)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="По карте(ОПС)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Код (ОПС)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Расшифровка (ОПС)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="По карте (ВПП)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Код (ВПП)" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Расшифровка (ВПП)" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
 <field name="Время регистрации" class="java.util.Date">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Время окончания транспортировки" class="java.util.Date">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>

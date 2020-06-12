@@ -203,6 +203,22 @@
     {
       "agg": null,
       "alias": null,
+      "caption": "По карте (НПС)",
+      "columnSwitch": null,
+      "id": "card03_icd10_icd_text_01320ea3-9bbd-4cfd-a874-6bc5217bdb63",
+      "idField": "card03_icd10_icd_text"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "По карте (ОПС)",
+      "columnSwitch": null,
+      "id": "card03_icd10_bcd_text_c7fb1265-d970-4b54-bde4-82a69938613a",
+      "idField": "card03_icd10_bcd_text"
+    },
+    {
+      "agg": null,
+      "alias": null,
       "caption": "Код (СД)",
       "columnSwitch": null,
       "id": "card03_icd10_acc_cod_44366247-2290-4b35-8600-098641c78cc2",
