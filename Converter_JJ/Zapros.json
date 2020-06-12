@@ -1359,6 +1359,22 @@
       "columnSwitch": null,
       "id": "uci_is_emerg_4fa2308f-a1bb-4f91-a6fb-e87c49a2e289",
       "idField": "uci_is_emerg"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Причина несчастного случая (Прочее)",
+      "columnSwitch": null,
+      "id": "c03_accident_cause_desc_e6dc630c-c403-4ded-baa9-2ea1bba0d154",
+      "idField": "c03_accident_cause_desc"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время передачи в полицию",
+      "columnSwitch": null,
+      "id": "c03_time_transfer_to_police_4ed24259-aa5a-45e9-a073-5e584a918d55",
+      "idField": "c03_time_transfer_to_police"
     }
   ]
 }

@@ -1,39 +1,39 @@
 <field name="Причина НС" class="java.lang.String">
    <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Дней" class="java.lang.Number">
+<field name="Причина несчастного случая (Прочее)" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-
-<field name="Признак ЧС" class="java.lang.Number">
+<field name="Дата рождения" class="java.util.Date">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-
+<field name="Основной диагноз по карте" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="ФИО пациента" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
 <field name="ЛПУ" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-
-<field name="Месяцев" class="java.lang.Number">
+<field name="Код (ОД)" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Пол код" class="java.lang.Number">
+<field name="Общее состояние" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Лет" class="java.lang.Number">
+<field name="Место проживания" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Место вызова" class="java.lang.String">
+<field name="Пол" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Идентификатор происшествия" class="java.lang.Number">
+<field name="Время передачи в полицию" class="java.util.Date">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Адрес" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
 <field name="Время регистрации" class="java.util.Date">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Код ПМУ" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Код уровня медицинского учреждения" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
