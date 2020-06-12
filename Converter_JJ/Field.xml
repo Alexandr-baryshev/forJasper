@@ -1,30 +1,39 @@
-<field name="Адрес" class="java.lang.String">
+<field name="Причина НС" class="java.lang.String">
    <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
+<field name="Дней" class="java.lang.Number">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+
+<field name="Признак ЧС" class="java.lang.Number">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+
+<field name="ЛПУ" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+
+<field name="Месяцев" class="java.lang.Number">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Пол код" class="java.lang.Number">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Лет" class="java.lang.Number">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
+<field name="Место вызова" class="java.lang.String">
+<fieldDescription><![CDATA[]]></fieldDescription>
+</field>
 <field name="Идентификатор происшествия" class="java.lang.Number">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Заявитель" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Телефон заявителя" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Время завершения" class="java.util.Date">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
 <field name="Время регистрации" class="java.util.Date">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Бригада позывной" class="java.lang.String">
+<field name="Код ПМУ" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>
-<field name="Наименование типа сил и средств" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Содержание текста происшествия" class="java.lang.String">
-<fieldDescription><![CDATA[]]></fieldDescription>
-</field>
-<field name="Причина завершения происшествия (результат)" class="java.lang.String">
+<field name="Код уровня медицинского учреждения" class="java.lang.String">
 <fieldDescription><![CDATA[]]></fieldDescription>
 </field>

@@ -1351,6 +1351,14 @@
       "columnSwitch": null,
       "id": "vw_sc_help_list_usl_list_373dce19-208e-4052-8baa-1d156dd8d5d1",
       "idField": "vw_sc_help_list_usl_list"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Признак ЧС",
+      "columnSwitch": null,
+      "id": "uci_is_emerg_4fa2308f-a1bb-4f91-a6fb-e87c49a2e289",
+      "idField": "uci_is_emerg"
     }
   ]
 }
