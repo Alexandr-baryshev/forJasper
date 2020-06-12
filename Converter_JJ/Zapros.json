@@ -195,6 +195,14 @@
     {
       "agg": null,
       "alias": null,
+      "caption": "По карте (ПО)",
+      "columnSwitch": null,
+      "id": "card03_icd10_hos_dia_text_89ae52ef-c742-4635-90bf-27b17715eed5",
+      "idField": "card03_icd10_hos_dia_text"
+    },
+    {
+      "agg": null,
+      "alias": null,
       "caption": "Код (СД)",
       "columnSwitch": null,
       "id": "card03_icd10_acc_cod_44366247-2290-4b35-8600-098641c78cc2",
@@ -807,6 +815,14 @@
       "columnSwitch": null,
       "id": "card03_icd10_ec_cod_ce8d5a11-88e9-4754-9c2c-758736c6a31e",
       "idField": "card03_icd10_ec_cod"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "По карте (ВПП)",
+      "columnSwitch": null,
+      "id": "card03_icd10_ec_text_219f3657-2c36-409a-ba43-1d8d31d9a8ac",
+      "idField": "card03_icd10_ec_text"
     },
     {
       "agg": null,
